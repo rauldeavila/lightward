@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Enemy
+  - DashingLightDetector
+  - InsideLightDetector
+  - WizHitBox
+  - Breakable
+  - CrossfadePanel
+  - Ground
+  - Water
+  - Dirt
+  - Stone
+  - RegularGround
+  - Wood
+  - Grass
+  - Light
+  - Fireball
+  - HitParticles
+  - Base
+  - Coin
+  - Spike
+  - Projectile
+  - Platform
+  - DeflectProjectile
+  - WizRoll
+  - Laser
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - Enemy
+  - WizHitAndAttack
+  - Player
+  - Light
+  - DetectsOnlyWizHitbox
+  - WizHitBox
+  - DetectsWizHitboxAndGround
+  - PARTICLES
+  - Chains
+  - Breakable
+  - CamBoundary
+  - WizHitBoxGroundAndBreakables
+  - DetectsOnlyEnemies
+  - Map
+  - NoPP
+  - GroundAndBreakable
+  - GIZMOS-EditorOnly
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 229961523
+    locked: 0
+  - name: Background Unlit Globally
+    uniqueID: 3312453663
+    locked: 0
+  - name: Mid Background
+    uniqueID: 3081696573
+    locked: 0
+  - name: Wiz
+    uniqueID: 972938265
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Tiles
+    uniqueID: 3120509865
+    locked: 0
+  - name: Enemy
+    uniqueID: 2894868401
+    locked: 0
+  - name: Mid Fg Unlit By Wiz
+    uniqueID: 2982809809
+    locked: 0
+  - name: Mid Foreground
+    uniqueID: 200776671
+    locked: 0
+  - name: Foreground
+    uniqueID: 3695264437
+    locked: 0
+  - name: UI
+    uniqueID: 3646779307
+    locked: 0

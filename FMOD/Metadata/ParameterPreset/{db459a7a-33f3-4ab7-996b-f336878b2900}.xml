@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{db459a7a-33f3-4ab7-996b-f336878b2900}">
+		<property name="name">
+			<value>layer5INSTANT</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f0507627-9f78-4cbf-948f-14244afc3545}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{97403ee0-0515-4fdc-bf96-bc515b47fc72}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{97403ee0-0515-4fdc-bf96-bc515b47fc72}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

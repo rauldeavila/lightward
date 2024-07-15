@@ -1,0 +1,3416 @@
+fileFormatVersion: 2
+guid: ce60700e6d0744e3eacedd98b6692630
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: grass_monsters_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: -1.5652174}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 568
+      width: 36
+      height: 46
+    spriteID: 861264d8ee9603f4fa7fa3dfc563a804
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 222, y: 568}
+  - name: grass_monsters_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 229
+      y: 252
+      width: 36
+      height: 45
+    spriteID: dcf95beea0b75a54f972b3810080a064
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 229, y: 252}
+  - name: grass_monsters_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: -1.5869565}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 622
+      width: 36
+      height: 46
+    spriteID: 6e216b4ba5108ed40ab82a0426a93fd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 222, y: 622}
+  - name: grass_monsters_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: -1.5531915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 317
+      width: 36
+      height: 47
+    spriteID: 70baec97ec7208842a097bcae9d101a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 317}
+  - name: grass_monsters_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: -1.5531915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 926
+      width: 36
+      height: 47
+    spriteID: 0564f2fd62975c44890f5d2804dea9c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 926}
+  - name: grass_monsters_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 840
+      width: 36
+      height: 44
+    spriteID: 88cc02e6435467e44992323c91a72d6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 222, y: 840}
+  - name: grass_monsters_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: -1.6976745}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 675
+      width: 36
+      height: 43
+    spriteID: 29d334092342f6a43a76e3f98848f2d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 675}
+  - name: grass_monsters_Frame_7
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 726
+      width: 35
+      height: 44
+    spriteID: 5c46dcedb80be534f8d78f46953c829e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 726}
+  - name: grass_monsters_Frame_8
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 778
+      width: 35
+      height: 44
+    spriteID: 18629b5655b1d7240b9b4b9b7972d6bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 778}
+  - name: grass_monsters_Frame_9
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 892
+      width: 35
+      height: 45
+    spriteID: e6f0dfd12941d64418c95a18559b479d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 222, y: 892}
+  - name: grass_monsters_Frame_10
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.5869565}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 786
+      width: 35
+      height: 46
+    spriteID: 276afc4229f4e8543b3a00d9445735b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 222, y: 786}
+  - name: grass_monsters_Frame_11
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.5531915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 686
+      width: 35
+      height: 47
+    spriteID: 433a849b6911ab6478a94879d2170968
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 686}
+  - name: grass_monsters_Frame_12
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.6976745}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 4
+      width: 35
+      height: 43
+    spriteID: e5497b3652422074e9056979c51968f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 4}
+  - name: grass_monsters_Frame_13
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 945
+      width: 35
+      height: 45
+    spriteID: 7189fbcab75b98241a02b2aa93b22dbc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 222, y: 945}
+  - name: grass_monsters_Frame_14
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.5531915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 676
+      width: 35
+      height: 47
+    spriteID: 3eba7194148847b4a9ab83c2f1b3a5d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 222, y: 676}
+  - name: grass_monsters_Frame_16
+    originalName: 
+    pivot: {x: 0.44444442, y: -1.4313726}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 404
+      width: 45
+      height: 51
+    spriteID: 6d7da5dbde0cdc84ea413f6027225895
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 404}
+  - name: grass_monsters_Frame_17
+    originalName: 
+    pivot: {x: 0.44897965, y: -1.56}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 139
+      width: 49
+      height: 50
+    spriteID: 00627ff0e616b9b4386aa283b92d4ec7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 139}
+  - name: grass_monsters_Frame_18
+    originalName: 
+    pivot: {x: 0.462963, y: -1.9545455}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 352
+      width: 54
+      height: 44
+    spriteID: 18fc4a7199c7fac418c958b1379ebe46
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 352}
+  - name: grass_monsters_Frame_19
+    originalName: 
+    pivot: {x: 0.48333332, y: -2.1951218}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 90
+      width: 60
+      height: 41
+    spriteID: 9749310062c465c4bb57fa7a9650f2df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 90}
+  - name: grass_monsters_Frame_20
+    originalName: 
+    pivot: {x: 0.48387095, y: -2.3846154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 305
+      width: 62
+      height: 39
+    spriteID: 8fbef1a60b2d39c438b29a6636dd1327
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 305}
+  - name: grass_monsters_Frame_21
+    originalName: 
+    pivot: {x: 0.5714284, y: -4.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 143
+      y: 379
+      width: 14
+      height: 21
+    spriteID: 4bee1d25c3c03114d805b97620324cfa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 143, y: 379}
+  - name: grass_monsters_Frame_24
+    originalName: 
+    pivot: {x: 0.53968257, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 582
+      width: 63
+      height: 44
+    spriteID: 9833a995e3f11a84cadcb15b37a7e857
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 582}
+  - name: grass_monsters_Frame_25
+    originalName: 
+    pivot: {x: 0.53968257, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 426
+      width: 63
+      height: 45
+    spriteID: f0d50ccfc11adad4f97f5b8469283ec9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 426}
+  - name: grass_monsters_Frame_26
+    originalName: 
+    pivot: {x: 0.53968257, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 634
+      width: 63
+      height: 44
+    spriteID: 602bff9a2ba179b4980a1b3275f7be8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 634}
+  - name: grass_monsters_Frame_27
+    originalName: 
+    pivot: {x: 0.5166667, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 744
+      width: 60
+      height: 44
+    spriteID: cfbc57a265104a64680996f4f3427dc6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 744}
+  - name: grass_monsters_Frame_28
+    originalName: 
+    pivot: {x: 0.5166667, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 796
+      width: 60
+      height: 44
+    spriteID: 8c062e8589ab2e0429b5992db349cc5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 796}
+  - name: grass_monsters_Frame_29
+    originalName: 
+    pivot: {x: 0.52542377, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 848
+      width: 59
+      height: 44
+    spriteID: f9a78160d676bf440b6e336e56f8b19b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 848}
+  - name: grass_monsters_Frame_30
+    originalName: 
+    pivot: {x: 0.52542377, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 900
+      width: 59
+      height: 44
+    spriteID: 0e255b9290ea1ba41991e4ac19e2c508
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 900}
+  - name: grass_monsters_Frame_31
+    originalName: 
+    pivot: {x: 0.3243243, y: -2.1176472}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 403
+      y: 4
+      width: 37
+      height: 34
+    spriteID: 31571f210ec2e6d408e6e85ee281ba9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 403, y: 4}
+  - name: grass_monsters_Frame_32
+    originalName: 
+    pivot: {x: 0.09375, y: -1.9459459}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 102
+      width: 96
+      height: 37
+    spriteID: f98a25a4a59b4ad48b498815e227e4a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 102}
+  - name: grass_monsters_Frame_33
+    originalName: 
+    pivot: {x: 0.08247421, y: -1.9459459}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 4
+      width: 97
+      height: 37
+    spriteID: adf37d4fb69ea8f4e96b8d6f01a75fd6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 4}
+  - name: grass_monsters_Frame_34
+    originalName: 
+    pivot: {x: 0.10999998, y: -2.057143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 4
+      width: 100
+      height: 35
+    spriteID: 13cc066c3d255ca4f9046035df17f8ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 4}
+  - name: grass_monsters_Frame_35
+    originalName: 
+    pivot: {x: 0.10999998, y: -2.057143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 47
+      width: 100
+      height: 35
+    spriteID: 2245717d6346bfd428cf68fa6f276622
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 47}
+  - name: grass_monsters_Frame_36
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 92
+      width: 35
+      height: 45
+    spriteID: 1704b8a3b60ca08438523cf0e5435a05
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 92}
+  - name: grass_monsters_Frame_37
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.6976745}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 55
+      width: 35
+      height: 43
+    spriteID: a5a0fce2e6806c146b9bd2719b291b48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 55}
+  - name: grass_monsters_Frame_38
+    originalName: 
+    pivot: {x: 0.42857143, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 706
+      width: 28
+      height: 45
+    spriteID: c532f9d5dc3bcf84190ce12cd1532442
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 706}
+  - name: grass_monsters_Frame_39
+    originalName: 
+    pivot: {x: 0.45161283, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 526
+      width: 31
+      height: 45
+    spriteID: 826e83924f5f1ee4bbf2ccd02ab31bd1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 128, y: 526}
+  - name: grass_monsters_Frame_40
+    originalName: 
+    pivot: {x: 0.44117647, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 882
+      width: 34
+      height: 45
+    spriteID: b3ec4720e5cda064c851c8995184f33a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 882}
+  - name: grass_monsters_Frame_41
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 935
+      width: 34
+      height: 45
+    spriteID: 1abfe546169bfb24ebd7cddd87baf782
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 935}
+  - name: grass_monsters_Frame_42
+    originalName: 
+    pivot: {x: 0.37142864, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 145
+      width: 35
+      height: 45
+    spriteID: 9ecddf6001567fb4d8afdcdfbb254207
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 145}
+  - name: grass_monsters_Frame_43
+    originalName: 
+    pivot: {x: 0.35483864, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 506
+      width: 31
+      height: 45
+    spriteID: 4a86c6df00ac9874a911be16bbb1b75b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 506}
+  - name: grass_monsters_Frame_44
+    originalName: 
+    pivot: {x: 0.35714293, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 759
+      width: 28
+      height: 45
+    spriteID: c3b7eb4174ff94d4fa7137dce93dfd2f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 759}
+  - name: grass_monsters_Frame_45
+    originalName: 
+    pivot: {x: 0.46153846, y: -1.8717949}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 952
+      width: 65
+      height: 39
+    spriteID: 8f36c5fa66d032a48a42933eadf5ace9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 952}
+  - name: grass_monsters_Frame_46
+    originalName: 
+    pivot: {x: 0.45833334, y: -1.846154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 479
+      width: 72
+      height: 39
+    spriteID: fe1704714a13da04aa504a09727d7d1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 479}
+  - name: grass_monsters_Frame_47
+    originalName: 
+    pivot: {x: 0.46575344, y: -1.8717949}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 379
+      width: 73
+      height: 39
+    spriteID: c0759a715eae4584b844764a0bee35db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 379}
+  - name: grass_monsters_Frame_48
+    originalName: 
+    pivot: {x: 0.46753246, y: -1.6976745}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 198
+      width: 77
+      height: 43
+    spriteID: 3e9af12cf08741f48827e7e4b48f364e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 198}
+  - name: grass_monsters_Frame_49
+    originalName: 
+    pivot: {x: 0.475, y: -1.6976745}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 147
+      width: 80
+      height: 43
+    spriteID: 680beb19ea1b0a642b4ae19fc899ed24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 147}
+  - name: grass_monsters_Frame_50
+    originalName: 
+    pivot: {x: 0.5063291, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 49
+      width: 79
+      height: 45
+    spriteID: 9891ce2c6d935b846b0b0219e95160f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 49}
+  - name: grass_monsters_Frame_51
+    originalName: 
+    pivot: {x: 0.48571426, y: -1.5531915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 222
+      y: 731
+      width: 35
+      height: 47
+    spriteID: 2113226f295373d44af2547245a3a803
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 222, y: 731}
+  - name: grass_monsters_Frame_52
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 198
+      width: 35
+      height: 45
+    spriteID: 08ad9281828ddff4ba083e383c886bf3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 198}
+  - name: grass_monsters_Frame_53
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.6976745}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 106
+      width: 35
+      height: 43
+    spriteID: 8e96e8251c3965d4cabfc61a6491c552
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 106}
+  - name: grass_monsters_Frame_54
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.688889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 251
+      width: 35
+      height: 45
+    spriteID: bac0e22f9856e914b9d3aab777450107
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 251}
+  - name: grass_monsters_Frame_55
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.7333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 304
+      width: 35
+      height: 45
+    spriteID: 46306cc42c9b477418e1805b2ad5be1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 304}
+  - name: grass_monsters_Frame_56
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.7333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 357
+      width: 35
+      height: 45
+    spriteID: 51ee1754b6643084da69307b729661e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 357}
+  - name: grass_monsters_Frame_57
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.688889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 410
+      width: 35
+      height: 45
+    spriteID: b7042a887f2704549a172a998cc62896
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 410}
+  - name: grass_monsters_Frame_58
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.6976745}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 157
+      width: 35
+      height: 43
+    spriteID: 4af564aa8a0889c4db4c5aad691de209
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 157}
+  - name: grass_monsters_Frame_59
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.7380954}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 883
+      width: 35
+      height: 42
+    spriteID: e82a40c7f0764c74fa58fabc7b67daed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 883}
+  - name: grass_monsters_Frame_60
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.688889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 463
+      width: 35
+      height: 45
+    spriteID: 9e3e63f73fa027141b559c8c1f5e3ac9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 463}
+  - name: grass_monsters_Frame_61
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.7333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 516
+      width: 35
+      height: 45
+    spriteID: 2e4fb03a8614ec14fb633df107ff53cf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 516}
+  - name: grass_monsters_Frame_62
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.7333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 569
+      width: 35
+      height: 45
+    spriteID: ab55ef44539e0b54db0236f6cf964195
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 569}
+  - name: grass_monsters_Frame_63
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.688889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 622
+      width: 35
+      height: 45
+    spriteID: 653b2199e66d6ea43b9fc2d8c4eaa46f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 622}
+  - name: grass_monsters_Frame_64
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.6976745}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 208
+      width: 35
+      height: 43
+    spriteID: 3acebcb15c390ac4a854d5c42533635d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 208}
+  - name: grass_monsters_Frame_65
+    originalName: 
+    pivot: {x: 0.51428574, y: -1.7380954}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 933
+      width: 35
+      height: 42
+    spriteID: ad444a17356b1fb40a1435b4e82a514d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 933}
+  - name: grass_monsters_Frame_66
+    originalName: 
+    pivot: {x: 0.39473683, y: -1.6818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 229
+      y: 352
+      width: 38
+      height: 44
+    spriteID: 111212b0eafe21e48aa9dfc37eb9ca52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 229, y: 352}
+  - name: grass_monsters_Frame_67
+    originalName: 
+    pivot: {x: 0.34285715, y: -1.8536586}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 408
+      width: 35
+      height: 41
+    spriteID: a10551b4b6e29a64d81705ab4f5a44d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 408}
+  - name: grass_monsters_Frame_68
+    originalName: 
+    pivot: {x: 0.34285715, y: -1.8536586}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 457
+      width: 35
+      height: 41
+    spriteID: 6c406dd3040951841aefe99acea2f328
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 457}
+  - name: grass_monsters_Frame_69
+    originalName: 
+    pivot: {x: 0.34285715, y: -1.7857144}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 4
+      width: 35
+      height: 42
+    spriteID: d7af6aabffe5c764286d2845e1b194e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 4}
+  - name: grass_monsters_Frame_70
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.7209302}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 204
+      width: 34
+      height: 43
+    spriteID: c869ea7360c052c4fbf98db82ca6ecc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 204}
+  - name: grass_monsters_Frame_71
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 259
+      width: 34
+      height: 44
+    spriteID: 97c4542b6a539f743a91e63cba67fa9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 259}
+  - name: grass_monsters_Frame_72
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 311
+      width: 34
+      height: 44
+    spriteID: 05111c0428c458e45b0109ada890c051
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 311}
+  - name: grass_monsters_Frame_73
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 363
+      width: 34
+      height: 44
+    spriteID: 6ab69258a13b927409982853178a1542
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 363}
+  - name: grass_monsters_Frame_74
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.8536586}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 559
+      width: 34
+      height: 41
+    spriteID: b489fc99aae8a8b49affbd81921df990
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 559}
+  - name: grass_monsters_Frame_75
+    originalName: 
+    pivot: {x: 0.34285715, y: -1.7857144}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 54
+      width: 35
+      height: 42
+    spriteID: 4f78fe244934e7f4ca1aa34d492d9651
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 54}
+  - name: grass_monsters_Frame_76
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.7209302}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 255
+      width: 34
+      height: 43
+    spriteID: bcdca12d00704ef449095733b23fbfbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 255}
+  - name: grass_monsters_Frame_77
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 415
+      width: 34
+      height: 44
+    spriteID: cbd8a0f47dcefe741ba52969674f1fbf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 415}
+  - name: grass_monsters_Frame_78
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 467
+      width: 34
+      height: 44
+    spriteID: b961567aac107fc4598f550d6e55dc68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 467}
+  - name: grass_monsters_Frame_79
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 519
+      width: 34
+      height: 44
+    spriteID: e4c027cee79a5894498c01cf752d7ec7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 519}
+  - name: grass_monsters_Frame_80
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.8536586}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 608
+      width: 34
+      height: 41
+    spriteID: 316fae2ecaafe044a8bab277285e20a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 608}
+  - name: grass_monsters_Frame_81
+    originalName: 
+    pivot: {x: 0.34285715, y: -1.7857144}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 104
+      width: 35
+      height: 42
+    spriteID: 0ab2ae803d29ccc42be4e7d25f3818d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 104}
+  - name: grass_monsters_Frame_82
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.7209302}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 306
+      width: 34
+      height: 43
+    spriteID: 08263774b53671046856df647f3226a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 306}
+  - name: grass_monsters_Frame_83
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 571
+      width: 34
+      height: 44
+    spriteID: e0f27a826e9f97741b635fbe2b20f929
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 571}
+  - name: grass_monsters_Frame_84
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 623
+      width: 34
+      height: 44
+    spriteID: e1d1036416305ee49a0e9cfbf2882c50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 623}
+  - name: grass_monsters_Frame_85
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 675
+      width: 34
+      height: 44
+    spriteID: 9206f98db6a605b47a7b5844d3e49822
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 675}
+  - name: grass_monsters_Frame_86
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.8536586}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 657
+      width: 34
+      height: 41
+    spriteID: a0e75959a5296234792546f82123723f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 657}
+  - name: grass_monsters_Frame_87
+    originalName: 
+    pivot: {x: 0.34285715, y: -1.7857144}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 154
+      width: 35
+      height: 42
+    spriteID: c6b40dffd97f8bf48b4f8c6b75f22e13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 154}
+  - name: grass_monsters_Frame_88
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.7209302}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 360
+      y: 357
+      width: 34
+      height: 43
+    spriteID: 160b004455178b34f82d8312c67ba89d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 360, y: 357}
+  - name: grass_monsters_Frame_89
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 727
+      width: 34
+      height: 44
+    spriteID: 060c547f8bc3c234da92f9232f899573
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 727}
+  - name: grass_monsters_Frame_90
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 779
+      width: 34
+      height: 44
+    spriteID: c498c522b3774824681362970d66d11e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 779}
+  - name: grass_monsters_Frame_91
+    originalName: 
+    pivot: {x: 0.3529412, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 831
+      width: 34
+      height: 44
+    spriteID: 9270958e9e74e6c4e90ebee235522a86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 831}
+  - name: grass_monsters_Frame_92
+    originalName: 
+    pivot: {x: 0.23529407, y: -1.6444445}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 275
+      y: 4
+      width: 34
+      height: 45
+    spriteID: 354874f4b0848a849a2e761fb677054a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 275, y: 4}
+  - name: grass_monsters_Frame_93
+    originalName: 
+    pivot: {x: 0.17142858, y: -1.6818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 830
+      width: 35
+      height: 44
+    spriteID: 2a9ba0e11fd37364290af2ff2e63ae56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 830}
+  - name: grass_monsters_Frame_94
+    originalName: 
+    pivot: {x: 0.6857143, y: -1.1896552}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 123
+      y: 249
+      width: 35
+      height: 58
+    spriteID: dcf3becd0f7768a4bb87a5ec00b15194
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 123, y: 249}
+  - name: grass_monsters_Frame_95
+    originalName: 
+    pivot: {x: 0.6857143, y: -1.1896552}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 676
+      width: 35
+      height: 58
+    spriteID: d424c3fe82914664caf251bae4128bba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 676}
+  - name: grass_monsters_Frame_96
+    originalName: 
+    pivot: {x: 0.6857143, y: -1.1896552}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 742
+      width: 35
+      height: 58
+    spriteID: 4588cc68305466f498a09452122e3d8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 742}
+  - name: grass_monsters_Frame_97
+    originalName: 
+    pivot: {x: 0.6857143, y: -1.1896552}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 808
+      width: 35
+      height: 58
+    spriteID: d75059022af85834aacb58488d535c79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 808}
+  - name: grass_monsters_Frame_98
+    originalName: 
+    pivot: {x: 0.48717955, y: -2.162162}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 981
+      width: 39
+      height: 37
+    spriteID: 7b5188b396beac14582c8617d2aa877d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 981}
+  - name: grass_monsters_Frame_99
+    originalName: 
+    pivot: {x: 0.48717955, y: -1.5531915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 227
+      y: 197
+      width: 39
+      height: 47
+    spriteID: 17ecf3fff4314ce4db12585431dd3b09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 227, y: 197}
+  - name: grass_monsters_Frame_100
+    originalName: 
+    pivot: {x: 0.5365854, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 226
+      y: 463
+      width: 41
+      height: 44
+    spriteID: 706358c00f52657408bf75e534229d06
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 226, y: 463}
+  - name: grass_monsters_Frame_101
+    originalName: 
+    pivot: {x: 0.5365854, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 225
+      y: 516
+      width: 41
+      height: 44
+    spriteID: 1e825b04abe5bb1478ede4a28df85cae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 225, y: 516}
+  - name: grass_monsters_Frame_102
+    originalName: 
+    pivot: {x: 0.53333336, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 874
+      width: 45
+      height: 44
+    spriteID: 8941d04641b0db04f8fa87b16b61f1b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 874}
+  - name: grass_monsters_Frame_103
+    originalName: 
+    pivot: {x: 0.5199999, y: -1.659091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 516
+      width: 50
+      height: 44
+    spriteID: ca1b35cfae3591b499dd705f7a0c5380
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 516}
+  - name: grass_monsters_Frame_104
+    originalName: 
+    pivot: {x: 0.51851857, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 252
+      width: 54
+      height: 45
+    spriteID: eca48f6bc8685f24da0334a8c9a24331
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 252}
+  - name: grass_monsters_Frame_105
+    originalName: 
+    pivot: {x: 0.5192308, y: -1.5531915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 197
+      width: 52
+      height: 47
+    spriteID: 943cbb65de0d9f84a81c88caef150a9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 197}
+  - name: grass_monsters_Frame_106
+    originalName: 
+    pivot: {x: 0.49999997, y: -1.5208334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 526
+      width: 58
+      height: 48
+    spriteID: 79e4e927b9d6a0e40be9975121423118
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 526}
+  - name: grass_monsters_Frame_107
+    originalName: 
+    pivot: {x: 0.51851857, y: -1.46}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 686
+      width: 54
+      height: 50
+    spriteID: d7e8d739ce32ed643849de46dafdbd98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 686}
+  - name: grass_monsters_Frame_108
+    originalName: 
+    pivot: {x: 0.509434, y: -1.3518519}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 317
+      width: 53
+      height: 54
+    spriteID: 01ca2134377794a43864bade9421c228
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 317}
+  - name: grass_monsters_Frame_109
+    originalName: 
+    pivot: {x: 0.509434, y: -1.2166667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 62
+      y: 249
+      width: 53
+      height: 60
+    spriteID: 0efac876995036c48bd43e5983f78f59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 62, y: 249}
+  - name: grass_monsters_Frame_110
+    originalName: 
+    pivot: {x: 0.5, y: -0.9125001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 50
+      height: 80
+    spriteID: a9cd04d07c4ee134eb3933917b4892d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: grass_monsters_Frame_111
+    originalName: 
+    pivot: {x: 0.5098039, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 463
+      width: 51
+      height: 45
+    spriteID: da953bf67c88d8b408c334324d210816
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 463}
+  - name: grass_monsters_Frame_112
+    originalName: 
+    pivot: {x: 0.48936167, y: -1.6222223}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 568
+      width: 47
+      height: 45
+    spriteID: eae4ef8250a760243a56641fc2daee97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 568}
+  - name: grass_monsters_Frame_113
+    originalName: 
+    pivot: {x: 0.49999994, y: -1.5531915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 404
+      width: 46
+      height: 47
+    spriteID: b941d9352b6c21f41827aede89fac0b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 404}
+  - name: grass_monsters_Frame_114
+    originalName: 
+    pivot: {x: 0.50000006, y: -1.5531915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 167
+      y: 621
+      width: 44
+      height: 47
+    spriteID: c851c5085aa71874b8e9ec1e696c8049
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 167, y: 621}
+  - name: grass_monsters_Frame_115
+    originalName: 
+    pivot: {x: 0.5, y: -1.5869565}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 224
+      y: 139
+      width: 42
+      height: 46
+    spriteID: 73359c6b08428e146b26f6ab319fb2d8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 224, y: 139}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1297322562
+    name: grass_monsters
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: grass_monsters_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 72
+        width: 36
+        height: 46
+      spriteId: 861264d8ee9603f4fa7fa3dfc563a804
+    - name: grass_monsters_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 36
+        height: 45
+      spriteId: dcf95beea0b75a54f972b3810080a064
+    - name: grass_monsters_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 36
+        height: 46
+      spriteId: 6e216b4ba5108ed40ab82a0426a93fd3
+    - name: grass_monsters_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 36
+        height: 47
+      spriteId: 70baec97ec7208842a097bcae9d101a5
+    - name: grass_monsters_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 36
+        height: 47
+      spriteId: 0564f2fd62975c44890f5d2804dea9c8
+    - name: grass_monsters_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 36
+        height: 44
+      spriteId: 88cc02e6435467e44992323c91a72d6b
+    - name: grass_monsters_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 36
+        height: 43
+      spriteId: 29d334092342f6a43a76e3f98848f2d7
+    - name: grass_monsters_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 44
+      spriteId: 5c46dcedb80be534f8d78f46953c829e
+    - name: grass_monsters_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 44
+      spriteId: 18629b5655b1d7240b9b4b9b7972d6bf
+    - name: grass_monsters_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 45
+      spriteId: e6f0dfd12941d64418c95a18559b479d
+    - name: grass_monsters_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 46
+      spriteId: 276afc4229f4e8543b3a00d9445735b7
+    - name: grass_monsters_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 47
+      spriteId: 433a849b6911ab6478a94879d2170968
+    - name: grass_monsters_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 43
+      spriteId: e5497b3652422074e9056979c51968f3
+    - name: grass_monsters_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 45
+      spriteId: 7189fbcab75b98241a02b2aa93b22dbc
+    - name: grass_monsters_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 47
+      spriteId: 3eba7194148847b4a9ab83c2f1b3a5d9
+    - name: grass_monsters_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 76
+        y: 73
+        width: 45
+        height: 51
+      spriteId: 6d7da5dbde0cdc84ea413f6027225895
+    - name: grass_monsters_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 74
+        y: 78
+        width: 49
+        height: 50
+      spriteId: 00627ff0e616b9b4386aa283b92d4ec7
+    - name: grass_monsters_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 86
+        width: 54
+        height: 44
+      spriteId: 18fc4a7199c7fac418c958b1379ebe46
+    - name: grass_monsters_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 90
+        width: 60
+        height: 41
+      spriteId: 9749310062c465c4bb57fa7a9650f2df
+    - name: grass_monsters_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 93
+        width: 62
+        height: 39
+      spriteId: 8fbef1a60b2d39c438b29a6636dd1327
+    - name: grass_monsters_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 88
+        y: 102
+        width: 14
+        height: 21
+      spriteId: 4bee1d25c3c03114d805b97620324cfa
+    - name: grass_monsters_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 73
+        width: 63
+        height: 44
+      spriteId: 9833a995e3f11a84cadcb15b37a7e857
+    - name: grass_monsters_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 73
+        width: 63
+        height: 45
+      spriteId: f0d50ccfc11adad4f97f5b8469283ec9
+    - name: grass_monsters_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 73
+        width: 63
+        height: 44
+      spriteId: 602bff9a2ba179b4980a1b3275f7be8d
+    - name: grass_monsters_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 73
+        width: 60
+        height: 44
+      spriteId: cfbc57a265104a64680996f4f3427dc6
+    - name: grass_monsters_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 73
+        width: 60
+        height: 44
+      spriteId: 8c062e8589ab2e0429b5992db349cc5c
+    - name: grass_monsters_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 73
+        width: 59
+        height: 44
+      spriteId: f9a78160d676bf440b6e336e56f8b19b
+    - name: grass_monsters_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 73
+        width: 59
+        height: 44
+      spriteId: 0e255b9290ea1ba41991e4ac19e2c508
+    - name: grass_monsters_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 72
+        width: 37
+        height: 34
+      spriteId: 31571f210ec2e6d408e6e85ee281ba9d
+    - name: grass_monsters_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 87
+        y: 72
+        width: 96
+        height: 37
+      spriteId: f98a25a4a59b4ad48b498815e227e4a2
+    - name: grass_monsters_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 88
+        y: 72
+        width: 97
+        height: 37
+      spriteId: adf37d4fb69ea8f4e96b8d6f01a75fd6
+    - name: grass_monsters_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 85
+        y: 72
+        width: 100
+        height: 35
+      spriteId: 13cc066c3d255ca4f9046035df17f8ba
+    - name: grass_monsters_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 85
+        y: 72
+        width: 100
+        height: 35
+      spriteId: 2245717d6346bfd428cf68fa6f276622
+    - name: grass_monsters_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 45
+      spriteId: 1704b8a3b60ca08438523cf0e5435a05
+    - name: grass_monsters_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 43
+      spriteId: a5a0fce2e6806c146b9bd2719b291b48
+    - name: grass_monsters_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 28
+        height: 45
+      spriteId: c532f9d5dc3bcf84190ce12cd1532442
+    - name: grass_monsters_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 82
+        y: 73
+        width: 31
+        height: 45
+      spriteId: 826e83924f5f1ee4bbf2ccd02ab31bd1
+    - name: grass_monsters_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 81
+        y: 73
+        width: 34
+        height: 45
+      spriteId: b3ec4720e5cda064c851c8995184f33a
+    - name: grass_monsters_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 82
+        y: 73
+        width: 34
+        height: 45
+      spriteId: 1abfe546169bfb24ebd7cddd87baf782
+    - name: grass_monsters_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 83
+        y: 73
+        width: 35
+        height: 45
+      spriteId: 9ecddf6001567fb4d8afdcdfbb254207
+    - name: grass_monsters_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 85
+        y: 73
+        width: 31
+        height: 45
+      spriteId: 4a86c6df00ac9874a911be16bbb1b75b
+    - name: grass_monsters_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 86
+        y: 73
+        width: 28
+        height: 45
+      spriteId: c3b7eb4174ff94d4fa7137dce93dfd2f
+    - name: grass_monsters_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 73
+        width: 65
+        height: 39
+      spriteId: 8f36c5fa66d032a48a42933eadf5ace9
+    - name: grass_monsters_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 72
+        width: 72
+        height: 39
+      spriteId: fe1704714a13da04aa504a09727d7d1d
+    - name: grass_monsters_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 73
+        width: 73
+        height: 39
+      spriteId: c0759a715eae4584b844764a0bee35db
+    - name: grass_monsters_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 73
+        width: 77
+        height: 43
+      spriteId: 3e9af12cf08741f48827e7e4b48f364e
+    - name: grass_monsters_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 58
+        y: 73
+        width: 80
+        height: 43
+      spriteId: 680beb19ea1b0a642b4ae19fc899ed24
+    - name: grass_monsters_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 56
+        y: 73
+        width: 79
+        height: 45
+      spriteId: 9891ce2c6d935b846b0b0219e95160f3
+    - name: grass_monsters_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 79
+        y: 73
+        width: 35
+        height: 47
+      spriteId: 2113226f295373d44af2547245a3a803
+    - name: grass_monsters_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 45
+      spriteId: 08ad9281828ddff4ba083e383c886bf3
+    - name: grass_monsters_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 43
+      spriteId: 8e96e8251c3965d4cabfc61a6491c552
+    - name: grass_monsters_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 76
+        width: 35
+        height: 45
+      spriteId: bac0e22f9856e914b9d3aab777450107
+    - name: grass_monsters_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 78
+        width: 35
+        height: 45
+      spriteId: 46306cc42c9b477418e1805b2ad5be1c
+    - name: grass_monsters_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 78
+        width: 35
+        height: 45
+      spriteId: 51ee1754b6643084da69307b729661e9
+    - name: grass_monsters_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 76
+        width: 35
+        height: 45
+      spriteId: b7042a887f2704549a172a998cc62896
+    - name: grass_monsters_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 43
+      spriteId: 4af564aa8a0889c4db4c5aad691de209
+    - name: grass_monsters_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 42
+      spriteId: e82a40c7f0764c74fa58fabc7b67daed
+    - name: grass_monsters_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 76
+        width: 35
+        height: 45
+      spriteId: 9e3e63f73fa027141b559c8c1f5e3ac9
+    - name: grass_monsters_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 78
+        width: 35
+        height: 45
+      spriteId: 2e4fb03a8614ec14fb633df107ff53cf
+    - name: grass_monsters_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 78
+        width: 35
+        height: 45
+      spriteId: ab55ef44539e0b54db0236f6cf964195
+    - name: grass_monsters_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 76
+        width: 35
+        height: 45
+      spriteId: 653b2199e66d6ea43b9fc2d8c4eaa46f
+    - name: grass_monsters_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 43
+      spriteId: 3acebcb15c390ac4a854d5c42533635d
+    - name: grass_monsters_Frame_65
+      frameIndex: 65
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 73
+        width: 35
+        height: 42
+      spriteId: ad444a17356b1fb40a1435b4e82a514d
+    - name: grass_monsters_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 81
+        y: 74
+        width: 38
+        height: 44
+      spriteId: 111212b0eafe21e48aa9dfc37eb9ca52
+    - name: grass_monsters_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 76
+        width: 35
+        height: 41
+      spriteId: a10551b4b6e29a64d81705ab4f5a44d0
+    - name: grass_monsters_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 76
+        width: 35
+        height: 41
+      spriteId: 6c406dd3040951841aefe99acea2f328
+    - name: grass_monsters_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 75
+        width: 35
+        height: 42
+      spriteId: d7af6aabffe5c764286d2845e1b194e5
+    - name: grass_monsters_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 74
+        width: 34
+        height: 43
+      spriteId: c869ea7360c052c4fbf98db82ca6ecc1
+    - name: grass_monsters_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: 97c4542b6a539f743a91e63cba67fa9c
+    - name: grass_monsters_Frame_72
+      frameIndex: 72
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: 05111c0428c458e45b0109ada890c051
+    - name: grass_monsters_Frame_73
+      frameIndex: 73
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: 6ab69258a13b927409982853178a1542
+    - name: grass_monsters_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 76
+        width: 34
+        height: 41
+      spriteId: b489fc99aae8a8b49affbd81921df990
+    - name: grass_monsters_Frame_75
+      frameIndex: 75
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 75
+        width: 35
+        height: 42
+      spriteId: 4f78fe244934e7f4ca1aa34d492d9651
+    - name: grass_monsters_Frame_76
+      frameIndex: 76
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 74
+        width: 34
+        height: 43
+      spriteId: bcdca12d00704ef449095733b23fbfbf
+    - name: grass_monsters_Frame_77
+      frameIndex: 77
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: cbd8a0f47dcefe741ba52969674f1fbf
+    - name: grass_monsters_Frame_78
+      frameIndex: 78
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: b961567aac107fc4598f550d6e55dc68
+    - name: grass_monsters_Frame_79
+      frameIndex: 79
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: e4c027cee79a5894498c01cf752d7ec7
+    - name: grass_monsters_Frame_80
+      frameIndex: 80
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 76
+        width: 34
+        height: 41
+      spriteId: 316fae2ecaafe044a8bab277285e20a7
+    - name: grass_monsters_Frame_81
+      frameIndex: 81
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 75
+        width: 35
+        height: 42
+      spriteId: 0ab2ae803d29ccc42be4e7d25f3818d9
+    - name: grass_monsters_Frame_82
+      frameIndex: 82
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 74
+        width: 34
+        height: 43
+      spriteId: 08263774b53671046856df647f3226a3
+    - name: grass_monsters_Frame_83
+      frameIndex: 83
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: e0f27a826e9f97741b635fbe2b20f929
+    - name: grass_monsters_Frame_84
+      frameIndex: 84
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: e1d1036416305ee49a0e9cfbf2882c50
+    - name: grass_monsters_Frame_85
+      frameIndex: 85
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: 9206f98db6a605b47a7b5844d3e49822
+    - name: grass_monsters_Frame_86
+      frameIndex: 86
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 76
+        width: 34
+        height: 41
+      spriteId: a0e75959a5296234792546f82123723f
+    - name: grass_monsters_Frame_87
+      frameIndex: 87
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 75
+        width: 35
+        height: 42
+      spriteId: c6b40dffd97f8bf48b4f8c6b75f22e13
+    - name: grass_monsters_Frame_88
+      frameIndex: 88
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 74
+        width: 34
+        height: 43
+      spriteId: 160b004455178b34f82d8312c67ba89d
+    - name: grass_monsters_Frame_89
+      frameIndex: 89
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: 060c547f8bc3c234da92f9232f899573
+    - name: grass_monsters_Frame_90
+      frameIndex: 90
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: c498c522b3774824681362970d66d11e
+    - name: grass_monsters_Frame_91
+      frameIndex: 91
+      additiveSortOrder: 0
+      cellRect:
+        x: 84
+        y: 73
+        width: 34
+        height: 44
+      spriteId: 9270958e9e74e6c4e90ebee235522a86
+    - name: grass_monsters_Frame_92
+      frameIndex: 92
+      additiveSortOrder: 0
+      cellRect:
+        x: 88
+        y: 74
+        width: 34
+        height: 45
+      spriteId: 354874f4b0848a849a2e761fb677054a
+    - name: grass_monsters_Frame_93
+      frameIndex: 93
+      additiveSortOrder: 0
+      cellRect:
+        x: 90
+        y: 74
+        width: 35
+        height: 44
+      spriteId: 2a9ba0e11fd37364290af2ff2e63ae56
+    - name: grass_monsters_Frame_94
+      frameIndex: 94
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 69
+        width: 35
+        height: 58
+      spriteId: dcf3becd0f7768a4bb87a5ec00b15194
+    - name: grass_monsters_Frame_95
+      frameIndex: 95
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 69
+        width: 35
+        height: 58
+      spriteId: d424c3fe82914664caf251bae4128bba
+    - name: grass_monsters_Frame_96
+      frameIndex: 96
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 69
+        width: 35
+        height: 58
+      spriteId: 4588cc68305466f498a09452122e3d8e
+    - name: grass_monsters_Frame_97
+      frameIndex: 97
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 69
+        width: 35
+        height: 58
+      spriteId: d75059022af85834aacb58488d535c79
+    - name: grass_monsters_Frame_98
+      frameIndex: 98
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 80
+        width: 39
+        height: 37
+      spriteId: 7b5188b396beac14582c8617d2aa877d
+    - name: grass_monsters_Frame_99
+      frameIndex: 99
+      additiveSortOrder: 0
+      cellRect:
+        x: 77
+        y: 73
+        width: 39
+        height: 47
+      spriteId: 17ecf3fff4314ce4db12585431dd3b09
+    - name: grass_monsters_Frame_100
+      frameIndex: 100
+      additiveSortOrder: 0
+      cellRect:
+        x: 74
+        y: 73
+        width: 41
+        height: 44
+      spriteId: 706358c00f52657408bf75e534229d06
+    - name: grass_monsters_Frame_101
+      frameIndex: 101
+      additiveSortOrder: 0
+      cellRect:
+        x: 74
+        y: 73
+        width: 41
+        height: 44
+      spriteId: 1e825b04abe5bb1478ede4a28df85cae
+    - name: grass_monsters_Frame_102
+      frameIndex: 102
+      additiveSortOrder: 0
+      cellRect:
+        x: 72
+        y: 73
+        width: 45
+        height: 44
+      spriteId: 8941d04641b0db04f8fa87b16b61f1b0
+    - name: grass_monsters_Frame_103
+      frameIndex: 103
+      additiveSortOrder: 0
+      cellRect:
+        x: 70
+        y: 73
+        width: 50
+        height: 44
+      spriteId: ca1b35cfae3591b499dd705f7a0c5380
+    - name: grass_monsters_Frame_104
+      frameIndex: 104
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 73
+        width: 54
+        height: 45
+      spriteId: eca48f6bc8685f24da0334a8c9a24331
+    - name: grass_monsters_Frame_105
+      frameIndex: 105
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 73
+        width: 52
+        height: 47
+      spriteId: 943cbb65de0d9f84a81c88caef150a9e
+    - name: grass_monsters_Frame_106
+      frameIndex: 106
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 73
+        width: 58
+        height: 48
+      spriteId: 79e4e927b9d6a0e40be9975121423118
+    - name: grass_monsters_Frame_107
+      frameIndex: 107
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 73
+        width: 54
+        height: 50
+      spriteId: d7e8d739ce32ed643849de46dafdbd98
+    - name: grass_monsters_Frame_108
+      frameIndex: 108
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 73
+        width: 53
+        height: 54
+      spriteId: 01ca2134377794a43864bade9421c228
+    - name: grass_monsters_Frame_109
+      frameIndex: 109
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 73
+        width: 53
+        height: 60
+      spriteId: 0efac876995036c48bd43e5983f78f59
+    - name: grass_monsters_Frame_110
+      frameIndex: 110
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 73
+        width: 50
+        height: 80
+      spriteId: a9cd04d07c4ee134eb3933917b4892d8
+    - name: grass_monsters_Frame_111
+      frameIndex: 111
+      additiveSortOrder: 0
+      cellRect:
+        x: 70
+        y: 73
+        width: 51
+        height: 45
+      spriteId: da953bf67c88d8b408c334324d210816
+    - name: grass_monsters_Frame_112
+      frameIndex: 112
+      additiveSortOrder: 0
+      cellRect:
+        x: 73
+        y: 73
+        width: 47
+        height: 45
+      spriteId: eae4ef8250a760243a56641fc2daee97
+    - name: grass_monsters_Frame_113
+      frameIndex: 113
+      additiveSortOrder: 0
+      cellRect:
+        x: 73
+        y: 73
+        width: 46
+        height: 47
+      spriteId: b941d9352b6c21f41827aede89fac0b6
+    - name: grass_monsters_Frame_114
+      frameIndex: 114
+      additiveSortOrder: 0
+      cellRect:
+        x: 74
+        y: 73
+        width: 44
+        height: 47
+      spriteId: c851c5085aa71874b8e9ec1e696c8049
+    - name: grass_monsters_Frame_115
+      frameIndex: 115
+      additiveSortOrder: 0
+      cellRect:
+        x: 75
+        y: 73
+        width: 42
+        height: 46
+      spriteId: 73359c6b08428e146b26f6ab319fb2d8
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 192, y: 192}

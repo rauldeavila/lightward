@@ -1,0 +1,980 @@
+fileFormatVersion: 2
+guid: 25880d8f902f5294f912252cc0153e8e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: grv_crypt_gate_anim_Frame_0
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 505
+      height: 103
+    spriteID: bc218821f57784367a0d2459bd7187ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: grv_crypt_gate_anim_Frame_1
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 4
+      width: 505
+      height: 103
+    spriteID: 2f00e1962650c4eaeb40ee6358ac6413
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 517, y: 4}
+  - name: grv_crypt_gate_anim_Frame_2
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 4
+      width: 505
+      height: 103
+    spriteID: 5957d7919374649cf8f2fd605dd52ca2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1030, y: 4}
+  - name: grv_crypt_gate_anim_Frame_3
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 115
+      width: 505
+      height: 103
+    spriteID: 2b5b2f506f0bd41fe939318b93fcf43f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 115}
+  - name: grv_crypt_gate_anim_Frame_4
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 115
+      width: 505
+      height: 103
+    spriteID: 52d059d6293c04f5981e8d25d83bbb41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 517, y: 115}
+  - name: grv_crypt_gate_anim_Frame_5
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 115
+      width: 505
+      height: 103
+    spriteID: c2220342888314fd58b08bbe6b9b08cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1030, y: 115}
+  - name: grv_crypt_gate_anim_Frame_6
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 226
+      width: 505
+      height: 103
+    spriteID: 4153d8093d87a4efeb63d7ba7e99bfa7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 226}
+  - name: grv_crypt_gate_anim_Frame_7
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 226
+      width: 505
+      height: 103
+    spriteID: 92877151dfd334023888e21804b8ab41
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 517, y: 226}
+  - name: grv_crypt_gate_anim_Frame_8
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 226
+      width: 505
+      height: 103
+    spriteID: 0faa68dc8e1304364a293d59083d6660
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1030, y: 226}
+  - name: grv_crypt_gate_anim_Frame_9
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 337
+      width: 505
+      height: 103
+    spriteID: 9f02ffb61a6824d72a9e9a9f5d464a77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 337}
+  - name: grv_crypt_gate_anim_Frame_10
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 337
+      width: 505
+      height: 103
+    spriteID: b2da136d54d27430fbc104f660d539b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 517, y: 337}
+  - name: grv_crypt_gate_anim_Frame_11
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 337
+      width: 505
+      height: 103
+    spriteID: 58ac6721dcea0415897f65caf1177dce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1030, y: 337}
+  - name: grv_crypt_gate_anim_Frame_12
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 448
+      width: 505
+      height: 103
+    spriteID: 0bd7b67bb9f614773913840c2f9163d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 448}
+  - name: grv_crypt_gate_anim_Frame_13
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 448
+      width: 505
+      height: 103
+    spriteID: f4810cabc295d4cabb8fea4f721280f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 517, y: 448}
+  - name: grv_crypt_gate_anim_Frame_14
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 448
+      width: 505
+      height: 103
+    spriteID: 6d37aee9ba6a94eac99f84fa9da26c5a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1030, y: 448}
+  - name: grv_crypt_gate_anim_Frame_15
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 559
+      width: 505
+      height: 103
+    spriteID: 39ec40219f5674a5d8369e8498397aed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 559}
+  - name: grv_crypt_gate_anim_Frame_16
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 559
+      width: 505
+      height: 103
+    spriteID: fc2c7110b335a4f408230d24fe1680d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 517, y: 559}
+  - name: grv_crypt_gate_anim_Frame_17
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 559
+      width: 505
+      height: 103
+    spriteID: d2bf4d600e08743ecbcebb8406d58b71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1030, y: 559}
+  - name: grv_crypt_gate_anim_Frame_18
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 670
+      width: 505
+      height: 103
+    spriteID: 386f20b0e81444e93b9768e872bad26c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 670}
+  - name: grv_crypt_gate_anim_Frame_19
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 670
+      width: 505
+      height: 103
+    spriteID: 59b784ff211a0410b8b29016fe436811
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 517, y: 670}
+  - name: grv_crypt_gate_anim_Frame_20
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 670
+      width: 505
+      height: 103
+    spriteID: c81ee54bd3c014bed9c7f01bb91ff42b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1030, y: 670}
+  - name: grv_crypt_gate_anim_Frame_21
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 781
+      width: 505
+      height: 103
+    spriteID: b4b64edc893674ce6821eb5c5b783fa4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 781}
+  - name: grv_crypt_gate_anim_Frame_22
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 781
+      width: 505
+      height: 103
+    spriteID: 4be02257fcabb48e4bde08fd45bb2c4c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 517, y: 781}
+  - name: grv_crypt_gate_anim_Frame_23
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 781
+      width: 505
+      height: 103
+    spriteID: dc6e5292c8b6d454bae6747b0a459ca7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1030, y: 781}
+  - name: grv_crypt_gate_anim_Frame_24
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 892
+      width: 505
+      height: 103
+    spriteID: debec52974daa43bebae099d786416ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 892}
+  - name: grv_crypt_gate_anim_Frame_25
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 892
+      width: 505
+      height: 103
+    spriteID: 53d858a0b808c4fca9eab4be348faf81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 517, y: 892}
+  - name: grv_crypt_gate_anim_Frame_26
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1030
+      y: 892
+      width: 505
+      height: 103
+    spriteID: 646fe094764de4104af436e7661bf519
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1030, y: 892}
+  - name: grv_crypt_gate_anim_Frame_27
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1003
+      width: 505
+      height: 103
+    spriteID: 5919a55d75d5645b0aead644c47d87da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1003}
+  - name: grv_crypt_gate_anim_Frame_28
+    originalName: 
+    pivot: {x: 0.6118812, y: -0.1553398}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 1003
+      width: 505
+      height: 103
+    spriteID: 81dd9cecb83a84d8d8d48361cfc4af8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 517, y: 1003}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1073577334
+    name: grv_crypt_gate_anim
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: grv_crypt_gate_anim_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: bc218821f57784367a0d2459bd7187ac
+    - name: grv_crypt_gate_anim_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 2f00e1962650c4eaeb40ee6358ac6413
+    - name: grv_crypt_gate_anim_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 5957d7919374649cf8f2fd605dd52ca2
+    - name: grv_crypt_gate_anim_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 2b5b2f506f0bd41fe939318b93fcf43f
+    - name: grv_crypt_gate_anim_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 52d059d6293c04f5981e8d25d83bbb41
+    - name: grv_crypt_gate_anim_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: c2220342888314fd58b08bbe6b9b08cb
+    - name: grv_crypt_gate_anim_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 4153d8093d87a4efeb63d7ba7e99bfa7
+    - name: grv_crypt_gate_anim_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 92877151dfd334023888e21804b8ab41
+    - name: grv_crypt_gate_anim_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 0faa68dc8e1304364a293d59083d6660
+    - name: grv_crypt_gate_anim_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 9f02ffb61a6824d72a9e9a9f5d464a77
+    - name: grv_crypt_gate_anim_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: b2da136d54d27430fbc104f660d539b5
+    - name: grv_crypt_gate_anim_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 58ac6721dcea0415897f65caf1177dce
+    - name: grv_crypt_gate_anim_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 0bd7b67bb9f614773913840c2f9163d7
+    - name: grv_crypt_gate_anim_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: f4810cabc295d4cabb8fea4f721280f6
+    - name: grv_crypt_gate_anim_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 6d37aee9ba6a94eac99f84fa9da26c5a
+    - name: grv_crypt_gate_anim_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 39ec40219f5674a5d8369e8498397aed
+    - name: grv_crypt_gate_anim_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: fc2c7110b335a4f408230d24fe1680d7
+    - name: grv_crypt_gate_anim_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: d2bf4d600e08743ecbcebb8406d58b71
+    - name: grv_crypt_gate_anim_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 386f20b0e81444e93b9768e872bad26c
+    - name: grv_crypt_gate_anim_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 59b784ff211a0410b8b29016fe436811
+    - name: grv_crypt_gate_anim_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: c81ee54bd3c014bed9c7f01bb91ff42b
+    - name: grv_crypt_gate_anim_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: b4b64edc893674ce6821eb5c5b783fa4
+    - name: grv_crypt_gate_anim_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 4be02257fcabb48e4bde08fd45bb2c4c
+    - name: grv_crypt_gate_anim_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: dc6e5292c8b6d454bae6747b0a459ca7
+    - name: grv_crypt_gate_anim_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: debec52974daa43bebae099d786416ac
+    - name: grv_crypt_gate_anim_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 53d858a0b808c4fca9eab4be348faf81
+    - name: grv_crypt_gate_anim_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 646fe094764de4104af436e7661bf519
+    - name: grv_crypt_gate_anim_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 5919a55d75d5645b0aead644c47d87da
+    - name: grv_crypt_gate_anim_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 505
+        height: 103
+      spriteId: 81dd9cecb83a84d8d8d48361cfc4af8a
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 640, y: 180}

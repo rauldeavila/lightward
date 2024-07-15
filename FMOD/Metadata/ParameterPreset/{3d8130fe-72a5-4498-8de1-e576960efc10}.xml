@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{3d8130fe-72a5-4498-8de1-e576960efc10}">
+		<property name="name">
+			<value>layer2</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f0507627-9f78-4cbf-948f-14244afc3545}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{4dc3a36a-9624-496d-b8e4-85a63f83024a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{4dc3a36a-9624-496d-b8e4-85a63f83024a}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.099999994039535522</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

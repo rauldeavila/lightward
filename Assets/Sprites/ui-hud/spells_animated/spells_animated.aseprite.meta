@@ -1,0 +1,2372 @@
+fileFormatVersion: 2
+guid: fbcb17f7460510048aceac65bc0afa73
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: spells_animated_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 17
+      height: 60
+    spriteID: 3d9a795bd472cde418b43c7a665b853a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: spells_animated_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.6666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 72
+      width: 17
+      height: 60
+    spriteID: 9b13635ca091d914d8e1561300120460
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 72}
+  - name: spells_animated_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5833333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 140
+      width: 17
+      height: 60
+    spriteID: ceada44fa76a3ee44bd338ee161ece88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 140}
+  - name: spells_animated_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.48333332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 208
+      width: 17
+      height: 60
+    spriteID: a2230962537261c4291fbd94e4212723
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 208}
+  - name: spells_animated_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.36666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 276
+      width: 17
+      height: 60
+    spriteID: 16eb2aeca9492f9459430f4cf7df711a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 276}
+  - name: spells_animated_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.28333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 344
+      width: 17
+      height: 60
+    spriteID: 45aaba3bb7b1f9b499ae1e9bba8f2765
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 344}
+  - name: spells_animated_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.18333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 412
+      width: 17
+      height: 60
+    spriteID: 2239876c08920e54089254b11eb111d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 412}
+  - name: spells_animated_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.15}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 4
+      width: 17
+      height: 60
+    spriteID: 8a9c59fe84060924eae00d5730922d9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 4}
+  - name: spells_animated_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.11666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 72
+      width: 17
+      height: 60
+    spriteID: 5316e2586887a10428d08ff380595845
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 72}
+  - name: spells_animated_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 140
+      width: 17
+      height: 60
+    spriteID: 6adcbe559c0eeb642b217d59560c5130
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 140}
+  - name: spells_animated_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.06666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 208
+      width: 17
+      height: 60
+    spriteID: d8a2abb6a372bca479e323aed85d4319
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 208}
+  - name: spells_animated_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.05}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 276
+      width: 17
+      height: 60
+    spriteID: b26b4cf9c715c304aafbf48bcce734f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 276}
+  - name: spells_animated_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.05}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 344
+      width: 17
+      height: 60
+    spriteID: 078b53fd2f84a8740ad1156d79473581
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 344}
+  - name: spells_animated_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 412
+      width: 17
+      height: 60
+    spriteID: 5abc898415a96714eb41050ac97dfc19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 412}
+  - name: spells_animated_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 4
+      width: 17
+      height: 60
+    spriteID: abe4631e7ed36e941b1de90a9bdff659
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 4}
+  - name: spells_animated_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 72
+      width: 17
+      height: 60
+    spriteID: 279a06a855c46144f93d78346bb8a218
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 72}
+  - name: spells_animated_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 140
+      width: 17
+      height: 60
+    spriteID: a7cfe27ed6df6a542a578e4efd6e5d81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 140}
+  - name: spells_animated_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 208
+      width: 17
+      height: 60
+    spriteID: cc5142bf2199f4d479c5d33435ca3cf0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 208}
+  - name: spells_animated_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 276
+      width: 17
+      height: 60
+    spriteID: 2c254087180c133498c509fc6a4c4f4c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 276}
+  - name: spells_animated_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 344
+      width: 17
+      height: 60
+    spriteID: 0d2006afbfd520f40899f2fc29685536
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 344}
+  - name: spells_animated_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 412
+      width: 17
+      height: 60
+    spriteID: 3f736306e728e0b47b44f383d081d720
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 412}
+  - name: spells_animated_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0.033333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 4
+      width: 17
+      height: 60
+    spriteID: 794a555897dfec94e88342d21c9dd12f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 4}
+  - name: spells_animated_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 144
+      width: 17
+      height: 15
+    spriteID: b2b84f539d47b894299720f6b407e40e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 144}
+  - name: spells_animated_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 167
+      width: 17
+      height: 15
+    spriteID: 5a3f0c37093f2504284cd5092ef0a7f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 167}
+  - name: spells_animated_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 190
+      width: 17
+      height: 15
+    spriteID: ba07f1f2cce95ef4eb21d9a48e2b4e1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 190}
+  - name: spells_animated_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 213
+      width: 17
+      height: 15
+    spriteID: 9f053095c7372064eac7be07158960c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 213}
+  - name: spells_animated_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 236
+      width: 17
+      height: 15
+    spriteID: 3a2146ad33bcf3a41b982e6dd30e17d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 236}
+  - name: spells_animated_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 259
+      width: 17
+      height: 15
+    spriteID: b757a61c68441d343b7fb7c91bcee32e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 259}
+  - name: spells_animated_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 282
+      width: 17
+      height: 15
+    spriteID: 8f46456527d4d1f449ab224d72c94c0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 282}
+  - name: spells_animated_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 305
+      width: 17
+      height: 15
+    spriteID: c179d18c963ac9d468d0050de50a1da7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 305}
+  - name: spells_animated_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 328
+      width: 17
+      height: 15
+    spriteID: 5048e7c681abab64c914115249f8d856
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 328}
+  - name: spells_animated_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 351
+      width: 17
+      height: 15
+    spriteID: 1fefbf245aace4d4ebdb8be265bc2eb6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 351}
+  - name: spells_animated_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 374
+      width: 17
+      height: 15
+    spriteID: 8712e081144b57442b1712b290be5143
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 374}
+  - name: spells_animated_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 397
+      width: 17
+      height: 15
+    spriteID: 4a0389a39fd2b7842ab06d50847e12d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 397}
+  - name: spells_animated_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 420
+      width: 17
+      height: 15
+    spriteID: d54e846e33b0d884696a76f3abc49d88
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 420}
+  - name: spells_animated_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 443
+      width: 17
+      height: 15
+    spriteID: 8430e0bddb5214f49960c4192d5f576f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 443}
+  - name: spells_animated_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 466
+      width: 17
+      height: 15
+    spriteID: aa46ae515f54c584c8dba707b8d13598
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 466}
+  - name: spells_animated_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 489
+      width: 17
+      height: 15
+    spriteID: 7c51a3f71179c1c4a97597bc911f1a93
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 489}
+  - name: spells_animated_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 4
+      width: 17
+      height: 15
+    spriteID: 21a18b9c6f8941c4c87505e987aeb6c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 4}
+  - name: spells_animated_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 27
+      width: 17
+      height: 15
+    spriteID: a89ce23a6a721fe48b2fcfcbb95fd6e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 27}
+  - name: spells_animated_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 50
+      width: 17
+      height: 15
+    spriteID: 5e06901c73416e04facb9192dad1a78b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 50}
+  - name: spells_animated_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 73
+      width: 17
+      height: 15
+    spriteID: bd91147e7ad1a2644ba0303ceed17005
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 73}
+  - name: spells_animated_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 96
+      width: 17
+      height: 15
+    spriteID: 7de2c2917d1af3b41be89d1598091cca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 96}
+  - name: spells_animated_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 119
+      width: 17
+      height: 15
+    spriteID: 5b9ac3f3ad93b5a48855cf76011f97ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 119}
+  - name: spells_animated_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 142
+      width: 17
+      height: 15
+    spriteID: f4197bd8a9f704b4ca4b24a69de50bfc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 142}
+  - name: spells_animated_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 165
+      width: 17
+      height: 15
+    spriteID: 19e6e05f172303c41a449df32eb3415e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 165}
+  - name: spells_animated_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 188
+      width: 17
+      height: 15
+    spriteID: 1abe19de83d9369479cf765d19c5576e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 188}
+  - name: spells_animated_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 211
+      width: 17
+      height: 15
+    spriteID: 923369cc14d6bbb4c9df075e9babd2fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 211}
+  - name: spells_animated_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 234
+      width: 17
+      height: 15
+    spriteID: 376f02e1b7dc2fa48b521d3d529d2d79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 234}
+  - name: spells_animated_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 257
+      width: 17
+      height: 15
+    spriteID: 861f74391405a604eb1c5282c9095c19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 257}
+  - name: spells_animated_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 280
+      width: 17
+      height: 15
+    spriteID: 364c95b17ac63994aace528286a72f49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 280}
+  - name: spells_animated_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 303
+      width: 17
+      height: 15
+    spriteID: 1a38541fd50b0484b867be91a30526dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 303}
+  - name: spells_animated_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 326
+      width: 17
+      height: 15
+    spriteID: 1a0d8d7ddfd21eb4a91f80afb883f77a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 326}
+  - name: spells_animated_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 349
+      width: 17
+      height: 15
+    spriteID: 29afcc4778028364a957c22656a3ddf6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 349}
+  - name: spells_animated_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 372
+      width: 17
+      height: 15
+    spriteID: 23cf4ea2898acc3418b4961f151d4ba4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 372}
+  - name: spells_animated_Frame_55
+    originalName: 
+    pivot: {x: 0.5, y: 0.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 480
+      width: 17
+      height: 16
+    spriteID: 51e0909a1bb525b47b491baeef6b10e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 480}
+  - name: spells_animated_Frame_56
+    originalName: 
+    pivot: {x: 0.5, y: 0.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 480
+      width: 17
+      height: 16
+    spriteID: 2692ef27740176d4ea5ce322b7610b89
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 480}
+  - name: spells_animated_Frame_57
+    originalName: 
+    pivot: {x: 0.5, y: 0.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 480
+      width: 17
+      height: 16
+    spriteID: 94a4537b1b4fb7c4bb5197bc9f12b89d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 480}
+  - name: spells_animated_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: 0.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 72
+      width: 17
+      height: 16
+    spriteID: 596602c776def774d94cb952ced2bdda
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 72}
+  - name: spells_animated_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: 0.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 96
+      width: 17
+      height: 16
+    spriteID: 7cc8c38edc71917459933f6424022a19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 96}
+  - name: spells_animated_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: 0.0625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 120
+      width: 17
+      height: 16
+    spriteID: 877c41cd2d2b1cd42ace2dc9c181d4ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 120}
+  - name: spells_animated_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 395
+      width: 17
+      height: 15
+    spriteID: a8e9a4d8082d91449b7b225085ee5123
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 395}
+  - name: spells_animated_Frame_62
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 418
+      width: 17
+      height: 15
+    spriteID: 3354829c76e9b8a4daa1bbc20e49aad3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 418}
+  - name: spells_animated_Frame_63
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 441
+      width: 17
+      height: 15
+    spriteID: d169b905825d34b45a9a5417ff83dda8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 441}
+  - name: spells_animated_Frame_64
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 464
+      width: 17
+      height: 15
+    spriteID: 50084a509bb4dac408d8019e864c8253
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 464}
+  - name: spells_animated_Frame_65
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 487
+      width: 17
+      height: 15
+    spriteID: b13abb0c8ac6471468f4f7cdb8ddbbad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 487}
+  - name: spells_animated_Frame_66
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 4
+      width: 17
+      height: 15
+    spriteID: d20d7301d34825a49b91d600776c86ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 4}
+  - name: spells_animated_Frame_67
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 27
+      width: 17
+      height: 15
+    spriteID: cae99f92a54615546a4757ad70394b02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 27}
+  - name: spells_animated_Frame_68
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 50
+      width: 17
+      height: 15
+    spriteID: d187dcb925e238f46ae902c89f95e2ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 50}
+  - name: spells_animated_Frame_69
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 73
+      width: 17
+      height: 15
+    spriteID: 4d77b3ebb0b4e4b46be8d5a640d27d59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 73}
+  - name: spells_animated_Frame_70
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 96
+      width: 17
+      height: 15
+    spriteID: 9e499228f46b8264f8fa3d76aa3b1818
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 96}
+  - name: spells_animated_Frame_71
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 119
+      width: 17
+      height: 15
+    spriteID: 6f7a31ba5b884fb4da8a668ec26fa3ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 119}
+  - name: spells_animated_Frame_72
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 142
+      width: 17
+      height: 15
+    spriteID: d6f54852624dd32438cb2ee3c1daa0b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 142}
+  - name: spells_animated_Frame_73
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 165
+      width: 17
+      height: 15
+    spriteID: a99a4a2574a1e984eaf0649f7846c700
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 165}
+  - name: spells_animated_Frame_74
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 188
+      width: 17
+      height: 15
+    spriteID: 4d4ae3515540ee4419a25f7c5b15fe02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 188}
+  - name: spells_animated_Frame_75
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 211
+      width: 17
+      height: 15
+    spriteID: a15795cd56eeca540911a3ece7fa4f61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 211}
+  - name: spells_animated_Frame_76
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 129
+      y: 234
+      width: 17
+      height: 15
+    spriteID: 7e57074e4ec99f04a86249bcbc32bf51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 129, y: 234}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -404939715
+    name: spells_animated
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: spells_animated_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -45
+        width: 17
+        height: 60
+      spriteId: 3d9a795bd472cde418b43c7a665b853a
+    - name: spells_animated_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -40
+        width: 17
+        height: 60
+      spriteId: 9b13635ca091d914d8e1561300120460
+    - name: spells_animated_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -35
+        width: 17
+        height: 60
+      spriteId: ceada44fa76a3ee44bd338ee161ece88
+    - name: spells_animated_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -29
+        width: 17
+        height: 60
+      spriteId: a2230962537261c4291fbd94e4212723
+    - name: spells_animated_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -22
+        width: 17
+        height: 60
+      spriteId: 16eb2aeca9492f9459430f4cf7df711a
+    - name: spells_animated_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -17
+        width: 17
+        height: 60
+      spriteId: 45aaba3bb7b1f9b499ae1e9bba8f2765
+    - name: spells_animated_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -11
+        width: 17
+        height: 60
+      spriteId: 2239876c08920e54089254b11eb111d3
+    - name: spells_animated_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -9
+        width: 17
+        height: 60
+      spriteId: 8a9c59fe84060924eae00d5730922d9c
+    - name: spells_animated_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -7
+        width: 17
+        height: 60
+      spriteId: 5316e2586887a10428d08ff380595845
+    - name: spells_animated_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -5
+        width: 17
+        height: 60
+      spriteId: 6adcbe559c0eeb642b217d59560c5130
+    - name: spells_animated_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -4
+        width: 17
+        height: 60
+      spriteId: d8a2abb6a372bca479e323aed85d4319
+    - name: spells_animated_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -3
+        width: 17
+        height: 60
+      spriteId: b26b4cf9c715c304aafbf48bcce734f3
+    - name: spells_animated_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -3
+        width: 17
+        height: 60
+      spriteId: 078b53fd2f84a8740ad1156d79473581
+    - name: spells_animated_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 17
+        height: 60
+      spriteId: 5abc898415a96714eb41050ac97dfc19
+    - name: spells_animated_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 17
+        height: 60
+      spriteId: abe4631e7ed36e941b1de90a9bdff659
+    - name: spells_animated_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 17
+        height: 60
+      spriteId: 279a06a855c46144f93d78346bb8a218
+    - name: spells_animated_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 17
+        height: 60
+      spriteId: a7cfe27ed6df6a542a578e4efd6e5d81
+    - name: spells_animated_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 17
+        height: 60
+      spriteId: cc5142bf2199f4d479c5d33435ca3cf0
+    - name: spells_animated_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 17
+        height: 60
+      spriteId: 2c254087180c133498c509fc6a4c4f4c
+    - name: spells_animated_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 17
+        height: 60
+      spriteId: 0d2006afbfd520f40899f2fc29685536
+    - name: spells_animated_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 17
+        height: 60
+      spriteId: 3f736306e728e0b47b44f383d081d720
+    - name: spells_animated_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -2
+        width: 17
+        height: 60
+      spriteId: 794a555897dfec94e88342d21c9dd12f
+    - name: spells_animated_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: b2b84f539d47b894299720f6b407e40e
+    - name: spells_animated_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 5a3f0c37093f2504284cd5092ef0a7f6
+    - name: spells_animated_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: ba07f1f2cce95ef4eb21d9a48e2b4e1c
+    - name: spells_animated_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 9f053095c7372064eac7be07158960c2
+    - name: spells_animated_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 3a2146ad33bcf3a41b982e6dd30e17d3
+    - name: spells_animated_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: b757a61c68441d343b7fb7c91bcee32e
+    - name: spells_animated_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 8f46456527d4d1f449ab224d72c94c0b
+    - name: spells_animated_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: c179d18c963ac9d468d0050de50a1da7
+    - name: spells_animated_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 5048e7c681abab64c914115249f8d856
+    - name: spells_animated_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 1fefbf245aace4d4ebdb8be265bc2eb6
+    - name: spells_animated_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 8712e081144b57442b1712b290be5143
+    - name: spells_animated_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 4a0389a39fd2b7842ab06d50847e12d9
+    - name: spells_animated_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: d54e846e33b0d884696a76f3abc49d88
+    - name: spells_animated_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 8430e0bddb5214f49960c4192d5f576f
+    - name: spells_animated_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: aa46ae515f54c584c8dba707b8d13598
+    - name: spells_animated_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 7c51a3f71179c1c4a97597bc911f1a93
+    - name: spells_animated_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 21a18b9c6f8941c4c87505e987aeb6c4
+    - name: spells_animated_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: a89ce23a6a721fe48b2fcfcbb95fd6e4
+    - name: spells_animated_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 5e06901c73416e04facb9192dad1a78b
+    - name: spells_animated_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: bd91147e7ad1a2644ba0303ceed17005
+    - name: spells_animated_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 7de2c2917d1af3b41be89d1598091cca
+    - name: spells_animated_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 5b9ac3f3ad93b5a48855cf76011f97ac
+    - name: spells_animated_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: f4197bd8a9f704b4ca4b24a69de50bfc
+    - name: spells_animated_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 19e6e05f172303c41a449df32eb3415e
+    - name: spells_animated_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 1abe19de83d9369479cf765d19c5576e
+    - name: spells_animated_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 923369cc14d6bbb4c9df075e9babd2fa
+    - name: spells_animated_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 376f02e1b7dc2fa48b521d3d529d2d79
+    - name: spells_animated_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 861f74391405a604eb1c5282c9095c19
+    - name: spells_animated_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 364c95b17ac63994aace528286a72f49
+    - name: spells_animated_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 1a38541fd50b0484b867be91a30526dc
+    - name: spells_animated_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 1a0d8d7ddfd21eb4a91f80afb883f77a
+    - name: spells_animated_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 29afcc4778028364a957c22656a3ddf6
+    - name: spells_animated_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 23cf4ea2898acc3418b4961f151d4ba4
+    - name: spells_animated_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -1
+        width: 17
+        height: 16
+      spriteId: 51e0909a1bb525b47b491baeef6b10e8
+    - name: spells_animated_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -1
+        width: 17
+        height: 16
+      spriteId: 2692ef27740176d4ea5ce322b7610b89
+    - name: spells_animated_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -1
+        width: 17
+        height: 16
+      spriteId: 94a4537b1b4fb7c4bb5197bc9f12b89d
+    - name: spells_animated_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -1
+        width: 17
+        height: 16
+      spriteId: 596602c776def774d94cb952ced2bdda
+    - name: spells_animated_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -1
+        width: 17
+        height: 16
+      spriteId: 7cc8c38edc71917459933f6424022a19
+    - name: spells_animated_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: -1
+        width: 17
+        height: 16
+      spriteId: 877c41cd2d2b1cd42ace2dc9c181d4ab
+    - name: spells_animated_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: a8e9a4d8082d91449b7b225085ee5123
+    - name: spells_animated_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 3354829c76e9b8a4daa1bbc20e49aad3
+    - name: spells_animated_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: d169b905825d34b45a9a5417ff83dda8
+    - name: spells_animated_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 50084a509bb4dac408d8019e864c8253
+    - name: spells_animated_Frame_65
+      frameIndex: 65
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: b13abb0c8ac6471468f4f7cdb8ddbbad
+    - name: spells_animated_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: d20d7301d34825a49b91d600776c86ec
+    - name: spells_animated_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: cae99f92a54615546a4757ad70394b02
+    - name: spells_animated_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: d187dcb925e238f46ae902c89f95e2ab
+    - name: spells_animated_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 4d77b3ebb0b4e4b46be8d5a640d27d59
+    - name: spells_animated_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 9e499228f46b8264f8fa3d76aa3b1818
+    - name: spells_animated_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 6f7a31ba5b884fb4da8a668ec26fa3ce
+    - name: spells_animated_Frame_72
+      frameIndex: 72
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: d6f54852624dd32438cb2ee3c1daa0b9
+    - name: spells_animated_Frame_73
+      frameIndex: 73
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: a99a4a2574a1e984eaf0649f7846c700
+    - name: spells_animated_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 4d4ae3515540ee4419a25f7c5b15fe02
+    - name: spells_animated_Frame_75
+      frameIndex: 75
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: a15795cd56eeca540911a3ece7fa4f61
+    - name: spells_animated_Frame_76
+      frameIndex: 76
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 17
+        height: 15
+      spriteId: 7e57074e4ec99f04a86249bcbc32bf51
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 17, y: 15}

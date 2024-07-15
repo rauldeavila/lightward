@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{0959077a-ab86-476f-a947-c3f7d23a664e}">
+		<property name="name">
+			<value>cave_ambience</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f0507627-9f78-4cbf-948f-14244afc3545}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{ab699593-18d2-4fdf-b334-d15cd18e2f98}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{ab699593-18d2-4fdf-b334-d15cd18e2f98}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.34999999403953552</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+		<relationship name="automators">
+			<destination>{96f1fa29-a043-4359-863a-814471164a2e}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{96f1fa29-a043-4359-863a-814471164a2e}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>cursorPosition</value>
+		</property>
+	</object>
+</objects>

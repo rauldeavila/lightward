@@ -1,0 +1,1111 @@
+fileFormatVersion: 2
+guid: b0e8c9fa333214045a126da5418bf05b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: bite
+    second: {fileID: 7400000, guid: 71ac020f538e8774cbeaf94e76cf31c6, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: head
+    second: {fileID: 7400000, guid: a334e1fdb9a2f234b8633fe4f919e870, type: 2}
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: idle
+    second: {fileID: 7400000, guid: 5fc3c17a958028443a016f43638e1027, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638157103655762330
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: evil_plant_Frame_0
+    originalName: 
+    pivot: {x: 0.5500001, y: 0.33333337}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 53
+      width: 20
+      height: 24
+    spriteID: 094cb41a00ca10b40a10b642fea25140
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 53}
+  - name: evil_plant_Frame_1
+    originalName: 
+    pivot: {x: 0.5500001, y: 0.34782612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 53
+      width: 20
+      height: 23
+    spriteID: 96a1a7d1b1336e04a86702e66cc3065b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 64, y: 53}
+  - name: evil_plant_Frame_2
+    originalName: 
+    pivot: {x: 0.5500001, y: 0.36363643}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 53
+      width: 20
+      height: 22
+    spriteID: 7011375bdca187f4fa69ffd1ebd12e10
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 53}
+  - name: evil_plant_Frame_3
+    originalName: 
+    pivot: {x: 0.5500001, y: 0.38095245}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 53
+      width: 20
+      height: 21
+    spriteID: 4ee5fd061b549b342bdccbd07ced018b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 53}
+  - name: evil_plant_Frame_4
+    originalName: 
+    pivot: {x: 0.5500001, y: 0.36363643}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 176
+      y: 53
+      width: 20
+      height: 22
+    spriteID: fdd030937409df94a8df42f735b3d958
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 176, y: 53}
+  - name: evil_plant_Frame_5
+    originalName: 
+    pivot: {x: 0.5500001, y: 0.34782612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 92
+      y: 53
+      width: 20
+      height: 23
+    spriteID: d421db42d23eba44ab7409ed752e17c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 92, y: 53}
+  - name: evil_plant_Frame_6
+    originalName: 
+    pivot: {x: 0.5500001, y: 0.34782612}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 120
+      y: 53
+      width: 20
+      height: 23
+    spriteID: 3511b0854f806bb4a9da4c22881486ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 120, y: 53}
+  - name: evil_plant_Frame_7
+    originalName: 
+    pivot: {x: 0.3529412, y: 0.4705883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 111
+      width: 17
+      height: 17
+    spriteID: 02b9081d9084ec947a8bad05dc0ffe2b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 111}
+  - name: evil_plant_Frame_8
+    originalName: 
+    pivot: {x: 0.3529412, y: 0.50000006}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 164
+      y: 29
+      width: 17
+      height: 16
+    spriteID: 682918bbd6c0de04c9159db25d1ae9c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 164, y: 29}
+  - name: evil_plant_Frame_9
+    originalName: 
+    pivot: {x: 0.3529412, y: 0.4705883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 111
+      width: 17
+      height: 17
+    spriteID: 15eb0732e70f07144943240a23f8de84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 111}
+  - name: evil_plant_Frame_10
+    originalName: 
+    pivot: {x: 0.38888884, y: 0.4705883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 85
+      width: 18
+      height: 17
+    spriteID: eb5b5131a89b5f64388bcf16be099a6e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 85}
+  - name: evil_plant_Frame_11
+    originalName: 
+    pivot: {x: 0.38888884, y: 0.4705883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 85
+      width: 18
+      height: 17
+    spriteID: a28acb8faa098874cbb39f93d564f106
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 137, y: 85}
+  - name: evil_plant_Frame_12
+    originalName: 
+    pivot: {x: 0.4210527, y: 0.4705883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 85
+      width: 19
+      height: 17
+    spriteID: a7073ba8c12dcae4886093c694c22c2c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: 85}
+  - name: evil_plant_Frame_13
+    originalName: 
+    pivot: {x: 0.4210527, y: 0.4705883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 57
+      y: 85
+      width: 19
+      height: 17
+    spriteID: 8061141bb654df443a0c73ba1a9618aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 57, y: 85}
+  - name: evil_plant_Frame_14
+    originalName: 
+    pivot: {x: 0.4210527, y: 0.4705883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 84
+      y: 85
+      width: 19
+      height: 17
+    spriteID: cdcbb18ea5efd8f4ab41fe0995521846
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 84, y: 85}
+  - name: evil_plant_Frame_15
+    originalName: 
+    pivot: {x: 0.3529412, y: 0.4705883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 54
+      y: 111
+      width: 17
+      height: 17
+    spriteID: 4c99329341a08d247b8d103d8c121612
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 54, y: 111}
+  - name: evil_plant_Frame_16
+    originalName: 
+    pivot: {x: 0.3529412, y: 0.4705883}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 111
+      width: 17
+      height: 17
+    spriteID: d91606052a34cb64db96edf3fd0cbd78
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 111}
+  - name: evil_plant_Frame_17
+    originalName: 
+    pivot: {x: 0.3157895, y: 0.57142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 29
+      width: 19
+      height: 14
+    spriteID: b8b16c9caa90e2d4eb8db44354c96621
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 29}
+  - name: evil_plant_Frame_18
+    originalName: 
+    pivot: {x: 0.3157895, y: 0.57142866}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 216
+      y: 29
+      width: 19
+      height: 14
+    spriteID: 4c970571b235c194b9c331d95c02f714
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 216, y: 29}
+  - name: evil_plant_Frame_19
+    originalName: 
+    pivot: {x: 0.8196721, y: 0.58823526}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 61
+      height: 17
+    spriteID: 62bc7c9d0b954f74fa1bf1397d205764
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: evil_plant_Frame_20
+    originalName: 
+    pivot: {x: 0.7903226, y: 0.62499994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 4
+      width: 62
+      height: 16
+    spriteID: 2a23f7f09d0550449a1db7eb4fc40b8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 4}
+  - name: evil_plant_Frame_21
+    originalName: 
+    pivot: {x: 0.7580645, y: 0.62499994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 143
+      y: 4
+      width: 62
+      height: 16
+    spriteID: 320fd49e86ee4bc4f8f7430963da2bc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 143, y: 4}
+  - name: evil_plant_Frame_22
+    originalName: 
+    pivot: {x: 0.6666667, y: 0.62499994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 29
+      width: 54
+      height: 16
+    spriteID: 30eba74764c9a524fb8836d846b18158
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 29}
+  - name: evil_plant_Frame_23
+    originalName: 
+    pivot: {x: 0.62264144, y: 0.6666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 29
+      width: 53
+      height: 15
+    spriteID: 7344bcd24df91e246acaa3d29b4e6d52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 29}
+  - name: evil_plant_Frame_24
+    originalName: 
+    pivot: {x: 0.7567568, y: 0.6666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 4
+      width: 37
+      height: 15
+    spriteID: d426da19b0c898f409545bc0c21a32ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 213, y: 4}
+  - name: evil_plant_Frame_25
+    originalName: 
+    pivot: {x: 0.6896551, y: 0.5625}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 127
+      y: 29
+      width: 29
+      height: 16
+    spriteID: 66f43e190cb7fc44f82d1f83e1b60a1c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 127, y: 29}
+  - name: evil_plant_Frame_26
+    originalName: 
+    pivot: {x: 0.625, y: 0.40000007}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 32
+      y: 53
+      width: 24
+      height: 20
+    spriteID: 1b5ae33ba63167f4693d5e94db835a60
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 32, y: 53}
+  - name: evil_plant_Frame_27
+    originalName: 
+    pivot: {x: 0.3529412, y: 0.5294118}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 111
+      width: 17
+      height: 17
+    spriteID: 297c9c8e4066c5241b1833afe5497abd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 111}
+  - name: evil_plant_Frame_28
+    originalName: 
+    pivot: {x: 0.33333334, y: 0.5555555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 232
+      y: 53
+      width: 18
+      height: 18
+    spriteID: fb55682144604dd489d375411991d0f6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 232, y: 53}
+  - name: evil_plant_Frame_29
+    originalName: 
+    pivot: {x: 0.33333334, y: 0.5555555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 85
+      width: 18
+      height: 18
+    spriteID: 09a5ce878ade3ed4db195e69c1b058af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 85}
+  - name: evil_plant_Frame_30
+    originalName: 
+    pivot: {x: 0.3529412, y: 0.5555555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 85
+      width: 17
+      height: 18
+    spriteID: e3d18e1f19c6f2f45b8a29af962820e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 85}
+  - name: evil_plant_Frame_31
+    originalName: 
+    pivot: {x: 0.3529412, y: 0.5555555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 85
+      width: 17
+      height: 18
+    spriteID: 9a273c8524a5e584bb77457dd68f7759
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 85}
+  - name: evil_plant_Frame_32
+    originalName: 
+    pivot: {x: 0.3529412, y: 0.5555555}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 85
+      width: 17
+      height: 18
+    spriteID: 2c1c7a4f3794cfa46b2a0900212eeb84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 213, y: 85}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1013176898
+    name: evil_plant
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: evil_plant_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 42
+        width: 20
+        height: 24
+      spriteId: 094cb41a00ca10b40a10b642fea25140
+    - name: evil_plant_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 42
+        width: 20
+        height: 23
+      spriteId: 96a1a7d1b1336e04a86702e66cc3065b
+    - name: evil_plant_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 42
+        width: 20
+        height: 22
+      spriteId: 7011375bdca187f4fa69ffd1ebd12e10
+    - name: evil_plant_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 42
+        width: 20
+        height: 21
+      spriteId: 4ee5fd061b549b342bdccbd07ced018b
+    - name: evil_plant_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 42
+        width: 20
+        height: 22
+      spriteId: fdd030937409df94a8df42f735b3d958
+    - name: evil_plant_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 42
+        width: 20
+        height: 23
+      spriteId: d421db42d23eba44ab7409ed752e17c8
+    - name: evil_plant_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 42
+        width: 20
+        height: 23
+      spriteId: 3511b0854f806bb4a9da4c22881486ae
+    - name: evil_plant_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 42
+        width: 17
+        height: 17
+      spriteId: 02b9081d9084ec947a8bad05dc0ffe2b
+    - name: evil_plant_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 42
+        width: 17
+        height: 16
+      spriteId: 682918bbd6c0de04c9159db25d1ae9c5
+    - name: evil_plant_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 42
+        width: 17
+        height: 17
+      spriteId: 15eb0732e70f07144943240a23f8de84
+    - name: evil_plant_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 42
+        width: 18
+        height: 17
+      spriteId: eb5b5131a89b5f64388bcf16be099a6e
+    - name: evil_plant_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 43
+        y: 42
+        width: 18
+        height: 17
+      spriteId: a28acb8faa098874cbb39f93d564f106
+    - name: evil_plant_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 42
+        width: 19
+        height: 17
+      spriteId: a7073ba8c12dcae4886093c694c22c2c
+    - name: evil_plant_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 42
+        width: 19
+        height: 17
+      spriteId: 8061141bb654df443a0c73ba1a9618aa
+    - name: evil_plant_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 42
+        width: 19
+        height: 17
+      spriteId: cdcbb18ea5efd8f4ab41fe0995521846
+    - name: evil_plant_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 42
+        width: 17
+        height: 17
+      spriteId: 4c99329341a08d247b8d103d8c121612
+    - name: evil_plant_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 42
+        width: 17
+        height: 17
+      spriteId: d91606052a34cb64db96edf3fd0cbd78
+    - name: evil_plant_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 42
+        width: 19
+        height: 14
+      spriteId: b8b16c9caa90e2d4eb8db44354c96621
+    - name: evil_plant_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 42
+        width: 19
+        height: 14
+      spriteId: 4c970571b235c194b9c331d95c02f714
+    - name: evil_plant_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 40
+        width: 61
+        height: 17
+      spriteId: 62bc7c9d0b954f74fa1bf1397d205764
+    - name: evil_plant_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 1
+        y: 40
+        width: 62
+        height: 16
+      spriteId: 2a23f7f09d0550449a1db7eb4fc40b8b
+    - name: evil_plant_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 3
+        y: 40
+        width: 62
+        height: 16
+      spriteId: 320fd49e86ee4bc4f8f7430963da2bc5
+    - name: evil_plant_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 14
+        y: 40
+        width: 54
+        height: 16
+      spriteId: 30eba74764c9a524fb8836d846b18158
+    - name: evil_plant_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 17
+        y: 40
+        width: 53
+        height: 15
+      spriteId: 7344bcd24df91e246acaa3d29b4e6d52
+    - name: evil_plant_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 40
+        width: 37
+        height: 15
+      spriteId: d426da19b0c898f409545bc0c21a32ff
+    - name: evil_plant_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 30
+        y: 41
+        width: 29
+        height: 16
+      spriteId: 66f43e190cb7fc44f82d1f83e1b60a1c
+    - name: evil_plant_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 35
+        y: 42
+        width: 24
+        height: 20
+      spriteId: 1b5ae33ba63167f4693d5e94db835a60
+    - name: evil_plant_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 41
+        width: 17
+        height: 17
+      spriteId: 297c9c8e4066c5241b1833afe5497abd
+    - name: evil_plant_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 40
+        width: 18
+        height: 18
+      spriteId: fb55682144604dd489d375411991d0f6
+    - name: evil_plant_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 40
+        width: 18
+        height: 18
+      spriteId: 09a5ce878ade3ed4db195e69c1b058af
+    - name: evil_plant_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 40
+        width: 17
+        height: 18
+      spriteId: e3d18e1f19c6f2f45b8a29af962820e3
+    - name: evil_plant_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 40
+        width: 17
+        height: 18
+      spriteId: 9a273c8524a5e584bb77457dd68f7759
+    - name: evil_plant_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 40
+        width: 17
+        height: 18
+      spriteId: 2c1c7a4f3794cfa46b2a0900212eeb84
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 100, y: 100}

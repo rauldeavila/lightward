@@ -1,0 +1,980 @@
+fileFormatVersion: 2
+guid: 58a8204e2bd9d304abfb63ce3e1d30bc
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: gate_crypt_Frame_0
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 121
+      width: 16
+      height: 28
+    spriteID: f3027c59b19de426ab8c12fb8987621c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 121}
+  - name: gate_crypt_Frame_21
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 157
+      width: 16
+      height: 28
+    spriteID: 40025b2f325e24d02864ecb04f2bd3a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 157}
+  - name: gate_crypt_Frame_22
+    originalName: 
+    pivot: {x: 0.625, y: -0.4814815}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 112
+      width: 16
+      height: 27
+    spriteID: a2801407b68e54915b5f1fd453c581f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 112}
+  - name: gate_crypt_Frame_23
+    originalName: 
+    pivot: {x: 0.625, y: -0.53846157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 147
+      width: 16
+      height: 26
+    spriteID: 4845135ef98464f22bb139758333b394
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 147}
+  - name: gate_crypt_Frame_24
+    originalName: 
+    pivot: {x: 0.625, y: -1.1052631}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 229
+      width: 16
+      height: 19
+    spriteID: a37696e44407c4348953b324e8c667df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 229}
+  - name: gate_crypt_Frame_25
+    originalName: 
+    pivot: {x: 0.625, y: -2.6363637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 231
+      width: 16
+      height: 11
+    spriteID: 18bb131b56d2542e7b74c287f7e505b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 231}
+  - name: gate_crypt_Frame_26
+    originalName: 
+    pivot: {x: 0.625, y: -5.6666665}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 181
+      width: 16
+      height: 6
+    spriteID: c22b4cc9766ee4847a60159cca5a6abf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 181}
+  - name: gate_crypt_Frame_27
+    originalName: 
+    pivot: {x: 0.625, y: -9}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 208
+      width: 16
+      height: 4
+    spriteID: 67a5443e1992443908c92ce4598cf8fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 208}
+  - name: gate_crypt_Frame_28
+    originalName: 
+    pivot: {x: 0.625, y: -6.9999995}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 195
+      width: 16
+      height: 5
+    spriteID: 3aebf785dafe8443d89b2bab3aacb8eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 195}
+  - name: gate_crypt_Frame_1
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 193
+      width: 16
+      height: 28
+    spriteID: cc626f1cc885748fd9dd736250a3022b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 193}
+  - name: gate_crypt_Frame_2
+    originalName: 
+    pivot: {x: 0.5882354, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 4
+      width: 17
+      height: 28
+    spriteID: 4f02d9b27779741279de526d89eb43dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 4}
+  - name: gate_crypt_Frame_3
+    originalName: 
+    pivot: {x: 0.5454545, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 112
+      width: 22
+      height: 28
+    spriteID: b7887f6dfddb44b84935453bd657750a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 112}
+  - name: gate_crypt_Frame_4
+    originalName: 
+    pivot: {x: 0.5517241, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 40
+      width: 29
+      height: 28
+    spriteID: 9290e9489af8e4fcd8e5986179d73171
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 40}
+  - name: gate_crypt_Frame_5
+    originalName: 
+    pivot: {x: 0.5882354, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 34
+      height: 28
+    spriteID: 74b9eb6f82bbe462eaa829dd1fd0eb0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: gate_crypt_Frame_6
+    originalName: 
+    pivot: {x: 0.76923084, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 76
+      width: 26
+      height: 28
+    spriteID: 95bdcd069176644779aad8a4ac4433ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 76}
+  - name: gate_crypt_Frame_7
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 40
+      width: 16
+      height: 28
+    spriteID: 17ee07909ab66476f88adb828c9ca1fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 40}
+  - name: gate_crypt_Frame_8
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 76
+      width: 16
+      height: 28
+    spriteID: d16f708aed909401e9676b9dbd4aa9b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 76}
+  - name: gate_crypt_Frame_9
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 112
+      width: 16
+      height: 28
+    spriteID: 7807aef26a97b4c1c8d69d0e08695185
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 112}
+  - name: gate_crypt_Frame_10
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 148
+      width: 16
+      height: 28
+    spriteID: 926afa270ca304745af14eb09f19c417
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 148}
+  - name: gate_crypt_Frame_11
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 184
+      width: 16
+      height: 28
+    spriteID: 22a629d95950a4b49885cc8ed5ec9613
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 184}
+  - name: gate_crypt_Frame_12
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 220
+      width: 16
+      height: 28
+    spriteID: e7b32a5794bca4618a7b0fb6af26f1b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 220}
+  - name: gate_crypt_Frame_13
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 4
+      width: 16
+      height: 28
+    spriteID: 385a8a96d5c534379973277da3936073
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 4}
+  - name: gate_crypt_Frame_14
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 40
+      width: 16
+      height: 28
+    spriteID: 4680f35d7a24b4fdd8453f7d546f518d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 40}
+  - name: gate_crypt_Frame_15
+    originalName: 
+    pivot: {x: 0.625, y: -0.42857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 76
+      width: 16
+      height: 28
+    spriteID: ba61be0ade3a44ac5a1dff340b935d9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 76}
+  - name: gate_crypt_Frame_16
+    originalName: 
+    pivot: {x: 0.625, y: -0.40000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 83
+      width: 16
+      height: 30
+    spriteID: 3464940087469470b84c8fb084c6cb2c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 83}
+  - name: gate_crypt_Frame_17
+    originalName: 
+    pivot: {x: 0.625, y: -0.38709676}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 44
+      width: 16
+      height: 31
+    spriteID: 3eca2001c6bfa4a409013560fb511dd0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 44}
+  - name: gate_crypt_Frame_18
+    originalName: 
+    pivot: {x: 0.625, y: -0.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 46
+      y: 4
+      width: 16
+      height: 32
+    spriteID: 2400d0155a1dd46dfb7e76bb0a607bc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 4}
+  - name: gate_crypt_Frame_19
+    originalName: 
+    pivot: {x: 0.625, y: -0.36363637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 190
+      width: 16
+      height: 33
+    spriteID: 8bea93faee20f401391bbedceca5c2a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 190}
+  - name: gate_crypt_Frame_20
+    originalName: 
+    pivot: {x: 0.625, y: -0.35294122}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 148
+      width: 16
+      height: 34
+    spriteID: d69fcb84a47f64428b2961fa4a7ad2ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 148}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1146383390
+    name: gate_crypt
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: gate_crypt_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: f3027c59b19de426ab8c12fb8987621c
+    - name: gate_crypt_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: 40025b2f325e24d02864ecb04f2bd3a7
+    - name: gate_crypt_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 13
+        width: 16
+        height: 27
+      spriteId: a2801407b68e54915b5f1fd453c581f7
+    - name: gate_crypt_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 14
+        width: 16
+        height: 26
+      spriteId: 4845135ef98464f22bb139758333b394
+    - name: gate_crypt_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 21
+        width: 16
+        height: 19
+      spriteId: a37696e44407c4348953b324e8c667df
+    - name: gate_crypt_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 29
+        width: 16
+        height: 11
+      spriteId: 18bb131b56d2542e7b74c287f7e505b1
+    - name: gate_crypt_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 34
+        width: 16
+        height: 6
+      spriteId: c22b4cc9766ee4847a60159cca5a6abf
+    - name: gate_crypt_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 36
+        width: 16
+        height: 4
+      spriteId: 67a5443e1992443908c92ce4598cf8fb
+    - name: gate_crypt_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 35
+        width: 16
+        height: 5
+      spriteId: 3aebf785dafe8443d89b2bab3aacb8eb
+    - name: gate_crypt_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: cc626f1cc885748fd9dd736250a3022b
+    - name: gate_crypt_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 17
+        height: 28
+      spriteId: 4f02d9b27779741279de526d89eb43dc
+    - name: gate_crypt_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 12
+        width: 22
+        height: 28
+      spriteId: b7887f6dfddb44b84935453bd657750a
+    - name: gate_crypt_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 12
+        width: 29
+        height: 28
+      spriteId: 9290e9489af8e4fcd8e5986179d73171
+    - name: gate_crypt_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 12
+        width: 34
+        height: 28
+      spriteId: 74b9eb6f82bbe462eaa829dd1fd0eb0e
+    - name: gate_crypt_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 12
+        width: 26
+        height: 28
+      spriteId: 95bdcd069176644779aad8a4ac4433ba
+    - name: gate_crypt_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: 17ee07909ab66476f88adb828c9ca1fa
+    - name: gate_crypt_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: d16f708aed909401e9676b9dbd4aa9b7
+    - name: gate_crypt_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: 7807aef26a97b4c1c8d69d0e08695185
+    - name: gate_crypt_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: 926afa270ca304745af14eb09f19c417
+    - name: gate_crypt_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: 22a629d95950a4b49885cc8ed5ec9613
+    - name: gate_crypt_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: e7b32a5794bca4618a7b0fb6af26f1b1
+    - name: gate_crypt_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: 385a8a96d5c534379973277da3936073
+    - name: gate_crypt_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: 4680f35d7a24b4fdd8453f7d546f518d
+    - name: gate_crypt_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 28
+      spriteId: ba61be0ade3a44ac5a1dff340b935d9a
+    - name: gate_crypt_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 30
+      spriteId: 3464940087469470b84c8fb084c6cb2c
+    - name: gate_crypt_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 31
+      spriteId: 3eca2001c6bfa4a409013560fb511dd0
+    - name: gate_crypt_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 32
+      spriteId: 2400d0155a1dd46dfb7e76bb0a607bc9
+    - name: gate_crypt_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 33
+      spriteId: 8bea93faee20f401391bbedceca5c2a7
+    - name: gate_crypt_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 26
+        y: 12
+        width: 16
+        height: 34
+      spriteId: d69fcb84a47f64428b2961fa4a7ad2ef
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 72, y: 72}

@@ -1,0 +1,2314 @@
+fileFormatVersion: 2
+guid: ae6858528fdd54d4bada1732826c1d05
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: swoosh_Frame_181
+    originalName: 
+    pivot: {x: 0.21428573, y: -3.923077}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 161
+      y: 131
+      width: 28
+      height: 13
+    spriteID: 73a29afd22202e9468949e9b7647dbf2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 161, y: 131}
+  - name: swoosh_Frame_182
+    originalName: 
+    pivot: {x: 0.1388889, y: -2.3043478}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 45
+      width: 36
+      height: 23
+    spriteID: 655db6f951126f241994135ca9b58485
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 45}
+  - name: swoosh_Frame_183
+    originalName: 
+    pivot: {x: 0.09090909, y: -2.3478262}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 87
+      width: 33
+      height: 23
+    spriteID: b6953ba9d364fd8449f6c3abaf57e6aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 87}
+  - name: swoosh_Frame_184
+    originalName: 
+    pivot: {x: -0.11538462, y: -3.0526316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 4
+      width: 26
+      height: 19
+    spriteID: 1fea91e5888a6674e837ca904ec232bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 4}
+  - name: swoosh_Frame_185
+    originalName: 
+    pivot: {x: 0.03448276, y: -4.066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 131
+      width: 29
+      height: 15
+    spriteID: e2a9c95b1f06cfc4dba812f5e2c0f600
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 131}
+  - name: swoosh_Frame_186
+    originalName: 
+    pivot: {x: 0.06896552, y: -4.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 131
+      width: 29
+      height: 14
+    spriteID: 2675d522e0f070c44a39f6475799c04d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 131}
+  - name: swoosh_Frame_187
+    originalName: 
+    pivot: {x: 0.06666667, y: -5.818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 197
+      y: 131
+      width: 30
+      height: 11
+    spriteID: a034a02c920c1a440a53bc671291cfb0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 197, y: 131}
+  - name: swoosh_Frame_188
+    originalName: 
+    pivot: {x: 0.22222222, y: -6.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 27
+      width: 36
+      height: 10
+    spriteID: e4aa1b333e061fd46856be3496beb2be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 27}
+  - name: swoosh_Frame_189
+    originalName: 
+    pivot: {x: 0.24324325, y: -8.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 201
+      y: 152
+      width: 37
+      height: 8
+    spriteID: b711a190f089e924b9028d8377d90dcc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 201, y: 152}
+  - name: swoosh_Frame_190
+    originalName: 
+    pivot: {x: -27, y: -68}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 76
+      width: 1
+      height: 1
+    spriteID: fb9645cd1c8612d458a51bdf2cec10cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 76}
+  - name: swoosh_Frame_201
+    originalName: 
+    pivot: {x: -0.2916667, y: -2.3043478}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 105
+      y: 4
+      width: 24
+      height: 23
+    spriteID: d306120698adeb540a6607d02217982f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 105, y: 4}
+  - name: swoosh_Frame_202
+    originalName: 
+    pivot: {x: 0.21428573, y: -2.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 223
+      y: 87
+      width: 28
+      height: 24
+    spriteID: a84d7571d764d044ea0d1647057aaa83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 223, y: 87}
+  - name: swoosh_Frame_203
+    originalName: 
+    pivot: {x: 0.32258064, y: -2.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 87
+      width: 31
+      height: 24
+    spriteID: c29df0877976d9d4886c54941c58763c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 114, y: 87}
+  - name: swoosh_Frame_204
+    originalName: 
+    pivot: {x: 0.36363637, y: -2.5714285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 87
+      width: 33
+      height: 21
+    spriteID: a7632c7b92f3e3b48b85c75ec425fa95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 87}
+  - name: swoosh_Frame_205
+    originalName: 
+    pivot: {x: 0.375, y: -3.7333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 4
+      width: 32
+      height: 15
+    spriteID: b3f8ca46007c47a43b21f4d32c533d36
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 4}
+  - name: swoosh_Frame_206
+    originalName: 
+    pivot: {x: 0.375, y: -5.7000003}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 161
+      y: 152
+      width: 32
+      height: 10
+    spriteID: 1e030a01ec499154e9aac7b84840bb5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 161, y: 152}
+  - name: swoosh_Frame_207
+    originalName: 
+    pivot: {x: 0.5, y: -9.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 31
+      width: 24
+      height: 6
+    spriteID: 9964acef0db6dac429866aba6bb8e992
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 31}
+  - name: swoosh_Frame_208
+    originalName: 
+    pivot: {x: 1, y: -9.333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 192
+      width: 11
+      height: 6
+    spriteID: 310448bd62c9293469b367ad831cbcf0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 192}
+  - name: swoosh_Frame_210
+    originalName: 
+    pivot: {x: 1.1, y: -14.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 223
+      y: 119
+      width: 10
+      height: 4
+    spriteID: 9fb6284738f55b04d844eb9a0791df81
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 223, y: 119}
+  - name: swoosh_Frame_211
+    originalName: 
+    pivot: {x: 1.1111112, y: -11.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 23
+      y: 194
+      width: 9
+      height: 5
+    spriteID: 8075c276dd174d444ba6fccb8e809070
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 23, y: 194}
+  - name: swoosh_Frame_212
+    originalName: 
+    pivot: {x: 1.1111112, y: -11.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 118
+      width: 9
+      height: 5
+    spriteID: 5980a5e09b150c44eb031c1e14adbb4f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 118}
+  - name: swoosh_Frame_229
+    originalName: 
+    pivot: {x: -0.22222222, y: -13.400001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 90
+      y: 118
+      width: 9
+      height: 5
+    spriteID: 47ff1d2e6efadcb41af53137a0e1b03d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 90, y: 118}
+  - name: swoosh_Frame_230
+    originalName: 
+    pivot: {x: -0.125, y: -11.333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 170
+      y: 173
+      width: 8
+      height: 6
+    spriteID: adbe278e16f22d342882aa97d1dc1f8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 170, y: 173}
+  - name: swoosh_Frame_231
+    originalName: 
+    pivot: {x: 0.14285715, y: -9.714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 116
+      width: 7
+      height: 7
+    spriteID: 72c5b124ce31c334fb3c5b8795c0b527
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 116}
+  - name: swoosh_Frame_232
+    originalName: 
+    pivot: {x: 0.33333334, y: -9.857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 173
+      width: 6
+      height: 7
+    spriteID: b4f070d00af50414db329143d0a5e675
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 173}
+  - name: swoosh_Frame_233
+    originalName: 
+    pivot: {x: 0.5, y: -8.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 246
+      y: 27
+      width: 6
+      height: 8
+    spriteID: 29276b92a8956724ab22eaf4666dafd7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 246, y: 27}
+  - name: swoosh_Frame_234
+    originalName: 
+    pivot: {x: 0.375, y: -8.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 242
+      y: 4
+      width: 8
+      height: 8
+    spriteID: 4752e797ead3d7b428cab396bbf344b9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 242, y: 4}
+  - name: swoosh_Frame_235
+    originalName: 
+    pivot: {x: 0.23076925, y: -8.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 149
+      y: 173
+      width: 13
+      height: 8
+    spriteID: 77b8eda520e6a85498a4dd7b2104fe9a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 149, y: 173}
+  - name: swoosh_Frame_236
+    originalName: 
+    pivot: {x: 0.15789473, y: -4.846154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 23
+      y: 173
+      width: 19
+      height: 13
+    spriteID: 7ddd671a5d4d3fd4a874e4f642e201d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 23, y: 173}
+  - name: swoosh_Frame_237
+    originalName: 
+    pivot: {x: 0.10526316, y: -2.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 131
+      width: 19
+      height: 24
+    spriteID: 58116fa23dd49964ca8d7d85389a0e74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 131}
+  - name: swoosh_Frame_238
+    originalName: 
+    pivot: {x: 0.34615386, y: -1.0857143}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 39
+      y: 87
+      width: 26
+      height: 35
+    spriteID: f1bf3365fc866224e8209db47a1fea73
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 39, y: 87}
+  - name: swoosh_Frame_239
+    originalName: 
+    pivot: {x: 0.5641026, y: -1.1515152}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 39
+      height: 33
+    spriteID: e894b59f2b796e44597ff2235b155b84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: swoosh_Frame_240
+    originalName: 
+    pivot: {x: 0.6111111, y: -1.1875}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 45
+      width: 36
+      height: 32
+    spriteID: 7e16f7549843f6a499b31ac1a2defd12
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 45}
+  - name: swoosh_Frame_241
+    originalName: 
+    pivot: {x: 0.62857145, y: -1.117647}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 45
+      width: 35
+      height: 34
+    spriteID: e837e412ba67b6d4f8c8b0eea659a82c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 45}
+  - name: swoosh_Frame_242
+    originalName: 
+    pivot: {x: 0.64705884, y: -1.2352941}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 45
+      width: 34
+      height: 34
+    spriteID: 8f7ccc79853c51949b6601c761458fd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 45}
+  - name: swoosh_Frame_243
+    originalName: 
+    pivot: {x: 0.6296296, y: -1.1666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 87
+      width: 27
+      height: 36
+    spriteID: 0bbb78b64e33b9d42a4e9bf97990e63f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 87}
+  - name: swoosh_Frame_244
+    originalName: 
+    pivot: {x: 0.7619048, y: -1.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 87
+      width: 21
+      height: 35
+    spriteID: 0bbdc30a61a91fd4abf23b5c4bd327f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 87}
+  - name: swoosh_Frame_245
+    originalName: 
+    pivot: {x: 0.7857143, y: -1.2352941}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 131
+      width: 14
+      height: 34
+    spriteID: 30343dc40fda86640adf83dbe760c897
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 131}
+  - name: swoosh_Frame_246
+    originalName: 
+    pivot: {x: 0.7857143, y: -5.3333335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 153
+      width: 14
+      height: 12
+    spriteID: e4114ef985987d44f860686d6f26787f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 153}
+  - name: swoosh_Frame_247
+    originalName: 
+    pivot: {x: 0.7692308, y: -5.909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 173
+      width: 13
+      height: 11
+    spriteID: 955293de6690c7e428054a380827e559
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 173}
+  - name: swoosh_Frame_248
+    originalName: 
+    pivot: {x: 0.5, y: -5.909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 146
+      y: 153
+      width: 6
+      height: 11
+    spriteID: 1b01d83196f436c42b745ba90aed86fc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 146, y: 153}
+  - name: swoosh_Frame_249
+    originalName: 
+    pivot: {x: 0.5, y: -5.909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 246
+      y: 152
+      width: 6
+      height: 11
+    spriteID: 4261059b5d9e8f347bf68ca031fe2009
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 246, y: 152}
+  - name: swoosh_Frame_171
+    originalName: 
+    pivot: {x: 1.1111112, y: -14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 132
+      y: 119
+      width: 9
+      height: 4
+    spriteID: fc213b85d9784ed40815f2afd0737b30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 132, y: 119}
+  - name: swoosh_Frame_172
+    originalName: 
+    pivot: {x: 1.1111112, y: -14}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 200
+      y: 173
+      width: 9
+      height: 4
+    spriteID: bda28da1af8e1cb4094f12f0f5e9aa96
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 200, y: 173}
+  - name: swoosh_Frame_173
+    originalName: 
+    pivot: {x: 1.1, y: -14.25}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 241
+      y: 119
+      width: 10
+      height: 4
+    spriteID: 0c15e71ac28c1584bb3d37c4946de1db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 241, y: 119}
+  - name: swoosh_Frame_174
+    originalName: 
+    pivot: {x: 1.2222222, y: -29.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 26
+      y: 163
+      width: 9
+      height: 2
+    spriteID: 12848c1cd1c6191409b8cd9b00602665
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 26, y: 163}
+  - name: swoosh_Frame_175
+    originalName: 
+    pivot: {x: 1.2222222, y: -19.666668}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 235
+      y: 173
+      width: 9
+      height: 3
+    spriteID: 3d22c7f654583b44d83c4e5fd5871547
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 235, y: 173}
+  - name: swoosh_Frame_176
+    originalName: 
+    pivot: {x: 1.2, y: -20}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 217
+      y: 173
+      width: 10
+      height: 3
+    spriteID: 72f470c54aeb20d47b39cf1fb8e9d118
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 217, y: 173}
+  - name: swoosh_Frame_177
+    originalName: 
+    pivot: {x: 1.2, y: -14.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 119
+      width: 10
+      height: 4
+    spriteID: 33267b2cb85f41e48a0762427e1f4818
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 114, y: 119}
+  - name: swoosh_Frame_178
+    originalName: 
+    pivot: {x: 1.0909091, y: -9.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 192
+      width: 11
+      height: 6
+    spriteID: 73ddb51c0b41d6f46a70efeba48e680d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 192}
+  - name: swoosh_Frame_179
+    originalName: 
+    pivot: {x: 0.75, y: -6.75}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 106
+      y: 173
+      width: 16
+      height: 8
+    spriteID: b8feab920a043cd4da49f3408372a10e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 106, y: 173}
+  - name: swoosh_Frame_180
+    originalName: 
+    pivot: {x: 0.5555556, y: -5.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 87
+      y: 154
+      width: 18
+      height: 10
+    spriteID: 337ffd7639968e54eb80ab26d93f1fd6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 87, y: 154}
+  - name: swoosh_Frame_194
+    originalName: 
+    pivot: {x: 4.5, y: -33}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 163
+      width: 2
+      height: 2
+    spriteID: 8c989b34be2f8d44fa66718f93a62dc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 163}
+  - name: swoosh_Frame_195
+    originalName: 
+    pivot: {x: 4, y: -16.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 194
+      width: 2
+      height: 4
+    spriteID: 19e82b805801669448aadf40cbfe42b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 194}
+  - name: swoosh_Frame_196
+    originalName: 
+    pivot: {x: 0.2857143, y: -24}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 76
+      width: 7
+      height: 3
+    spriteID: 53f352108afadb64390e91accbff31f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 76}
+  - name: swoosh_Frame_197
+    originalName: 
+    pivot: {x: 0.11111111, y: -11.833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 182
+      y: 116
+      width: 18
+      height: 6
+    spriteID: 751d49c36b8c69a4f8a92fa417399f18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 182, y: 116}
+  - name: swoosh_Frame_198
+    originalName: 
+    pivot: {x: 0.03846154, y: -8.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 156
+      width: 26
+      height: 8
+    spriteID: d9f218254a10f454ba7783eb04da26bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 156}
+  - name: swoosh_Frame_199
+    originalName: 
+    pivot: {x: -0.11538462, y: -3.5294118}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 53
+      y: 131
+      width: 26
+      height: 17
+    spriteID: ee93504cd16b5a24db0a7cbc6ee719ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 53, y: 131}
+  - name: swoosh_Frame_200
+    originalName: 
+    pivot: {x: -0.30434784, y: -2.3478262}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 137
+      y: 4
+      width: 23
+      height: 23
+    spriteID: f1a7e2e969ec20c4a969fbb0b56d6355
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 137, y: 4}
+  - name: swoosh_Frame_209
+    originalName: 
+    pivot: {x: 1.2222222, y: -29.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 76
+      width: 9
+      height: 2
+    spriteID: 01e55c978ecf32542b13162a77ffc88e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 76}
+  - name: swoosh_Frame_213
+    originalName: 
+    pivot: {x: -0.5, y: -8.833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 189
+      width: 2
+      height: 6
+    spriteID: 73a3fa2619522ec4180bdcf35d33f2c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 189}
+  - name: swoosh_Frame_214
+    originalName: 
+    pivot: {x: 0.33333334, y: -10.8}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 154
+      width: 3
+      height: 5
+    spriteID: 718a095b4b31a0c42b2eef634d1cedb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 154}
+  - name: swoosh_Frame_215
+    originalName: 
+    pivot: {x: -0.5, y: -8.833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 189
+      width: 2
+      height: 6
+    spriteID: 10ef26af822b2594bad9564fec20906a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 189}
+  - name: swoosh_Frame_216
+    originalName: 
+    pivot: {x: -0.083333336, y: -5.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 106
+      y: 189
+      width: 12
+      height: 10
+    spriteID: 952acfe7c2c716745a5909fbd026a277
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 106, y: 189}
+  - name: swoosh_Frame_217
+    originalName: 
+    pivot: {x: -0.44444445, y: -3.2941177}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 68
+      y: 173
+      width: 9
+      height: 17
+    spriteID: 98e41e04645c7b64bbba24589fc68191
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 68, y: 173}
+  - name: swoosh_Frame_218
+    originalName: 
+    pivot: {x: -0.45454547, y: -2.2307694}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 173
+      width: 11
+      height: 26
+    spriteID: f3b6db28cf2ea0a4990c17751f4e5f3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 173}
+  - name: swoosh_Frame_219
+    originalName: 
+    pivot: {x: 0.15789473, y: -1.8484849}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 4
+      width: 19
+      height: 33
+    spriteID: 1e9ad8b371a59464199357b63250891b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 4}
+  - name: swoosh_Frame_220
+    originalName: 
+    pivot: {x: 0.53125, y: -2.9166667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 218
+      y: 45
+      width: 32
+      height: 24
+    spriteID: c0580982f77ccb04d87c5fd951fe651e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 218, y: 45}
+  - name: swoosh_Frame_221
+    originalName: 
+    pivot: {x: 0.5757576, y: -2.2857144}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 133
+      y: 45
+      width: 33
+      height: 28
+    spriteID: a1611b8248ff6cf4ab7ffc25abf2b254
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 133, y: 45}
+  - name: swoosh_Frame_222
+    originalName: 
+    pivot: {x: 1, y: -1.7878789}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 78
+      y: 4
+      width: 19
+      height: 33
+    spriteID: 07b6f042ee1051d429f783b87ab2d97c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 78, y: 4}
+  - name: swoosh_Frame_223
+    originalName: 
+    pivot: {x: 2, y: -2.7142859}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 50
+      y: 173
+      width: 10
+      height: 21
+    spriteID: 62890ac70711de846932b212e529e80f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 50, y: 173}
+  - name: swoosh_Frame_224
+    originalName: 
+    pivot: {x: 0.9411765, y: -4.909091}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 235
+      y: 131
+      width: 17
+      height: 11
+    spriteID: 68ba8c179dd12a44491a173756baa939
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 235, y: 131}
+  - name: swoosh_Frame_225
+    originalName: 
+    pivot: {x: 1, y: -4.818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 173
+      width: 11
+      height: 11
+    spriteID: 32c026a38d2d44748bea9ebc3adee878
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 173}
+  - name: swoosh_Frame_226
+    originalName: 
+    pivot: {x: 1.8000001, y: -5.888889}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 149
+      y: 189
+      width: 5
+      height: 9
+    spriteID: 171cee35edfb7b441a5314d708c88dae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 149, y: 189}
+  - name: swoosh_Frame_227
+    originalName: 
+    pivot: {x: 2.25, y: -11.400001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 162
+      y: 189
+      width: 4
+      height: 5
+    spriteID: 6b4abb0d6ecadd844b3b96ea92fa2ca0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 162, y: 189}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1298766601
+    name: swoosh
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: swoosh_Frame_181
+      frameIndex: 181
+      additiveSortOrder: 0
+      cellRect:
+        x: 58
+        y: 51
+        width: 28
+        height: 13
+      spriteId: 73a29afd22202e9468949e9b7647dbf2
+    - name: swoosh_Frame_182
+      frameIndex: 182
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 53
+        width: 36
+        height: 23
+      spriteId: 655db6f951126f241994135ca9b58485
+    - name: swoosh_Frame_183
+      frameIndex: 183
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 54
+        width: 33
+        height: 23
+      spriteId: b6953ba9d364fd8449f6c3abaf57e6aa
+    - name: swoosh_Frame_184
+      frameIndex: 184
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 58
+        width: 26
+        height: 19
+      spriteId: 1fea91e5888a6674e837ca904ec232bd
+    - name: swoosh_Frame_185
+      frameIndex: 185
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 61
+        width: 29
+        height: 15
+      spriteId: e2a9c95b1f06cfc4dba812f5e2c0f600
+    - name: swoosh_Frame_186
+      frameIndex: 186
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 63
+        width: 29
+        height: 14
+      spriteId: 2675d522e0f070c44a39f6475799c04d
+    - name: swoosh_Frame_187
+      frameIndex: 187
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 64
+        width: 30
+        height: 11
+      spriteId: a034a02c920c1a440a53bc671291cfb0
+    - name: swoosh_Frame_188
+      frameIndex: 188
+      additiveSortOrder: 0
+      cellRect:
+        x: 56
+        y: 65
+        width: 36
+        height: 10
+      spriteId: e4aa1b333e061fd46856be3496beb2be
+    - name: swoosh_Frame_189
+      frameIndex: 189
+      additiveSortOrder: 0
+      cellRect:
+        x: 55
+        y: 66
+        width: 37
+        height: 8
+      spriteId: b711a190f089e924b9028d8377d90dcc
+    - name: swoosh_Frame_190
+      frameIndex: 190
+      additiveSortOrder: 0
+      cellRect:
+        x: 91
+        y: 68
+        width: 1
+        height: 1
+      spriteId: fb9645cd1c8612d458a51bdf2cec10cd
+    - name: swoosh_Frame_201
+      frameIndex: 201
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 53
+        width: 24
+        height: 23
+      spriteId: d306120698adeb540a6607d02217982f
+    - name: swoosh_Frame_202
+      frameIndex: 202
+      additiveSortOrder: 0
+      cellRect:
+        x: 58
+        y: 51
+        width: 28
+        height: 24
+      spriteId: a84d7571d764d044ea0d1647057aaa83
+    - name: swoosh_Frame_203
+      frameIndex: 203
+      additiveSortOrder: 0
+      cellRect:
+        x: 54
+        y: 51
+        width: 31
+        height: 24
+      spriteId: c29df0877976d9d4886c54941c58763c
+    - name: swoosh_Frame_204
+      frameIndex: 204
+      additiveSortOrder: 0
+      cellRect:
+        x: 52
+        y: 54
+        width: 33
+        height: 21
+      spriteId: a7632c7b92f3e3b48b85c75ec425fa95
+    - name: swoosh_Frame_205
+      frameIndex: 205
+      additiveSortOrder: 0
+      cellRect:
+        x: 52
+        y: 56
+        width: 32
+        height: 15
+      spriteId: b3f8ca46007c47a43b21f4d32c533d36
+    - name: swoosh_Frame_206
+      frameIndex: 206
+      additiveSortOrder: 0
+      cellRect:
+        x: 52
+        y: 57
+        width: 32
+        height: 10
+      spriteId: 1e030a01ec499154e9aac7b84840bb5c
+    - name: swoosh_Frame_207
+      frameIndex: 207
+      additiveSortOrder: 0
+      cellRect:
+        x: 52
+        y: 57
+        width: 24
+        height: 6
+      spriteId: 9964acef0db6dac429866aba6bb8e992
+    - name: swoosh_Frame_208
+      frameIndex: 208
+      additiveSortOrder: 0
+      cellRect:
+        x: 53
+        y: 56
+        width: 11
+        height: 6
+      spriteId: 310448bd62c9293469b367ad831cbcf0
+    - name: swoosh_Frame_210
+      frameIndex: 210
+      additiveSortOrder: 0
+      cellRect:
+        x: 53
+        y: 57
+        width: 10
+        height: 4
+      spriteId: 9fb6284738f55b04d844eb9a0791df81
+    - name: swoosh_Frame_211
+      frameIndex: 211
+      additiveSortOrder: 0
+      cellRect:
+        x: 54
+        y: 56
+        width: 9
+        height: 5
+      spriteId: 8075c276dd174d444ba6fccb8e809070
+    - name: swoosh_Frame_212
+      frameIndex: 212
+      additiveSortOrder: 0
+      cellRect:
+        x: 54
+        y: 56
+        width: 9
+        height: 5
+      spriteId: 5980a5e09b150c44eb031c1e14adbb4f
+    - name: swoosh_Frame_229
+      frameIndex: 229
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 67
+        width: 9
+        height: 5
+      spriteId: 47ff1d2e6efadcb41af53137a0e1b03d
+    - name: swoosh_Frame_230
+      frameIndex: 230
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 68
+        width: 8
+        height: 6
+      spriteId: adbe278e16f22d342882aa97d1dc1f8e
+    - name: swoosh_Frame_231
+      frameIndex: 231
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 68
+        width: 7
+        height: 7
+      spriteId: 72c5b124ce31c334fb3c5b8795c0b527
+    - name: swoosh_Frame_232
+      frameIndex: 232
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 69
+        width: 6
+        height: 7
+      spriteId: b4f070d00af50414db329143d0a5e675
+    - name: swoosh_Frame_233
+      frameIndex: 233
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 68
+        width: 6
+        height: 8
+      spriteId: 29276b92a8956724ab22eaf4666dafd7
+    - name: swoosh_Frame_234
+      frameIndex: 234
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 68
+        width: 8
+        height: 8
+      spriteId: 4752e797ead3d7b428cab396bbf344b9
+    - name: swoosh_Frame_235
+      frameIndex: 235
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 68
+        width: 13
+        height: 8
+      spriteId: 77b8eda520e6a85498a4dd7b2104fe9a
+    - name: swoosh_Frame_236
+      frameIndex: 236
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 63
+        width: 19
+        height: 13
+      spriteId: 7ddd671a5d4d3fd4a874e4f642e201d3
+    - name: swoosh_Frame_237
+      frameIndex: 237
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 51
+        width: 19
+        height: 24
+      spriteId: 58116fa23dd49964ca8d7d85389a0e74
+    - name: swoosh_Frame_238
+      frameIndex: 238
+      additiveSortOrder: 0
+      cellRect:
+        x: 55
+        y: 38
+        width: 26
+        height: 35
+      spriteId: f1bf3365fc866224e8209db47a1fea73
+    - name: swoosh_Frame_239
+      frameIndex: 239
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 38
+        width: 39
+        height: 33
+      spriteId: e894b59f2b796e44597ff2235b155b84
+    - name: swoosh_Frame_240
+      frameIndex: 240
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 38
+        width: 36
+        height: 32
+      spriteId: 7e16f7549843f6a499b31ac1a2defd12
+    - name: swoosh_Frame_241
+      frameIndex: 241
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 38
+        width: 35
+        height: 34
+      spriteId: e837e412ba67b6d4f8c8b0eea659a82c
+    - name: swoosh_Frame_242
+      frameIndex: 242
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 42
+        width: 34
+        height: 34
+      spriteId: 8f7ccc79853c51949b6601c761458fd5
+    - name: swoosh_Frame_243
+      frameIndex: 243
+      additiveSortOrder: 0
+      cellRect:
+        x: 47
+        y: 42
+        width: 27
+        height: 36
+      spriteId: 0bbb78b64e33b9d42a4e9bf97990e63f
+    - name: swoosh_Frame_244
+      frameIndex: 244
+      additiveSortOrder: 0
+      cellRect:
+        x: 48
+        y: 42
+        width: 21
+        height: 35
+      spriteId: 0bbdc30a61a91fd4abf23b5c4bd327f0
+    - name: swoosh_Frame_245
+      frameIndex: 245
+      additiveSortOrder: 0
+      cellRect:
+        x: 53
+        y: 42
+        width: 14
+        height: 34
+      spriteId: 30343dc40fda86640adf83dbe760c897
+    - name: swoosh_Frame_246
+      frameIndex: 246
+      additiveSortOrder: 0
+      cellRect:
+        x: 53
+        y: 64
+        width: 14
+        height: 12
+      spriteId: e4114ef985987d44f860686d6f26787f
+    - name: swoosh_Frame_247
+      frameIndex: 247
+      additiveSortOrder: 0
+      cellRect:
+        x: 54
+        y: 65
+        width: 13
+        height: 11
+      spriteId: 955293de6690c7e428054a380827e559
+    - name: swoosh_Frame_248
+      frameIndex: 248
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 65
+        width: 6
+        height: 11
+      spriteId: 1b01d83196f436c42b745ba90aed86fc
+    - name: swoosh_Frame_249
+      frameIndex: 249
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 65
+        width: 6
+        height: 11
+      spriteId: 4261059b5d9e8f347bf68ca031fe2009
+    - name: swoosh_Frame_171
+      frameIndex: 171
+      additiveSortOrder: 0
+      cellRect:
+        x: 54
+        y: 56
+        width: 9
+        height: 4
+      spriteId: fc213b85d9784ed40815f2afd0737b30
+    - name: swoosh_Frame_172
+      frameIndex: 172
+      additiveSortOrder: 0
+      cellRect:
+        x: 54
+        y: 56
+        width: 9
+        height: 4
+      spriteId: bda28da1af8e1cb4094f12f0f5e9aa96
+    - name: swoosh_Frame_173
+      frameIndex: 173
+      additiveSortOrder: 0
+      cellRect:
+        x: 53
+        y: 57
+        width: 10
+        height: 4
+      spriteId: 0c15e71ac28c1584bb3d37c4946de1db
+    - name: swoosh_Frame_174
+      frameIndex: 174
+      additiveSortOrder: 0
+      cellRect:
+        x: 53
+        y: 59
+        width: 9
+        height: 2
+      spriteId: 12848c1cd1c6191409b8cd9b00602665
+    - name: swoosh_Frame_175
+      frameIndex: 175
+      additiveSortOrder: 0
+      cellRect:
+        x: 53
+        y: 59
+        width: 9
+        height: 3
+      spriteId: 3d22c7f654583b44d83c4e5fd5871547
+    - name: swoosh_Frame_176
+      frameIndex: 176
+      additiveSortOrder: 0
+      cellRect:
+        x: 52
+        y: 60
+        width: 10
+        height: 3
+      spriteId: 72f470c54aeb20d47b39cf1fb8e9d118
+    - name: swoosh_Frame_177
+      frameIndex: 177
+      additiveSortOrder: 0
+      cellRect:
+        x: 52
+        y: 59
+        width: 10
+        height: 4
+      spriteId: 33267b2cb85f41e48a0762427e1f4818
+    - name: swoosh_Frame_178
+      frameIndex: 178
+      additiveSortOrder: 0
+      cellRect:
+        x: 52
+        y: 57
+        width: 11
+        height: 6
+      spriteId: 73ddb51c0b41d6f46a70efeba48e680d
+    - name: swoosh_Frame_179
+      frameIndex: 179
+      additiveSortOrder: 0
+      cellRect:
+        x: 52
+        y: 54
+        width: 16
+        height: 8
+      spriteId: b8feab920a043cd4da49f3408372a10e
+    - name: swoosh_Frame_180
+      frameIndex: 180
+      additiveSortOrder: 0
+      cellRect:
+        x: 54
+        y: 51
+        width: 18
+        height: 10
+      spriteId: 337ffd7639968e54eb80ab26d93f1fd6
+    - name: swoosh_Frame_194
+      frameIndex: 194
+      additiveSortOrder: 0
+      cellRect:
+        x: 55
+        y: 66
+        width: 2
+        height: 2
+      spriteId: 8c989b34be2f8d44fa66718f93a62dc9
+    - name: swoosh_Frame_195
+      frameIndex: 195
+      additiveSortOrder: 0
+      cellRect:
+        x: 56
+        y: 66
+        width: 2
+        height: 4
+      spriteId: 19e82b805801669448aadf40cbfe42b3
+    - name: swoosh_Frame_196
+      frameIndex: 196
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 72
+        width: 7
+        height: 3
+      spriteId: 53f352108afadb64390e91accbff31f0
+    - name: swoosh_Frame_197
+      frameIndex: 197
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 71
+        width: 18
+        height: 6
+      spriteId: 751d49c36b8c69a4f8a92fa417399f18
+    - name: swoosh_Frame_198
+      frameIndex: 198
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 68
+        width: 26
+        height: 8
+      spriteId: d9f218254a10f454ba7783eb04da26bb
+    - name: swoosh_Frame_199
+      frameIndex: 199
+      additiveSortOrder: 0
+      cellRect:
+        x: 67
+        y: 60
+        width: 26
+        height: 17
+      spriteId: ee93504cd16b5a24db0a7cbc6ee719ab
+    - name: swoosh_Frame_200
+      frameIndex: 200
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 54
+        width: 23
+        height: 23
+      spriteId: f1a7e2e969ec20c4a969fbb0b56d6355
+    - name: swoosh_Frame_209
+      frameIndex: 209
+      additiveSortOrder: 0
+      cellRect:
+        x: 53
+        y: 59
+        width: 9
+        height: 2
+      spriteId: 01e55c978ecf32542b13162a77ffc88e
+    - name: swoosh_Frame_213
+      frameIndex: 213
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 53
+        width: 2
+        height: 6
+      spriteId: 73a3fa2619522ec4180bdcf35d33f2c0
+    - name: swoosh_Frame_214
+      frameIndex: 214
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 54
+        width: 3
+        height: 5
+      spriteId: 718a095b4b31a0c42b2eef634d1cedb7
+    - name: swoosh_Frame_215
+      frameIndex: 215
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 53
+        width: 2
+        height: 6
+      spriteId: 10ef26af822b2594bad9564fec20906a
+    - name: swoosh_Frame_216
+      frameIndex: 216
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 54
+        width: 12
+        height: 10
+      spriteId: 952acfe7c2c716745a5909fbd026a277
+    - name: swoosh_Frame_217
+      frameIndex: 217
+      additiveSortOrder: 0
+      cellRect:
+        x: 68
+        y: 56
+        width: 9
+        height: 17
+      spriteId: 98e41e04645c7b64bbba24589fc68191
+    - name: swoosh_Frame_218
+      frameIndex: 218
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 58
+        width: 11
+        height: 26
+      spriteId: f3b6db28cf2ea0a4990c17751f4e5f3e
+    - name: swoosh_Frame_219
+      frameIndex: 219
+      additiveSortOrder: 0
+      cellRect:
+        x: 61
+        y: 61
+        width: 19
+        height: 33
+      spriteId: 1e9ad8b371a59464199357b63250891b
+    - name: swoosh_Frame_220
+      frameIndex: 220
+      additiveSortOrder: 0
+      cellRect:
+        x: 47
+        y: 70
+        width: 32
+        height: 24
+      spriteId: c0580982f77ccb04d87c5fd951fe651e
+    - name: swoosh_Frame_221
+      frameIndex: 221
+      additiveSortOrder: 0
+      cellRect:
+        x: 45
+        y: 64
+        width: 33
+        height: 28
+      spriteId: a1611b8248ff6cf4ab7ffc25abf2b254
+    - name: swoosh_Frame_222
+      frameIndex: 222
+      additiveSortOrder: 0
+      cellRect:
+        x: 45
+        y: 59
+        width: 19
+        height: 33
+      spriteId: 07b6f042ee1051d429f783b87ab2d97c
+    - name: swoosh_Frame_223
+      frameIndex: 223
+      additiveSortOrder: 0
+      cellRect:
+        x: 44
+        y: 57
+        width: 10
+        height: 21
+      spriteId: 62890ac70711de846932b212e529e80f
+    - name: swoosh_Frame_224
+      frameIndex: 224
+      additiveSortOrder: 0
+      cellRect:
+        x: 48
+        y: 54
+        width: 17
+        height: 11
+      spriteId: 68ba8c179dd12a44491a173756baa939
+    - name: swoosh_Frame_225
+      frameIndex: 225
+      additiveSortOrder: 0
+      cellRect:
+        x: 53
+        y: 53
+        width: 11
+        height: 11
+      spriteId: 32c026a38d2d44748bea9ebc3adee878
+    - name: swoosh_Frame_226
+      frameIndex: 226
+      additiveSortOrder: 0
+      cellRect:
+        x: 55
+        y: 53
+        width: 5
+        height: 9
+      spriteId: 171cee35edfb7b441a5314d708c88dae
+    - name: swoosh_Frame_227
+      frameIndex: 227
+      additiveSortOrder: 0
+      cellRect:
+        x: 55
+        y: 57
+        width: 4
+        height: 5
+      spriteId: 6b4abb0d6ecadd844b3b96ea92fa2ca0
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 128, y: 128}

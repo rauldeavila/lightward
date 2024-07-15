@@ -1,0 +1,4344 @@
+fileFormatVersion: 2
+guid: f775dae8848345c429a48542d1897e9e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: boss_bear_layered_Frame_0
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 277
+      y: 547
+      width: 64
+      height: 55
+    spriteID: 8ff8083bcd60445bc9624817e35f6f02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 277, y: 547}
+  - name: boss_bear_layered_Frame_18
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 349
+      y: 547
+      width: 64
+      height: 55
+    spriteID: 6ed36f1b84e0c40f3bd553b401af704d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 349, y: 547}
+  - name: boss_bear_layered_Frame_19
+    originalName: 
+    pivot: {x: 0.5081967, y: -1.016129}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 73
+      y: 476
+      width: 61
+      height: 62
+    spriteID: 4be35ae907749473680c3eee908da1e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 73, y: 476}
+  - name: boss_bear_layered_Frame_20
+    originalName: 
+    pivot: {x: 0.5081967, y: -1.0677966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 920
+      y: 476
+      width: 61
+      height: 59
+    spriteID: a2550f286fb6345da8818da281d59c4c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 920, y: 476}
+  - name: boss_bear_layered_Frame_21
+    originalName: 
+    pivot: {x: 0.5081967, y: -1.0862068}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 547
+      width: 61
+      height: 58
+    spriteID: 6d343fe800ca840f8b13694bfd699a85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 547}
+  - name: boss_bear_layered_Frame_34
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 421
+      y: 547
+      width: 64
+      height: 55
+    spriteID: dd19fecb5d6104d7d8d3b0fb429f0a44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 421, y: 547}
+  - name: boss_bear_layered_Frame_43
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 493
+      y: 547
+      width: 64
+      height: 55
+    spriteID: 2f257fda004db4210889f74d0997874e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 493, y: 547}
+  - name: boss_bear_layered_Frame_61
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 565
+      y: 547
+      width: 64
+      height: 55
+    spriteID: 0f35f022f2ca74492965a9ba00846174
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 565, y: 547}
+  - name: boss_bear_layered_Frame_66
+    originalName: 
+    pivot: {x: 0.5081967, y: -1.016129}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 142
+      y: 476
+      width: 61
+      height: 62
+    spriteID: 69e0c7046eb5a4821818c9c40f2b5ad5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 476}
+  - name: boss_bear_layered_Frame_67
+    originalName: 
+    pivot: {x: 0.5081967, y: -1.0677966}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 547
+      width: 61
+      height: 59
+    spriteID: 78e25ad31cc79478b99aae197386cc51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 547}
+  - name: boss_bear_layered_Frame_68
+    originalName: 
+    pivot: {x: 0.5081967, y: -1.0862068}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 208
+      y: 547
+      width: 61
+      height: 58
+    spriteID: b21e2b5283eee4ce6868252080b4e392
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 208, y: 547}
+  - name: boss_bear_layered_Frame_1
+    originalName: 
+    pivot: {x: 0.50793654, y: -0.7619047}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 877
+      y: 398
+      width: 63
+      height: 63
+    spriteID: d2a74cfe9a9794a93ac9ac17185ec139
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 877, y: 398}
+  - name: boss_bear_layered_Frame_2
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 667
+      y: 333
+      width: 72
+      height: 57
+    spriteID: 79385620a7a7142ebac94aded1f30e59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 667, y: 333}
+  - name: boss_bear_layered_Frame_3
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 747
+      y: 333
+      width: 72
+      height: 57
+    spriteID: cbf9a067fa5b148c6a9c5acd26eab864
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 747, y: 333}
+  - name: boss_bear_layered_Frame_4
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 827
+      y: 333
+      width: 72
+      height: 57
+    spriteID: 2b8318b24f1004e65b96a94bd42279eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 827, y: 333}
+  - name: boss_bear_layered_Frame_5
+    originalName: 
+    pivot: {x: 0.46052635, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 499
+      y: 333
+      width: 76
+      height: 57
+    spriteID: 1020024cea78e49aaa318c01e6714885
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 499, y: 333}
+  - name: boss_bear_layered_Frame_6
+    originalName: 
+    pivot: {x: 0.4166667, y: -0.89285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 315
+      y: 333
+      width: 84
+      height: 56
+    spriteID: 665e461a5f6a74673820fe72e3180a50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 315, y: 333}
+  - name: boss_bear_layered_Frame_7
+    originalName: 
+    pivot: {x: 0.3763441, y: -0.89285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 697
+      y: 192
+      width: 93
+      height: 56
+    spriteID: 5dc625126f1d9401cb6fd843cbc8ae19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 697, y: 192}
+  - name: boss_bear_layered_Frame_8
+    originalName: 
+    pivot: {x: 0.35353538, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 887
+      y: 256
+      width: 99
+      height: 57
+    spriteID: 4b646904afb274601bb8233d19535563
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 887, y: 256}
+  - name: boss_bear_layered_Frame_9
+    originalName: 
+    pivot: {x: 0.33333334, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 301
+      y: 256
+      width: 105
+      height: 57
+    spriteID: f98e68cbe97774d369b9e8efc69389f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 301, y: 256}
+  - name: boss_bear_layered_Frame_10
+    originalName: 
+    pivot: {x: 0.30973452, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 706
+      y: 102
+      width: 113
+      height: 57
+    spriteID: 8659f5623b7a04475b8f9eb4ff980b3a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 706, y: 102}
+  - name: boss_bear_layered_Frame_11
+    originalName: 
+    pivot: {x: 0.2991453, y: -0.89285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 456
+      y: 102
+      width: 117
+      height: 56
+    spriteID: b2c02c1972796450b9390b814cf5b942
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 456, y: 102}
+  - name: boss_bear_layered_Frame_12
+    originalName: 
+    pivot: {x: 0.29411766, y: -0.89285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 102
+      width: 119
+      height: 56
+    spriteID: 901e5e2dc25424da1a18f7923e68fc01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 102}
+  - name: boss_bear_layered_Frame_13
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 907
+      y: 333
+      width: 72
+      height: 57
+    spriteID: 2105563f5e59c42eeb3a18a1d34c0d76
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 907, y: 333}
+  - name: boss_bear_layered_Frame_14
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 77
+      y: 398
+      width: 72
+      height: 57
+    spriteID: eca89b2c26ad74dbcaf685c33930705a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 77, y: 398}
+  - name: boss_bear_layered_Frame_15
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 157
+      y: 398
+      width: 72
+      height: 57
+    spriteID: adcd6c6bf60574f459fa703fb81b6329
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 157, y: 398}
+  - name: boss_bear_layered_Frame_16
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 237
+      y: 398
+      width: 72
+      height: 57
+    spriteID: 555e9aeaf03044061873f76a3796d6dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 237, y: 398}
+  - name: boss_bear_layered_Frame_17
+    originalName: 
+    pivot: {x: 0.54237294, y: -0.7619047}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 416
+      y: 476
+      width: 59
+      height: 63
+    spriteID: be247defa265048d596a5a4b25e8bc2e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 416, y: 476}
+  - name: boss_bear_layered_Frame_35
+    originalName: 
+    pivot: {x: 0.5081967, y: -1.016129}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 211
+      y: 476
+      width: 61
+      height: 62
+    spriteID: 6e2bb5731308748989c8c7c6b8195100
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 211, y: 476}
+  - name: boss_bear_layered_Frame_36
+    originalName: 
+    pivot: {x: 0.5081967, y: -0.99999994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 476
+      width: 61
+      height: 63
+    spriteID: d1485bcb46bc74f1baeb04d4e2e7141e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 476}
+  - name: boss_bear_layered_Frame_37
+    originalName: 
+    pivot: {x: 0.51666665, y: -1.0158731}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 280
+      y: 476
+      width: 60
+      height: 63
+    spriteID: 9dda885ba755b4ebc83e6a911a74d07e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 280, y: 476}
+  - name: boss_bear_layered_Frame_38
+    originalName: 
+    pivot: {x: 0.5344827, y: -1.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 747
+      width: 58
+      height: 60
+    spriteID: a248cd587a2c940849d33dae8a36cd7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 747}
+  - name: boss_bear_layered_Frame_39
+    originalName: 
+    pivot: {x: 0.57407403, y: -1.0327868}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 888
+      width: 54
+      height: 61
+    spriteID: b4b07072e804a4c509eab3cbb88cc97f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 888}
+  - name: boss_bear_layered_Frame_40
+    originalName: 
+    pivot: {x: 0.57407403, y: -1.016129}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 304
+      y: 815
+      width: 54
+      height: 62
+    spriteID: b73ca592cde5e40e981230114c4cd7a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 304, y: 815}
+  - name: boss_bear_layered_Frame_41
+    originalName: 
+    pivot: {x: 0.5344827, y: -0.99999994}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 854
+      y: 476
+      width: 58
+      height: 63
+    spriteID: eaadf7ab311ea497aaef12c20857dd2b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 854, y: 476}
+  - name: boss_bear_layered_Frame_42
+    originalName: 
+    pivot: {x: 0.51666665, y: -1.048387}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 348
+      y: 476
+      width: 60
+      height: 62
+    spriteID: 3fc09a59027274acb996b576533ac243
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 348, y: 476}
+  - name: boss_bear_layered_Frame_44
+    originalName: 
+    pivot: {x: 0.50793654, y: -0.7619047}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 948
+      y: 398
+      width: 63
+      height: 63
+    spriteID: 9fddadbd5d926408d9ded8f275310dc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 948, y: 398}
+  - name: boss_bear_layered_Frame_45
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 317
+      y: 398
+      width: 72
+      height: 57
+    spriteID: 8414448348d8d4208ab9c0744165ff9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 317, y: 398}
+  - name: boss_bear_layered_Frame_46
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 397
+      y: 398
+      width: 72
+      height: 57
+    spriteID: e5253afd74d014112930867d8b50d213
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 397, y: 398}
+  - name: boss_bear_layered_Frame_47
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 477
+      y: 398
+      width: 72
+      height: 57
+    spriteID: a21554a6e42114ee4ab2b684cbf7b3e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 477, y: 398}
+  - name: boss_bear_layered_Frame_48
+    originalName: 
+    pivot: {x: 0.46052635, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 583
+      y: 333
+      width: 76
+      height: 57
+    spriteID: 086ed9ae40e2b4504a97ff4d49971b90
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 583, y: 333}
+  - name: boss_bear_layered_Frame_49
+    originalName: 
+    pivot: {x: 0.4166667, y: -0.89285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 407
+      y: 333
+      width: 84
+      height: 56
+    spriteID: 3dff3fe8a0c3347ceba92900d7841703
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 407, y: 333}
+  - name: boss_bear_layered_Frame_50
+    originalName: 
+    pivot: {x: 0.3763441, y: -0.89285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 798
+      y: 192
+      width: 93
+      height: 56
+    spriteID: d664b7ca7e54d4b1f9d13f8f63196532
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 798, y: 192}
+  - name: boss_bear_layered_Frame_51
+    originalName: 
+    pivot: {x: 0.35353538, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 333
+      width: 99
+      height: 57
+    spriteID: 1439c256962234238a9bc62b62e9d3a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 333}
+  - name: boss_bear_layered_Frame_52
+    originalName: 
+    pivot: {x: 0.33333334, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 414
+      y: 256
+      width: 105
+      height: 57
+    spriteID: 488b4630731bb47369e06fbae4e55934
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 414, y: 256}
+  - name: boss_bear_layered_Frame_53
+    originalName: 
+    pivot: {x: 0.30973452, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 827
+      y: 102
+      width: 113
+      height: 57
+    spriteID: 9478cbc4487fe4fa79793d71220242a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 827, y: 102}
+  - name: boss_bear_layered_Frame_54
+    originalName: 
+    pivot: {x: 0.2991453, y: -0.89285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 581
+      y: 102
+      width: 117
+      height: 56
+    spriteID: bd52bfb3cd9d84b5ab0cb023c345ce55
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 581, y: 102}
+  - name: boss_bear_layered_Frame_55
+    originalName: 
+    pivot: {x: 0.29411766, y: -0.89285713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 329
+      y: 102
+      width: 119
+      height: 56
+    spriteID: acb5bb4a724ae477c82794111e8fb2eb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 329, y: 102}
+  - name: boss_bear_layered_Frame_56
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 557
+      y: 398
+      width: 72
+      height: 57
+    spriteID: 64cc22c218cec4e439ef0471f617ccad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 557, y: 398}
+  - name: boss_bear_layered_Frame_57
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 637
+      y: 398
+      width: 72
+      height: 57
+    spriteID: 9a8db7dbf9a2044f1a8fe54b78a1112c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 637, y: 398}
+  - name: boss_bear_layered_Frame_58
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 717
+      y: 398
+      width: 72
+      height: 57
+    spriteID: b3155e4d75b15416fb77e69d9fbe5f33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 717, y: 398}
+  - name: boss_bear_layered_Frame_59
+    originalName: 
+    pivot: {x: 0.48611113, y: -0.85964906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 797
+      y: 398
+      width: 72
+      height: 57
+    spriteID: dfd5e842adbc24f69b569d2a9f018f4d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 797, y: 398}
+  - name: boss_bear_layered_Frame_60
+    originalName: 
+    pivot: {x: 0.54237294, y: -0.7619047}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 483
+      y: 476
+      width: 59
+      height: 63
+    spriteID: 0b527cb41bb4b442ea24a00dbae2a05c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 483, y: 476}
+  - name: boss_bear_layered_Frame_22
+    originalName: 
+    pivot: {x: 0.46153852, y: -1.0163934}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 888
+      width: 52
+      height: 61
+    spriteID: 44313cdbdeda1403fbf00a39966a4f76
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 888}
+  - name: boss_bear_layered_Frame_23
+    originalName: 
+    pivot: {x: 0.46153852, y: -1.0333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 186
+      y: 888
+      width: 52
+      height: 60
+    spriteID: cc4d9fef88c6440f48491efb4cfbb79e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 186, y: 888}
+  - name: boss_bear_layered_Frame_24
+    originalName: 
+    pivot: {x: 0.46153852, y: -0.95384616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 815
+      width: 52
+      height: 65
+    spriteID: a19eb58a32b23452ea7aad5c3cab084a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 815}
+  - name: boss_bear_layered_Frame_25
+    originalName: 
+    pivot: {x: 0.46153852, y: -0.95384616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 64
+      y: 815
+      width: 52
+      height: 65
+    spriteID: 3144914db22464fb5a9fa6adb91b3f42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 64, y: 815}
+  - name: boss_bear_layered_Frame_26
+    originalName: 
+    pivot: {x: 0.4142857, y: -1.5454546}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 306
+      y: 888
+      width: 70
+      height: 44
+    spriteID: 463ad3eb1366040129c63a8fb12b9a31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 306, y: 888}
+  - name: boss_bear_layered_Frame_27
+    originalName: 
+    pivot: {x: 0.3934427, y: -2.3214285}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 70
+      y: 747
+      width: 61
+      height: 28
+    spriteID: 1eab5b27ae5554cb38f3b9856dfb5fbe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 70, y: 747}
+  - name: boss_bear_layered_Frame_28
+    originalName: 
+    pivot: {x: 0.48780486, y: -2.346154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 466
+      y: 888
+      width: 82
+      height: 26
+    spriteID: 76eff04a725944cb1beafefd57dd4938
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 466, y: 888}
+  - name: boss_bear_layered_Frame_29
+    originalName: 
+    pivot: {x: 0.48780486, y: -2.346154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 556
+      y: 888
+      width: 82
+      height: 26
+    spriteID: 1ab136c332f2646138cae0a19dd22a84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 556, y: 888}
+  - name: boss_bear_layered_Frame_30
+    originalName: 
+    pivot: {x: 0.48780486, y: -2.44}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 646
+      y: 888
+      width: 82
+      height: 25
+    spriteID: 78a59c97aaacb4342990cda9562a7400
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 646, y: 888}
+  - name: boss_bear_layered_Frame_31
+    originalName: 
+    pivot: {x: 0.48780486, y: -2.44}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 736
+      y: 888
+      width: 82
+      height: 25
+    spriteID: 1b18d8d16cade4c85b2d580e83f498e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 736, y: 888}
+  - name: boss_bear_layered_Frame_32
+    originalName: 
+    pivot: {x: 0.4864865, y: -1.6944444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 384
+      y: 888
+      width: 74
+      height: 36
+    spriteID: 4018f496f8b9a4f5ebeb024f7f85ee90
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 384, y: 888}
+  - name: boss_bear_layered_Frame_33
+    originalName: 
+    pivot: {x: 0.54237294, y: -0.7619047}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 550
+      y: 476
+      width: 59
+      height: 63
+    spriteID: 5d6af028901694da48f1ae583b4aa5f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 550, y: 476}
+  - name: boss_bear_layered_Frame_62
+    originalName: 
+    pivot: {x: 0.3076923, y: -0.95384616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 124
+      y: 815
+      width: 52
+      height: 65
+    spriteID: 7c53e47c16bbf49f0b4bdc9364362153
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 124, y: 815}
+  - name: boss_bear_layered_Frame_63
+    originalName: 
+    pivot: {x: 0.44827583, y: -0.9242425}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 547
+      width: 58
+      height: 66
+    spriteID: a81a98f448343445495dc746a4931227
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 547}
+  - name: boss_bear_layered_Frame_64
+    originalName: 
+    pivot: {x: 0.5076923, y: -0.8142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 948
+      y: 102
+      width: 65
+      height: 70
+    spriteID: 10dce88cf60cf4f06930e9bbc9dcd807
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 948, y: 102}
+  - name: boss_bear_layered_Frame_65
+    originalName: 
+    pivot: {x: 0.5076923, y: -0.8142857}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 398
+      width: 65
+      height: 70
+    spriteID: 478376b4607334406a7573e0185ede65
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 398}
+  - name: boss_bear_layered_Frame_69
+    originalName: 
+    pivot: {x: 0.46153852, y: -1.0163934}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 126
+      y: 888
+      width: 52
+      height: 61
+    spriteID: a028fe56df76645a3830b64c7de47529
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 126, y: 888}
+  - name: boss_bear_layered_Frame_70
+    originalName: 
+    pivot: {x: 0.46153852, y: -1.0333334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 246
+      y: 888
+      width: 52
+      height: 60
+    spriteID: cf10a77bac0a54f099d02f5a8545a8e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 246, y: 888}
+  - name: boss_bear_layered_Frame_71
+    originalName: 
+    pivot: {x: 0.46153852, y: -0.95384616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 815
+      width: 52
+      height: 65
+    spriteID: 4ee4c6a7cd88248b5b23e0aab21bc4f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 815}
+  - name: boss_bear_layered_Frame_72
+    originalName: 
+    pivot: {x: 0.46153852, y: -0.95384616}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 815
+      width: 52
+      height: 65
+    spriteID: dc037c3ec99404fcb8972677397d470e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 244, y: 815}
+  - name: boss_bear_layered_Frame_73
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 684
+      width: 64
+      height: 53
+    spriteID: 84191e11ba9ff44fd81d3446439c8bfd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 684}
+  - name: boss_bear_layered_Frame_74
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 684
+      width: 64
+      height: 53
+    spriteID: 411736fd8bc9e434982bfd2dcf12e50e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 684}
+  - name: boss_bear_layered_Frame_75
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 684
+      width: 64
+      height: 53
+    spriteID: e33691345851b4d5a82821cab84d36c1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 684}
+  - name: boss_bear_layered_Frame_76
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 684
+      width: 64
+      height: 52
+    spriteID: 31b4336f5f8ed43ea837cc0e555e8e6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 684}
+  - name: boss_bear_layered_Frame_77
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 868
+      y: 684
+      width: 64
+      height: 52
+    spriteID: 614feaceccba24c76a73d63736cdc872
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 868, y: 684}
+  - name: boss_bear_layered_Frame_78
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 940
+      y: 684
+      width: 64
+      height: 52
+    spriteID: fd59ef94cb3f64579bf20c38a44f37b8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 940, y: 684}
+  - name: boss_bear_layered_Frame_79
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 684
+      width: 64
+      height: 53
+    spriteID: 591dba46cd6d14f52985de6450904505
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 684}
+  - name: boss_bear_layered_Frame_80
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 684
+      width: 64
+      height: 53
+    spriteID: 539bb1a690755463c929aade777164b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 684}
+  - name: boss_bear_layered_Frame_81
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 684
+      width: 64
+      height: 53
+    spriteID: 16a1a0fbb933f4ffe978dc1ee95a4258
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 684}
+  - name: boss_bear_layered_Frame_82
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 366
+      y: 815
+      width: 64
+      height: 52
+    spriteID: 9973199c021654570a7d1124e7f33635
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 366, y: 815}
+  - name: boss_bear_layered_Frame_83
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 438
+      y: 815
+      width: 64
+      height: 52
+    spriteID: 6403acde6a58c4490836d0e592f55a49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 438, y: 815}
+  - name: boss_bear_layered_Frame_84
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 510
+      y: 815
+      width: 64
+      height: 52
+    spriteID: f8b877e80a51d490a88d6037c1645a03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 510, y: 815}
+  - name: boss_bear_layered_Frame_85
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 637
+      y: 547
+      width: 64
+      height: 55
+    spriteID: 4a4cfeb14973c4da1a9f0c082bb973d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 637, y: 547}
+  - name: boss_bear_layered_Frame_86
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 709
+      y: 547
+      width: 64
+      height: 55
+    spriteID: ef86f6b81c0f2411397485932ccff493
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 709, y: 547}
+  - name: boss_bear_layered_Frame_87
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 781
+      y: 547
+      width: 64
+      height: 55
+    spriteID: a1f46366309c34ccaa06b52fb1f0ea0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 781, y: 547}
+  - name: boss_bear_layered_Frame_88
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 582
+      y: 815
+      width: 64
+      height: 52
+    spriteID: e52f016a27b5b42ada642b3babedaeb9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 582, y: 815}
+  - name: boss_bear_layered_Frame_89
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 654
+      y: 815
+      width: 64
+      height: 52
+    spriteID: c38213f23b03e4bb395010c01c1a6f8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 654, y: 815}
+  - name: boss_bear_layered_Frame_90
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 726
+      y: 815
+      width: 64
+      height: 52
+    spriteID: 27bebbc3e5c0546fb86a81c62f3a72af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 726, y: 815}
+  - name: boss_bear_layered_Frame_91
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 684
+      width: 64
+      height: 53
+    spriteID: 5609f7f638a384cf481e2e047e2dbee3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 684}
+  - name: boss_bear_layered_Frame_92
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 652
+      y: 684
+      width: 64
+      height: 53
+    spriteID: 91aac0b157aeb4319a6d43f15f76e828
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 652, y: 684}
+  - name: boss_bear_layered_Frame_93
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 724
+      y: 684
+      width: 64
+      height: 53
+    spriteID: e98b3ed039a574ed98ed3b8f54349259
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 724, y: 684}
+  - name: boss_bear_layered_Frame_94
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 798
+      y: 815
+      width: 64
+      height: 52
+    spriteID: 16e0f847c342246338a468fadf67c7c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 798, y: 815}
+  - name: boss_bear_layered_Frame_95
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 870
+      y: 815
+      width: 64
+      height: 52
+    spriteID: c5d76e524431943499e2eae2198bed53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 870, y: 815}
+  - name: boss_bear_layered_Frame_96
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 942
+      y: 815
+      width: 64
+      height: 52
+    spriteID: 7c56fa1f70a25437c9e594d0f908fc07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 942, y: 815}
+  - name: boss_bear_layered_Frame_97
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 853
+      y: 547
+      width: 64
+      height: 55
+    spriteID: 5b7b7d03cbdd34ddfbcabd291f8a2adf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 853, y: 547}
+  - name: boss_bear_layered_Frame_98
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 925
+      y: 547
+      width: 64
+      height: 55
+    spriteID: 9453bf4da9e59448fb28acea1effe058
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 925, y: 547}
+  - name: boss_bear_layered_Frame_99
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 621
+      width: 64
+      height: 55
+    spriteID: 7a2c059ab7bed417bb2568517636844d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 621}
+  - name: boss_bear_layered_Frame_100
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 621
+      width: 64
+      height: 55
+    spriteID: d149658b40dc74da8bdb456b93e685ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 621}
+  - name: boss_bear_layered_Frame_101
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 621
+      width: 64
+      height: 55
+    spriteID: 34eb43230573a4800b5cacd0560fc1af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 621}
+  - name: boss_bear_layered_Frame_102
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 621
+      width: 64
+      height: 55
+    spriteID: 6a48ed414dcfe47d29a8fa1780be51da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 621}
+  - name: boss_bear_layered_Frame_103
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 621
+      width: 64
+      height: 55
+    spriteID: 3c5fd0b4f02244b668f57cf0e7e52e14
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 621}
+  - name: boss_bear_layered_Frame_104
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 621
+      width: 64
+      height: 55
+    spriteID: 56497ea52b7da4f4f8d33cd2690237ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 621}
+  - name: boss_bear_layered_Frame_105
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 621
+      width: 64
+      height: 55
+    spriteID: 7c444d281275a49a9909afff28d3b82a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 621}
+  - name: boss_bear_layered_Frame_106
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 621
+      width: 64
+      height: 55
+    spriteID: 6d91d2a2b1457468dbe0f33f2af926bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 621}
+  - name: boss_bear_layered_Frame_107
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 621
+      width: 64
+      height: 55
+    spriteID: 27308a24645bf49d0876839a0c08a38c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 621}
+  - name: boss_bear_layered_Frame_108
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 652
+      y: 621
+      width: 64
+      height: 55
+    spriteID: ed33399ce779642898a17880675e8dbe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 652, y: 621}
+  - name: boss_bear_layered_Frame_109
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 724
+      y: 621
+      width: 64
+      height: 55
+    spriteID: 09120689f4adc4ea7bf858d69587834d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 724, y: 621}
+  - name: boss_bear_layered_Frame_110
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 796
+      y: 621
+      width: 64
+      height: 55
+    spriteID: e6acf439aafdb4d1fb9f584aa73298c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 796, y: 621}
+  - name: boss_bear_layered_Frame_111
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 868
+      y: 621
+      width: 64
+      height: 55
+    spriteID: d0f61c41b02e7485cbf0491e78c1abbe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 868, y: 621}
+  - name: boss_bear_layered_Frame_112
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 940
+      y: 621
+      width: 64
+      height: 55
+    spriteID: 008d55853128441d4876dc50e0cb5d8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 940, y: 621}
+  - name: boss_bear_layered_Frame_113
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 684
+      width: 64
+      height: 55
+    spriteID: 51d98b6db80aa407ea36de01aab427a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 684}
+  - name: boss_bear_layered_Frame_114
+    originalName: 
+    pivot: {x: 0.37500003, y: -1.1454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 684
+      width: 64
+      height: 55
+    spriteID: fc93d642a286a4bd89290a02366c0152
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 684}
+  - name: boss_bear_layered_Frame_115
+    originalName: 
+    pivot: {x: 0.67391306, y: -0.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 92
+      height: 90
+    spriteID: e71455de996bf4872b1e69086baf8a8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: boss_bear_layered_Frame_116
+    originalName: 
+    pivot: {x: 0.67391306, y: -0.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 104
+      y: 4
+      width: 92
+      height: 90
+    spriteID: 35879bd70fa1744d69cea30e57c00280
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 104, y: 4}
+  - name: boss_bear_layered_Frame_117
+    originalName: 
+    pivot: {x: 0.67391306, y: -0.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 204
+      y: 4
+      width: 92
+      height: 90
+    spriteID: 441484718fb0543bf8e7054c855e0320
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 204, y: 4}
+  - name: boss_bear_layered_Frame_118
+    originalName: 
+    pivot: {x: 0.6813187, y: -0.76829267}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 904
+      y: 4
+      width: 91
+      height: 82
+    spriteID: b4994c86f47274047ae36053ca94f8dc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 904, y: 4}
+  - name: boss_bear_layered_Frame_119
+    originalName: 
+    pivot: {x: 0.6813187, y: -0.9130435}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 256
+      width: 91
+      height: 69
+    spriteID: 5c2a960c18f1a45259e218fd48ccbcc0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 256}
+  - name: boss_bear_layered_Frame_120
+    originalName: 
+    pivot: {x: 0.27659574, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 899
+      y: 192
+      width: 94
+      height: 53
+    spriteID: d5d7173e07fe34c529565fd0327e2f9f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 899, y: 192}
+  - name: boss_bear_layered_Frame_121
+    originalName: 
+    pivot: {x: 0.29411763, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 367
+      y: 192
+      width: 102
+      height: 52
+    spriteID: 045f89315bee64f4ebba397b33b28b9d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 367, y: 192}
+  - name: boss_bear_layered_Frame_122
+    originalName: 
+    pivot: {x: 0.33035713, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 527
+      y: 256
+      width: 112
+      height: 52
+    spriteID: 0821383b3a5094b4b836d104feaa70a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 527, y: 256}
+  - name: boss_bear_layered_Frame_123
+    originalName: 
+    pivot: {x: 0.36283183, y: -1.0535713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 192
+      width: 113
+      height: 56
+    spriteID: bcb23027bc3724a6a8d362a15affd532
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 192}
+  - name: boss_bear_layered_Frame_124
+    originalName: 
+    pivot: {x: 0.36619717, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 617
+      y: 476
+      width: 71
+      height: 52
+    spriteID: fdbed81166d614a5b866d44a5084f57f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 617, y: 476}
+  - name: boss_bear_layered_Frame_125
+    originalName: 
+    pivot: {x: 0.32608697, y: -0.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 304
+      y: 4
+      width: 92
+      height: 90
+    spriteID: 876710e0082284bf0868be696beeec71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 304, y: 4}
+  - name: boss_bear_layered_Frame_126
+    originalName: 
+    pivot: {x: 0.32608697, y: -0.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 404
+      y: 4
+      width: 92
+      height: 90
+    spriteID: 26bd41f4545b345fb8acfcafe64dd035
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 404, y: 4}
+  - name: boss_bear_layered_Frame_127
+    originalName: 
+    pivot: {x: 0.32608697, y: -0.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 504
+      y: 4
+      width: 92
+      height: 90
+    spriteID: 8ca431ce99daf421f80f959264bbd459
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 504, y: 4}
+  - name: boss_bear_layered_Frame_128
+    originalName: 
+    pivot: {x: 0.31868133, y: -0.76829267}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 102
+      width: 91
+      height: 82
+    spriteID: 5cc83676b86a84ba0aa5be9038a0d55a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 102}
+  - name: boss_bear_layered_Frame_129
+    originalName: 
+    pivot: {x: 0.31868133, y: -0.9130435}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 256
+      width: 91
+      height: 69
+    spriteID: dcb45b5772aba45e8a99d2ee6a4d7833
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 256}
+  - name: boss_bear_layered_Frame_130
+    originalName: 
+    pivot: {x: 0.7234043, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 111
+      y: 333
+      width: 94
+      height: 53
+    spriteID: f95b9d931c5134fd99c5d4e4417f26f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 111, y: 333}
+  - name: boss_bear_layered_Frame_131
+    originalName: 
+    pivot: {x: 0.7058824, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 477
+      y: 192
+      width: 102
+      height: 52
+    spriteID: 6e1b3293bb0d743c09ac981d089f3b84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 477, y: 192}
+  - name: boss_bear_layered_Frame_132
+    originalName: 
+    pivot: {x: 0.6696428, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 647
+      y: 256
+      width: 112
+      height: 52
+    spriteID: 3dc28660e98b74ff4b97aadb041da619
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 647, y: 256}
+  - name: boss_bear_layered_Frame_133
+    originalName: 
+    pivot: {x: 0.63716817, y: -1.0535713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 125
+      y: 192
+      width: 113
+      height: 56
+    spriteID: 3ae3c066c423f459b9b4cc04cddd8fbe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 125, y: 192}
+  - name: boss_bear_layered_Frame_134
+    originalName: 
+    pivot: {x: 0.63380283, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 696
+      y: 476
+      width: 71
+      height: 52
+    spriteID: 2bf90d4a54d0f4889a7eadbf07923bc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 696, y: 476}
+  - name: boss_bear_layered_Frame_135
+    originalName: 
+    pivot: {x: 0.67391306, y: -0.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 4
+      width: 92
+      height: 90
+    spriteID: a2f32eb84fb614af3a4488a2cab928b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 604, y: 4}
+  - name: boss_bear_layered_Frame_136
+    originalName: 
+    pivot: {x: 0.67391306, y: -0.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 704
+      y: 4
+      width: 92
+      height: 90
+    spriteID: 8b529261b31334f2c8bad23a52b0ab61
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 704, y: 4}
+  - name: boss_bear_layered_Frame_137
+    originalName: 
+    pivot: {x: 0.67391306, y: -0.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 804
+      y: 4
+      width: 92
+      height: 90
+    spriteID: 80d11688b140c43d89bf7123a251b0d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 804, y: 4}
+  - name: boss_bear_layered_Frame_138
+    originalName: 
+    pivot: {x: 0.6813187, y: -0.76829267}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 103
+      y: 102
+      width: 91
+      height: 82
+    spriteID: 11b236f0e1a7a47528f510a758ca4fd9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 103, y: 102}
+  - name: boss_bear_layered_Frame_139
+    originalName: 
+    pivot: {x: 0.6813187, y: -0.9130435}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 202
+      y: 256
+      width: 91
+      height: 69
+    spriteID: fa89921c7fa8744cf9f61b718682c34d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 202, y: 256}
+  - name: boss_bear_layered_Frame_140
+    originalName: 
+    pivot: {x: 0.27659574, y: -1.1886792}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 213
+      y: 333
+      width: 94
+      height: 53
+    spriteID: 04bc2cd626ecd4b8595fb0e62ddbec85
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 213, y: 333}
+  - name: boss_bear_layered_Frame_141
+    originalName: 
+    pivot: {x: 0.29411763, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 587
+      y: 192
+      width: 102
+      height: 52
+    spriteID: 9aebc4441df1448a19027c997c6f2107
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 587, y: 192}
+  - name: boss_bear_layered_Frame_142
+    originalName: 
+    pivot: {x: 0.33035713, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 767
+      y: 256
+      width: 112
+      height: 52
+    spriteID: 198395c2209924eff88889834b039a04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 767, y: 256}
+  - name: boss_bear_layered_Frame_143
+    originalName: 
+    pivot: {x: 0.36283183, y: -1.0535713}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 246
+      y: 192
+      width: 113
+      height: 56
+    spriteID: c8f2e5f3c06e54df4839c144f7ceabcd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 246, y: 192}
+  - name: boss_bear_layered_Frame_144
+    originalName: 
+    pivot: {x: 0.36619717, y: -1.2115384}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 775
+      y: 476
+      width: 71
+      height: 52
+    spriteID: 1810ec4d4f22940fdaff61ecfbe1c53d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 775, y: 476}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1895253239
+    name: boss_bear_layered
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: boss_bear_layered_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 8ff8083bcd60445bc9624817e35f6f02
+    - name: boss_bear_layered_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 6ed36f1b84e0c40f3bd553b401af704d
+    - name: boss_bear_layered_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 63
+        width: 61
+        height: 62
+      spriteId: 4be35ae907749473680c3eee908da1e7
+    - name: boss_bear_layered_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 63
+        width: 61
+        height: 59
+      spriteId: a2550f286fb6345da8818da281d59c4c
+    - name: boss_bear_layered_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 63
+        width: 61
+        height: 58
+      spriteId: 6d343fe800ca840f8b13694bfd699a85
+    - name: boss_bear_layered_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: dd19fecb5d6104d7d8d3b0fb429f0a44
+    - name: boss_bear_layered_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 2f257fda004db4210889f74d0997874e
+    - name: boss_bear_layered_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 0f35f022f2ca74492965a9ba00846174
+    - name: boss_bear_layered_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 63
+        width: 61
+        height: 62
+      spriteId: 69e0c7046eb5a4821818c9c40f2b5ad5
+    - name: boss_bear_layered_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 63
+        width: 61
+        height: 59
+      spriteId: 78e25ad31cc79478b99aae197386cc51
+    - name: boss_bear_layered_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 63
+        width: 61
+        height: 58
+      spriteId: b21e2b5283eee4ce6868252080b4e392
+    - name: boss_bear_layered_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 48
+        width: 63
+        height: 63
+      spriteId: d2a74cfe9a9794a93ac9ac17185ec139
+    - name: boss_bear_layered_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: 79385620a7a7142ebac94aded1f30e59
+    - name: boss_bear_layered_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: cbf9a067fa5b148c6a9c5acd26eab864
+    - name: boss_bear_layered_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: 2b8318b24f1004e65b96a94bd42279eb
+    - name: boss_bear_layered_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 76
+        height: 57
+      spriteId: 1020024cea78e49aaa318c01e6714885
+    - name: boss_bear_layered_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 50
+        width: 84
+        height: 56
+      spriteId: 665e461a5f6a74673820fe72e3180a50
+    - name: boss_bear_layered_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 50
+        width: 93
+        height: 56
+      spriteId: 5dc625126f1d9401cb6fd843cbc8ae19
+    - name: boss_bear_layered_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 99
+        height: 57
+      spriteId: 4b646904afb274601bb8233d19535563
+    - name: boss_bear_layered_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 105
+        height: 57
+      spriteId: f98e68cbe97774d369b9e8efc69389f3
+    - name: boss_bear_layered_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 113
+        height: 57
+      spriteId: 8659f5623b7a04475b8f9eb4ff980b3a
+    - name: boss_bear_layered_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 50
+        width: 117
+        height: 56
+      spriteId: b2c02c1972796450b9390b814cf5b942
+    - name: boss_bear_layered_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 50
+        width: 119
+        height: 56
+      spriteId: 901e5e2dc25424da1a18f7923e68fc01
+    - name: boss_bear_layered_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: 2105563f5e59c42eeb3a18a1d34c0d76
+    - name: boss_bear_layered_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: eca89b2c26ad74dbcaf685c33930705a
+    - name: boss_bear_layered_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: adcd6c6bf60574f459fa703fb81b6329
+    - name: boss_bear_layered_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: 555e9aeaf03044061873f76a3796d6dd
+    - name: boss_bear_layered_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 48
+        width: 59
+        height: 63
+      spriteId: be247defa265048d596a5a4b25e8bc2e
+    - name: boss_bear_layered_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 63
+        width: 61
+        height: 62
+      spriteId: 6e2bb5731308748989c8c7c6b8195100
+    - name: boss_bear_layered_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 63
+        width: 61
+        height: 63
+      spriteId: d1485bcb46bc74f1baeb04d4e2e7141e
+    - name: boss_bear_layered_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 64
+        width: 60
+        height: 63
+      spriteId: 9dda885ba755b4ebc83e6a911a74d07e
+    - name: boss_bear_layered_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 66
+        width: 58
+        height: 60
+      spriteId: a248cd587a2c940849d33dae8a36cd7c
+    - name: boss_bear_layered_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 63
+        width: 54
+        height: 61
+      spriteId: b4b07072e804a4c509eab3cbb88cc97f
+    - name: boss_bear_layered_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 63
+        width: 54
+        height: 62
+      spriteId: b73ca592cde5e40e981230114c4cd7a7
+    - name: boss_bear_layered_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 63
+        width: 58
+        height: 63
+      spriteId: eaadf7ab311ea497aaef12c20857dd2b
+    - name: boss_bear_layered_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 64
+        y: 65
+        width: 60
+        height: 62
+      spriteId: 3fc09a59027274acb996b576533ac243
+    - name: boss_bear_layered_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 48
+        width: 63
+        height: 63
+      spriteId: 9fddadbd5d926408d9ded8f275310dc3
+    - name: boss_bear_layered_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: 8414448348d8d4208ab9c0744165ff9b
+    - name: boss_bear_layered_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: e5253afd74d014112930867d8b50d213
+    - name: boss_bear_layered_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: a21554a6e42114ee4ab2b684cbf7b3e7
+    - name: boss_bear_layered_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 76
+        height: 57
+      spriteId: 086ed9ae40e2b4504a97ff4d49971b90
+    - name: boss_bear_layered_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 50
+        width: 84
+        height: 56
+      spriteId: 3dff3fe8a0c3347ceba92900d7841703
+    - name: boss_bear_layered_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 50
+        width: 93
+        height: 56
+      spriteId: d664b7ca7e54d4b1f9d13f8f63196532
+    - name: boss_bear_layered_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 99
+        height: 57
+      spriteId: 1439c256962234238a9bc62b62e9d3a1
+    - name: boss_bear_layered_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 105
+        height: 57
+      spriteId: 488b4630731bb47369e06fbae4e55934
+    - name: boss_bear_layered_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 113
+        height: 57
+      spriteId: 9478cbc4487fe4fa79793d71220242a0
+    - name: boss_bear_layered_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 50
+        width: 117
+        height: 56
+      spriteId: bd52bfb3cd9d84b5ab0cb023c345ce55
+    - name: boss_bear_layered_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 50
+        width: 119
+        height: 56
+      spriteId: acb5bb4a724ae477c82794111e8fb2eb
+    - name: boss_bear_layered_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: 64cc22c218cec4e439ef0471f617ccad
+    - name: boss_bear_layered_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: 9a8db7dbf9a2044f1a8fe54b78a1112c
+    - name: boss_bear_layered_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: b3155e4d75b15416fb77e69d9fbe5f33
+    - name: boss_bear_layered_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 60
+        y: 49
+        width: 72
+        height: 57
+      spriteId: dfd5e842adbc24f69b569d2a9f018f4d
+    - name: boss_bear_layered_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 48
+        width: 59
+        height: 63
+      spriteId: 0b527cb41bb4b442ea24a00dbae2a05c
+    - name: boss_bear_layered_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 62
+        width: 52
+        height: 61
+      spriteId: 44313cdbdeda1403fbf00a39966a4f76
+    - name: boss_bear_layered_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 62
+        width: 52
+        height: 60
+      spriteId: cc4d9fef88c6440f48491efb4cfbb79e
+    - name: boss_bear_layered_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 62
+        width: 52
+        height: 65
+      spriteId: a19eb58a32b23452ea7aad5c3cab084a
+    - name: boss_bear_layered_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 62
+        width: 52
+        height: 65
+      spriteId: 3144914db22464fb5a9fa6adb91b3f42
+    - name: boss_bear_layered_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 68
+        width: 70
+        height: 44
+      spriteId: 463ad3eb1366040129c63a8fb12b9a31
+    - name: boss_bear_layered_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 65
+        width: 61
+        height: 28
+      spriteId: 1eab5b27ae5554cb38f3b9856dfb5fbe
+    - name: boss_bear_layered_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 55
+        y: 61
+        width: 82
+        height: 26
+      spriteId: 76eff04a725944cb1beafefd57dd4938
+    - name: boss_bear_layered_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 55
+        y: 61
+        width: 82
+        height: 26
+      spriteId: 1ab136c332f2646138cae0a19dd22a84
+    - name: boss_bear_layered_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 55
+        y: 61
+        width: 82
+        height: 25
+      spriteId: 78a59c97aaacb4342990cda9562a7400
+    - name: boss_bear_layered_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 55
+        y: 61
+        width: 82
+        height: 25
+      spriteId: 1b18d8d16cade4c85b2d580e83f498e7
+    - name: boss_bear_layered_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 59
+        y: 61
+        width: 74
+        height: 36
+      spriteId: 4018f496f8b9a4f5ebeb024f7f85ee90
+    - name: boss_bear_layered_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 63
+        y: 48
+        width: 59
+        height: 63
+      spriteId: 5d6af028901694da48f1ae583b4aa5f0
+    - name: boss_bear_layered_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 79
+        y: 62
+        width: 52
+        height: 65
+      spriteId: 7c53e47c16bbf49f0b4bdc9364362153
+    - name: boss_bear_layered_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 61
+        width: 58
+        height: 66
+      spriteId: a81a98f448343445495dc746a4931227
+    - name: boss_bear_layered_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 57
+        width: 65
+        height: 70
+      spriteId: 10dce88cf60cf4f06930e9bbc9dcd807
+    - name: boss_bear_layered_Frame_65
+      frameIndex: 65
+      additiveSortOrder: 0
+      cellRect:
+        x: 62
+        y: 57
+        width: 65
+        height: 70
+      spriteId: 478376b4607334406a7573e0185ede65
+    - name: boss_bear_layered_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 62
+        width: 52
+        height: 61
+      spriteId: a028fe56df76645a3830b64c7de47529
+    - name: boss_bear_layered_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 62
+        width: 52
+        height: 60
+      spriteId: cf10a77bac0a54f099d02f5a8545a8e6
+    - name: boss_bear_layered_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 62
+        width: 52
+        height: 65
+      spriteId: 4ee4c6a7cd88248b5b23e0aab21bc4f4
+    - name: boss_bear_layered_Frame_72
+      frameIndex: 72
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 62
+        width: 52
+        height: 65
+      spriteId: dc037c3ec99404fcb8972677397d470e
+    - name: boss_bear_layered_Frame_73
+      frameIndex: 73
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 53
+      spriteId: 84191e11ba9ff44fd81d3446439c8bfd
+    - name: boss_bear_layered_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 53
+      spriteId: 411736fd8bc9e434982bfd2dcf12e50e
+    - name: boss_bear_layered_Frame_75
+      frameIndex: 75
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 53
+      spriteId: e33691345851b4d5a82821cab84d36c1
+    - name: boss_bear_layered_Frame_76
+      frameIndex: 76
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: 31b4336f5f8ed43ea837cc0e555e8e6a
+    - name: boss_bear_layered_Frame_77
+      frameIndex: 77
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: 614feaceccba24c76a73d63736cdc872
+    - name: boss_bear_layered_Frame_78
+      frameIndex: 78
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: fd59ef94cb3f64579bf20c38a44f37b8
+    - name: boss_bear_layered_Frame_79
+      frameIndex: 79
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 53
+      spriteId: 591dba46cd6d14f52985de6450904505
+    - name: boss_bear_layered_Frame_80
+      frameIndex: 80
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 53
+      spriteId: 539bb1a690755463c929aade777164b5
+    - name: boss_bear_layered_Frame_81
+      frameIndex: 81
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 53
+      spriteId: 16a1a0fbb933f4ffe978dc1ee95a4258
+    - name: boss_bear_layered_Frame_82
+      frameIndex: 82
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: 9973199c021654570a7d1124e7f33635
+    - name: boss_bear_layered_Frame_83
+      frameIndex: 83
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: 6403acde6a58c4490836d0e592f55a49
+    - name: boss_bear_layered_Frame_84
+      frameIndex: 84
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: f8b877e80a51d490a88d6037c1645a03
+    - name: boss_bear_layered_Frame_85
+      frameIndex: 85
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 4a4cfeb14973c4da1a9f0c082bb973d7
+    - name: boss_bear_layered_Frame_86
+      frameIndex: 86
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: ef86f6b81c0f2411397485932ccff493
+    - name: boss_bear_layered_Frame_87
+      frameIndex: 87
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: a1f46366309c34ccaa06b52fb1f0ea0b
+    - name: boss_bear_layered_Frame_88
+      frameIndex: 88
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: e52f016a27b5b42ada642b3babedaeb9
+    - name: boss_bear_layered_Frame_89
+      frameIndex: 89
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: c38213f23b03e4bb395010c01c1a6f8b
+    - name: boss_bear_layered_Frame_90
+      frameIndex: 90
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: 27bebbc3e5c0546fb86a81c62f3a72af
+    - name: boss_bear_layered_Frame_91
+      frameIndex: 91
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 53
+      spriteId: 5609f7f638a384cf481e2e047e2dbee3
+    - name: boss_bear_layered_Frame_92
+      frameIndex: 92
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 53
+      spriteId: 91aac0b157aeb4319a6d43f15f76e828
+    - name: boss_bear_layered_Frame_93
+      frameIndex: 93
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 53
+      spriteId: e98b3ed039a574ed98ed3b8f54349259
+    - name: boss_bear_layered_Frame_94
+      frameIndex: 94
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: 16e0f847c342246338a468fadf67c7c6
+    - name: boss_bear_layered_Frame_95
+      frameIndex: 95
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: c5d76e524431943499e2eae2198bed53
+    - name: boss_bear_layered_Frame_96
+      frameIndex: 96
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 52
+      spriteId: 7c56fa1f70a25437c9e594d0f908fc07
+    - name: boss_bear_layered_Frame_97
+      frameIndex: 97
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 5b7b7d03cbdd34ddfbcabd291f8a2adf
+    - name: boss_bear_layered_Frame_98
+      frameIndex: 98
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 9453bf4da9e59448fb28acea1effe058
+    - name: boss_bear_layered_Frame_99
+      frameIndex: 99
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 7a2c059ab7bed417bb2568517636844d
+    - name: boss_bear_layered_Frame_100
+      frameIndex: 100
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: d149658b40dc74da8bdb456b93e685ae
+    - name: boss_bear_layered_Frame_101
+      frameIndex: 101
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 34eb43230573a4800b5cacd0560fc1af
+    - name: boss_bear_layered_Frame_102
+      frameIndex: 102
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 6a48ed414dcfe47d29a8fa1780be51da
+    - name: boss_bear_layered_Frame_103
+      frameIndex: 103
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 3c5fd0b4f02244b668f57cf0e7e52e14
+    - name: boss_bear_layered_Frame_104
+      frameIndex: 104
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 56497ea52b7da4f4f8d33cd2690237ec
+    - name: boss_bear_layered_Frame_105
+      frameIndex: 105
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 7c444d281275a49a9909afff28d3b82a
+    - name: boss_bear_layered_Frame_106
+      frameIndex: 106
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 6d91d2a2b1457468dbe0f33f2af926bb
+    - name: boss_bear_layered_Frame_107
+      frameIndex: 107
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 27308a24645bf49d0876839a0c08a38c
+    - name: boss_bear_layered_Frame_108
+      frameIndex: 108
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: ed33399ce779642898a17880675e8dbe
+    - name: boss_bear_layered_Frame_109
+      frameIndex: 109
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 09120689f4adc4ea7bf858d69587834d
+    - name: boss_bear_layered_Frame_110
+      frameIndex: 110
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: e6acf439aafdb4d1fb9f584aa73298c4
+    - name: boss_bear_layered_Frame_111
+      frameIndex: 111
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: d0f61c41b02e7485cbf0491e78c1abbe
+    - name: boss_bear_layered_Frame_112
+      frameIndex: 112
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 008d55853128441d4876dc50e0cb5d8b
+    - name: boss_bear_layered_Frame_113
+      frameIndex: 113
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: 51d98b6db80aa407ea36de01aab427a5
+    - name: boss_bear_layered_Frame_114
+      frameIndex: 114
+      additiveSortOrder: 0
+      cellRect:
+        x: 71
+        y: 63
+        width: 64
+        height: 55
+      spriteId: fc93d642a286a4bd89290a02366c0152
+    - name: boss_bear_layered_Frame_115
+      frameIndex: 115
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 63
+        width: 92
+        height: 90
+      spriteId: e71455de996bf4872b1e69086baf8a8e
+    - name: boss_bear_layered_Frame_116
+      frameIndex: 116
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 63
+        width: 92
+        height: 90
+      spriteId: 35879bd70fa1744d69cea30e57c00280
+    - name: boss_bear_layered_Frame_117
+      frameIndex: 117
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 63
+        width: 92
+        height: 90
+      spriteId: 441484718fb0543bf8e7054c855e0320
+    - name: boss_bear_layered_Frame_118
+      frameIndex: 118
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 63
+        width: 91
+        height: 82
+      spriteId: b4994c86f47274047ae36053ca94f8dc
+    - name: boss_bear_layered_Frame_119
+      frameIndex: 119
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 63
+        width: 91
+        height: 69
+      spriteId: 5c2a960c18f1a45259e218fd48ccbcc0
+    - name: boss_bear_layered_Frame_120
+      frameIndex: 120
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 63
+        width: 94
+        height: 53
+      spriteId: d5d7173e07fe34c529565fd0327e2f9f
+    - name: boss_bear_layered_Frame_121
+      frameIndex: 121
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 63
+        width: 102
+        height: 52
+      spriteId: 045f89315bee64f4ebba397b33b28b9d
+    - name: boss_bear_layered_Frame_122
+      frameIndex: 122
+      additiveSortOrder: 0
+      cellRect:
+        x: 58
+        y: 63
+        width: 112
+        height: 52
+      spriteId: 0821383b3a5094b4b836d104feaa70a4
+    - name: boss_bear_layered_Frame_123
+      frameIndex: 123
+      additiveSortOrder: 0
+      cellRect:
+        x: 54
+        y: 59
+        width: 113
+        height: 56
+      spriteId: bcb23027bc3724a6a8d362a15affd532
+    - name: boss_bear_layered_Frame_124
+      frameIndex: 124
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 63
+        width: 71
+        height: 52
+      spriteId: fdbed81166d614a5b866d44a5084f57f
+    - name: boss_bear_layered_Frame_125
+      frameIndex: 125
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 63
+        width: 92
+        height: 90
+      spriteId: 876710e0082284bf0868be696beeec71
+    - name: boss_bear_layered_Frame_126
+      frameIndex: 126
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 63
+        width: 92
+        height: 90
+      spriteId: 26bd41f4545b345fb8acfcafe64dd035
+    - name: boss_bear_layered_Frame_127
+      frameIndex: 127
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 63
+        width: 92
+        height: 90
+      spriteId: 8ca431ce99daf421f80f959264bbd459
+    - name: boss_bear_layered_Frame_128
+      frameIndex: 128
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 63
+        width: 91
+        height: 82
+      spriteId: 5cc83676b86a84ba0aa5be9038a0d55a
+    - name: boss_bear_layered_Frame_129
+      frameIndex: 129
+      additiveSortOrder: 0
+      cellRect:
+        x: 66
+        y: 63
+        width: 91
+        height: 69
+      spriteId: dcb45b5772aba45e8a99d2ee6a4d7833
+    - name: boss_bear_layered_Frame_130
+      frameIndex: 130
+      additiveSortOrder: 0
+      cellRect:
+        x: 27
+        y: 63
+        width: 94
+        height: 53
+      spriteId: f95b9d931c5134fd99c5d4e4417f26f0
+    - name: boss_bear_layered_Frame_131
+      frameIndex: 131
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 63
+        width: 102
+        height: 52
+      spriteId: 6e1b3293bb0d743c09ac981d089f3b84
+    - name: boss_bear_layered_Frame_132
+      frameIndex: 132
+      additiveSortOrder: 0
+      cellRect:
+        x: 20
+        y: 63
+        width: 112
+        height: 52
+      spriteId: 3dc28660e98b74ff4b97aadb041da619
+    - name: boss_bear_layered_Frame_133
+      frameIndex: 133
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 59
+        width: 113
+        height: 56
+      spriteId: 3ae3c066c423f459b9b4cc04cddd8fbe
+    - name: boss_bear_layered_Frame_134
+      frameIndex: 134
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 63
+        width: 71
+        height: 52
+      spriteId: 2bf90d4a54d0f4889a7eadbf07923bc1
+    - name: boss_bear_layered_Frame_135
+      frameIndex: 135
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 63
+        width: 92
+        height: 90
+      spriteId: a2f32eb84fb614af3a4488a2cab928b4
+    - name: boss_bear_layered_Frame_136
+      frameIndex: 136
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 63
+        width: 92
+        height: 90
+      spriteId: 8b529261b31334f2c8bad23a52b0ab61
+    - name: boss_bear_layered_Frame_137
+      frameIndex: 137
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 63
+        width: 92
+        height: 90
+      spriteId: 80d11688b140c43d89bf7123a251b0d3
+    - name: boss_bear_layered_Frame_138
+      frameIndex: 138
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 63
+        width: 91
+        height: 82
+      spriteId: 11b236f0e1a7a47528f510a758ca4fd9
+    - name: boss_bear_layered_Frame_139
+      frameIndex: 139
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 63
+        width: 91
+        height: 69
+      spriteId: fa89921c7fa8744cf9f61b718682c34d
+    - name: boss_bear_layered_Frame_140
+      frameIndex: 140
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 63
+        width: 94
+        height: 53
+      spriteId: 04bc2cd626ecd4b8595fb0e62ddbec85
+    - name: boss_bear_layered_Frame_141
+      frameIndex: 141
+      additiveSortOrder: 0
+      cellRect:
+        x: 65
+        y: 63
+        width: 102
+        height: 52
+      spriteId: 9aebc4441df1448a19027c997c6f2107
+    - name: boss_bear_layered_Frame_142
+      frameIndex: 142
+      additiveSortOrder: 0
+      cellRect:
+        x: 58
+        y: 63
+        width: 112
+        height: 52
+      spriteId: 198395c2209924eff88889834b039a04
+    - name: boss_bear_layered_Frame_143
+      frameIndex: 143
+      additiveSortOrder: 0
+      cellRect:
+        x: 54
+        y: 59
+        width: 113
+        height: 56
+      spriteId: c8f2e5f3c06e54df4839c144f7ceabcd
+    - name: boss_bear_layered_Frame_144
+      frameIndex: 144
+      additiveSortOrder: 0
+      cellRect:
+        x: 69
+        y: 63
+        width: 71
+        height: 52
+      spriteId: 1810ec4d4f22940fdaff61ecfbe1c53d
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 190, y: 190}

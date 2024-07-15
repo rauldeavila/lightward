@@ -1,0 +1,724 @@
+fileFormatVersion: 2
+guid: 4e6dee1ec0e488b48b6a947e0702112d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: skegullas_thrower_Clip
+    second: {fileID: 7400000, guid: 0feaea3816a345e4e9eead2bdc2e065f, type: 2}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 0
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: skegullas_thrower_Frame_0
+    originalName: 
+    pivot: {x: 0.25, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 32
+      width: 24
+      height: 20
+    spriteID: 961fe35140b473341b7b8033e2aef8e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 32}
+  - name: skegullas_thrower_Frame_1
+    originalName: 
+    pivot: {x: 0.20833331, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 60
+      width: 24
+      height: 20
+    spriteID: 9716cb7eb0fe3f44cac95e3a09ae5cba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 60}
+  - name: skegullas_thrower_Frame_2
+    originalName: 
+    pivot: {x: 0.20833331, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 88
+      width: 24
+      height: 20
+    spriteID: fb54f87b8ce9c9b4da35c65747b7f559
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 88}
+  - name: skegullas_thrower_Frame_3
+    originalName: 
+    pivot: {x: 0.5199999, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 25
+      height: 20
+    spriteID: f71b02e33d912714e89a77fe8c77ce86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: skegullas_thrower_Frame_4
+    originalName: 
+    pivot: {x: 0.4736842, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 32
+      width: 19
+      height: 20
+    spriteID: d5901357df9f9a34e8d761d6e79a6171
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 32}
+  - name: skegullas_thrower_Frame_5
+    originalName: 
+    pivot: {x: 0.45000002, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 4
+      width: 20
+      height: 20
+    spriteID: 0abfb5099885e4042b1448b15da56019
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 4}
+  - name: skegullas_thrower_Frame_6
+    originalName: 
+    pivot: {x: 0.42105258, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 60
+      width: 19
+      height: 20
+    spriteID: 419f215472e00964381ebe10c1bee8b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 60}
+  - name: skegullas_thrower_Frame_7
+    originalName: 
+    pivot: {x: 0.42105258, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 88
+      width: 19
+      height: 20
+    spriteID: 3837a9af90dfc0b458c83841a07a552b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 88}
+  - name: skegullas_thrower_Frame_8
+    originalName: 
+    pivot: {x: 0.42105258, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 116
+      width: 19
+      height: 20
+    spriteID: 90db7cbdbfc895e44b20c5850f6bd5a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 116}
+  - name: skegullas_thrower_Frame_9
+    originalName: 
+    pivot: {x: 0.42105258, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 144
+      width: 19
+      height: 20
+    spriteID: 6c197a68df6d2674b9c9815805bb1b2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 144}
+  - name: skegullas_thrower_Frame_10
+    originalName: 
+    pivot: {x: 0.42105258, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 172
+      width: 19
+      height: 20
+    spriteID: 78c7e9c081c3b944db36056e91158be6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 172}
+  - name: skegullas_thrower_Frame_11
+    originalName: 
+    pivot: {x: 0.4705882, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 200
+      width: 17
+      height: 20
+    spriteID: 8afb0960d31b859408701daf9cad6a48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 200}
+  - name: skegullas_thrower_Frame_12
+    originalName: 
+    pivot: {x: 0.4705882, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 37
+      y: 228
+      width: 17
+      height: 20
+    spriteID: 3b04623ff3679e14b974ca02a5503480
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 37, y: 228}
+  - name: skegullas_thrower_Frame_13
+    originalName: 
+    pivot: {x: 0.4705882, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 4
+      width: 17
+      height: 20
+    spriteID: 9c4c62bdd73255e49b99814c89cd0d3e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 4}
+  - name: skegullas_thrower_Frame_14
+    originalName: 
+    pivot: {x: 0.4705882, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 65
+      y: 32
+      width: 17
+      height: 20
+    spriteID: c812fe57e12b5a04bb31fc515fcc30d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 65, y: 32}
+  - name: skegullas_thrower_Frame_15
+    originalName: 
+    pivot: {x: 0.3333333, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 116
+      width: 24
+      height: 20
+    spriteID: 57244ebc5a03b3a49ac2857ecff88bba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 116}
+  - name: skegullas_thrower_Frame_16
+    originalName: 
+    pivot: {x: 0.3333333, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 144
+      width: 24
+      height: 20
+    spriteID: cddfca56a289b38448e4f526088a38ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 144}
+  - name: skegullas_thrower_Frame_17
+    originalName: 
+    pivot: {x: 0.27272728, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 228
+      width: 22
+      height: 20
+    spriteID: 431f9e13a9805e945b0e2311c2e36e6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 228}
+  - name: skegullas_thrower_Frame_18
+    originalName: 
+    pivot: {x: 0.25, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 172
+      width: 24
+      height: 20
+    spriteID: 08abca419045e8a4f8255e65c64ab8e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 172}
+  - name: skegullas_thrower_Frame_19
+    originalName: 
+    pivot: {x: 0.25, y: 0.4}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 200
+      width: 24
+      height: 20
+    spriteID: c8310b6c384c6c0408d91eecf568d3a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 200}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1369569973
+    name: skegullas_thrower
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: skegullas_thrower_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 18
+        y: 16
+        width: 24
+        height: 20
+      spriteId: 961fe35140b473341b7b8033e2aef8e3
+    - name: skegullas_thrower_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 16
+        width: 24
+        height: 20
+      spriteId: 9716cb7eb0fe3f44cac95e3a09ae5cba
+    - name: skegullas_thrower_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 19
+        y: 16
+        width: 24
+        height: 20
+      spriteId: fb54f87b8ce9c9b4da35c65747b7f559
+    - name: skegullas_thrower_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 16
+        width: 25
+        height: 20
+      spriteId: f71b02e33d912714e89a77fe8c77ce86
+    - name: skegullas_thrower_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 15
+        y: 16
+        width: 19
+        height: 20
+      spriteId: d5901357df9f9a34e8d761d6e79a6171
+    - name: skegullas_thrower_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 15
+        y: 16
+        width: 20
+        height: 20
+      spriteId: 0abfb5099885e4042b1448b15da56019
+    - name: skegullas_thrower_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 16
+        width: 19
+        height: 20
+      spriteId: 419f215472e00964381ebe10c1bee8b3
+    - name: skegullas_thrower_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 16
+        width: 19
+        height: 20
+      spriteId: 3837a9af90dfc0b458c83841a07a552b
+    - name: skegullas_thrower_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 16
+        width: 19
+        height: 20
+      spriteId: 90db7cbdbfc895e44b20c5850f6bd5a9
+    - name: skegullas_thrower_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 16
+        width: 19
+        height: 20
+      spriteId: 6c197a68df6d2674b9c9815805bb1b2a
+    - name: skegullas_thrower_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 16
+        width: 19
+        height: 20
+      spriteId: 78c7e9c081c3b944db36056e91158be6
+    - name: skegullas_thrower_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 16
+        width: 17
+        height: 20
+      spriteId: 8afb0960d31b859408701daf9cad6a48
+    - name: skegullas_thrower_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 16
+        width: 17
+        height: 20
+      spriteId: 3b04623ff3679e14b974ca02a5503480
+    - name: skegullas_thrower_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 16
+        width: 17
+        height: 20
+      spriteId: 9c4c62bdd73255e49b99814c89cd0d3e
+    - name: skegullas_thrower_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 16
+        width: 17
+        height: 20
+      spriteId: c812fe57e12b5a04bb31fc515fcc30d3
+    - name: skegullas_thrower_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 16
+        width: 24
+        height: 20
+      spriteId: 57244ebc5a03b3a49ac2857ecff88bba
+    - name: skegullas_thrower_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 16
+        width: 24
+        height: 20
+      spriteId: cddfca56a289b38448e4f526088a38ca
+    - name: skegullas_thrower_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 18
+        y: 16
+        width: 22
+        height: 20
+      spriteId: 431f9e13a9805e945b0e2311c2e36e6a
+    - name: skegullas_thrower_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 18
+        y: 16
+        width: 24
+        height: 20
+      spriteId: 08abca419045e8a4f8255e65c64ab8e8
+    - name: skegullas_thrower_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 18
+        y: 16
+        width: 24
+        height: 20
+      spriteId: c8310b6c384c6c0408d91eecf568d3a3
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 48, y: 48}
