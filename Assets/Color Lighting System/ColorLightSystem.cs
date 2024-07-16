@@ -76,7 +76,7 @@ public class ColorLightSystem : MonoBehaviour
         brightSpriteRenderer.sortingLayerID = parentSpriteRenderer.sortingLayerID;
         brightSpriteRenderer.sortingOrder = parentSpriteRenderer.sortingOrder + 2;
         brightSpriteRenderer.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
-        brightSpriteRenderer.color = lightLayerTintColor != Color.white ? lightLayerTintColor : tintColor; // Set the light layer tint color
+        brightSpriteRenderer.color = lightLayerTintColor; // Set the light layer tint color
 
         // Create the second child object with the original material
         GameObject darkChild = new GameObject("DarkLayer");
@@ -105,7 +105,7 @@ public class ColorLightSystem : MonoBehaviour
         brightTilemapRenderer.sortingLayerID = parentTilemapRenderer.sortingLayerID;
         brightTilemapRenderer.sortingOrder = parentTilemapRenderer.sortingOrder + 2;
         brightTilemapRenderer.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
-        brightTilemap.color = lightLayerTintColor != Color.white ? lightLayerTintColor : tintColor; // Set the light layer tint color
+        brightTilemap.color = lightLayerTintColor;// Set the light layer tint color
 
         // Copy tiles from parent to bright layer
         CopyTilemap(parentTilemapRenderer.GetComponent<Tilemap>(), brightTilemap);
