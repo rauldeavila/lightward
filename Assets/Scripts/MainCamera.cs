@@ -11,7 +11,7 @@ public class MainCamera : MonoBehaviour {
     private GameObject _summitCameraProps;
     private GameObject _darkWorldCameraProps;
 
-    private Color _darkworldBackgroundColor = new Color32(22, 22, 22, 255); // #161616
+    private Color _darkworldBackgroundColor = new Color32(80, 80, 80, 255); // #161616
     private Color _regularBackgroundColor = new Color32(0, 0, 0, 255);
     public static MainCamera Instance;
     void Awake(){
