@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 using Cinemachine;
 using UnityEngine.SceneManagement;
 using Sirenix.OdinInspector;
@@ -465,6 +466,15 @@ private IEnumerator StartLookCoroutine(bool isLookingUp) {
 
         // Return to 0 rotation for gameplay
         transform.rotation = Quaternion.Euler(0, 0, 0);
+    }
+
+    [Button]
+    public void MoveCameraToPlayer()
+    {
+        Debug.Log("Moved camera to HERO");
+        this.transform.position = new Vector3(FindObjectOfType<PlayerController>().transform.position.x, FindObjectOfType<PlayerController>().transform.position.y, this.transform.position.z);
+        EditorUtility.SetDirty(this.transform);
+        SceneView.RepaintAll();
     }
 
 }

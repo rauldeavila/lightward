@@ -3,20 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-[RequireComponent(typeof(LightAnimation))]
 public class DashingLightReceiver : MonoBehaviour {
     Coroutine OneSecondCoroutine = null;
     private bool _canEnterLight = true;
     private bool _once = true;
     public bool Inside = false;
     private DashingLight dashingLight;
-    private LightAnimation _lightAnimation;
     private ParticleSystem _enteringLightParticles;
 
     void OnEnable()
     {        
         dashingLight = FindObjectOfType<DashingLight>();
-        _lightAnimation = GetComponent<LightAnimation>();
         _enteringLightParticles = Resources.Load<ParticleSystem>("Particles/EnteringLightParticles");
     }
 
@@ -35,7 +32,6 @@ public class DashingLightReceiver : MonoBehaviour {
     private void HandleWizInside(){
         Instantiate(_enteringLightParticles, transform.position, Quaternion.identity);
         FMODUnity.RuntimeManager.PlayOneShot("event:/char/wiz/entering_light", transform.position);
-        _lightAnimation.UpdateWizInside(true);
         Inside = true;
         OneSecondCoroutine = StartCoroutine(OneSecond());
     }
@@ -47,7 +43,6 @@ public class DashingLightReceiver : MonoBehaviour {
 
     // CHAMADO NO DASHINGLIGHTTRIGGER.CS
     public void WizOutside(){
-        _lightAnimation.UpdateWizInside(false);
         Inside = false;
         StopAllCoroutines();
         _once = true;

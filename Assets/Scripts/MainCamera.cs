@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class MainCamera : MonoBehaviour {
+
+    public GameObject ColorSpaceObject;
     private Camera cam;
     private GameObject _graveyardCameraProps;
     private GameObject _forestCameraProps;
@@ -20,6 +22,7 @@ public class MainCamera : MonoBehaviour {
         } else { 
             Instance = this; 
         }
+        ColorSpaceObject.SetActive(true);
         _graveyardCameraProps = transform.Find("Graveyard Camera Props")?.gameObject;
         _forestCameraProps = transform.Find("Forest Camera Props")?.gameObject;
         _catacombsCameraProps = transform.Find("Catacombs Camera Props")?.gameObject;
