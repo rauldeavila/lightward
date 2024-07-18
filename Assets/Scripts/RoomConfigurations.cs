@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Events;
 
 public class RoomConfigurations : MonoBehaviour 
 {
@@ -10,6 +11,7 @@ public class RoomConfigurations : MonoBehaviour
     public bool isCurrentRoom = false;
     public RoomData Data;
     public static RoomConfigurations CurrentRoom;
+    public static UnityEvent OnRoomChanged = new UnityEvent();
     private CinemachineConfiner2D confiner;
 
     void Awake()
@@ -69,6 +71,7 @@ public class RoomConfigurations : MonoBehaviour
             }
             isCurrentRoom = true;
             CurrentRoom = this; // Update the static reference to the current room
+            OnRoomChanged.Invoke();
         }
     }
 

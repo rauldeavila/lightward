@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class MainCamera : MonoBehaviour {
 
+public class MainCamera : MonoBehaviour 
+{
     public GameObject ColorSpaceObject;
     private Camera cam;
     private GameObject _graveyardCameraProps;
@@ -16,12 +17,18 @@ public class MainCamera : MonoBehaviour {
     private Color _darkworldBackgroundColor = new Color32(80, 80, 80, 255); // #161616
     private Color _regularBackgroundColor = new Color32(0, 0, 0, 255);
     public static MainCamera Instance;
-    void Awake(){
-        if (Instance != null && Instance != this){ 
+
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        { 
             Destroy(this); 
-        } else { 
+        } 
+        else 
+        { 
             Instance = this; 
         }
+
         ColorSpaceObject.SetActive(true);
         _graveyardCameraProps = transform.Find("Graveyard Camera Props")?.gameObject;
         _forestCameraProps = transform.Find("Forest Camera Props")?.gameObject;
@@ -31,74 +38,114 @@ public class MainCamera : MonoBehaviour {
         _heightsCameraProps = GameObject.Find("Heights Camera Props")?.gameObject; 
         _darkWorldCameraProps = GameObject.Find("Dark World Camera Props")?.gameObject;
     }
+
     void Start()
     {
         cam = GetComponent<Camera>();
-        switch(RoomConfigurations.CurrentRoom.Data.AreaName)
+        RoomConfigurations.OnRoomChanged.AddListener(UpdateCameraProperties);
+        UpdateCameraProperties();
+    }
+
+    void UpdateCameraProperties()
+    {
+        if (RoomConfigurations.CurrentRoom != null)
         {
-            case "Graveyard":
-                GraveyardCam(true);
-                break;
-            case "Catacomb":
-                CatacombsCam(true);
-                break;
-            case "Forest":
-                ForestCam(true);
-                break;
-            case "Autumn":
-                AutumnCam(true);
-                Debug.LogError("Autumn Area Camera Props is floating on the scene!");
-                break;
-            case "Heights":
-                HeightsCam(true);
-                Debug.LogError("Heights Camera Props is floating on the scene!");
-                break;
-            case "Summit":
-                SummitCam(true);
-                Debug.LogError("Summit Camera Props is floating on the scene!");
-                break;
-            case "Darkworld":
-                DarkWorldCam(true);
-                Debug.LogError("Darkworld camera props is floating on the scene");
-                break;
-            default:
-                Debug.LogError("NO AREA NAME ASSIGNED TO ROOM OBJECT. FIX THIS.");
-                break;
+            switch (RoomConfigurations.CurrentRoom.Data.AreaName)
+            {
+                case "Graveyard":
+                    GraveyardCam(true);
+                    break;
+                case "Catacomb":
+                    CatacombsCam(true);
+                    break;
+                case "Forest":
+                    ForestCam(true);
+                    break;
+                case "Autumn":
+                    AutumnCam(true);
+                    Debug.LogError("Autumn Area Camera Props is floating on the scene!");
+                    break;
+                case "Heights":
+                    HeightsCam(true);
+                    Debug.LogError("Heights Camera Props is floating on the scene!");
+                    break;
+                case "Summit":
+                    SummitCam(true);
+                    Debug.LogError("Summit Camera Props is floating on the scene!");
+                    break;
+                case "Darkworld":
+                    DarkWorldCam(true);
+                    Debug.LogError("Darkworld camera props is floating on the scene");
+                    break;
+                default:
+                    Debug.LogError("NO AREA NAME ASSIGNED TO ROOM OBJECT. FIX THIS.");
+                    break;
+            }
         }
     }
-    private void SetAllCameraPropsToFalse(){
 
+    private void SetAllCameraPropsToFalse()
+    {
         cam.backgroundColor = _regularBackgroundColor;
-        // print("Regular");
-        if(_graveyardCameraProps != null){
+
+        if (_graveyardCameraProps != null)
+        {
             _graveyardCameraProps.SetActive(false);
         }
 
-        if(_forestCameraProps != null){
+        if (_forestCameraProps != null)
+        {
             _forestCameraProps.SetActive(false);
+        }
+
+        if (_catacombsCameraProps != null)
+        {
+            _catacombsCameraProps.SetActive(false);
+        }
+
+        if (_autumnCameraProps != null)
+        {
+            _autumnCameraProps.SetActive(false);
+        }
+
+        if (_summitCameraProps != null)
+        {
+            _summitCameraProps.SetActive(false);
+        }
+
+        if (_heightsCameraProps != null)
+        {
+            _heightsCameraProps.SetActive(false);
+        }
+
+        if (_darkWorldCameraProps != null)
+        {
+            _darkWorldCameraProps.SetActive(false);
         }
     }
 
     public void GraveyardCam(bool flag)
     {
         SetAllCameraPropsToFalse();
-        if(_graveyardCameraProps != null)
+        if (_graveyardCameraProps != null)
         {
             _graveyardCameraProps.SetActive(flag);
         }
     }
+
     public void CatacombsCam(bool flag)
     {
         SetAllCameraPropsToFalse();
-        if(_catacombsCameraProps != null)
+        if (_catacombsCameraProps != null)
         {
             _catacombsCameraProps.SetActive(flag);
         }
     }
+
     public void ForestCam(bool flag)
     {
         SetAllCameraPropsToFalse();
-        if(_forestCameraProps != null)
+        if (_forestCameraProps != null)
         {
             _forestCameraProps.SetActive(flag);
         }
@@ -107,7 +154,7 @@ public class MainCamera : MonoBehaviour {
     public void AutumnCam(bool flag)
     {
         SetAllCameraPropsToFalse();
-        if(_autumnCameraProps != null)
+        if (_autumnCameraProps != null)
         {
             _autumnCameraProps.SetActive(flag);
         }
@@ -116,16 +163,16 @@ public class MainCamera : MonoBehaviour {
     public void HeightsCam(bool flag)
     {
         SetAllCameraPropsToFalse();
-        if(_heightsCameraProps != null)
+        if (_heightsCameraProps != null)
         {
             _heightsCameraProps.SetActive(flag);
         }
     }
- 
+
     public void SummitCam(bool flag)
     {
         SetAllCameraPropsToFalse();
-        if(_summitCameraProps != null)
+        if (_summitCameraProps != null)
         {
             _summitCameraProps.SetActive(flag);
         }
@@ -134,12 +181,10 @@ public class MainCamera : MonoBehaviour {
     public void DarkWorldCam(bool flag)
     {
         SetAllCameraPropsToFalse();
-        if(_darkWorldCameraProps != null)
+        if (_darkWorldCameraProps != null)
         {
             _darkWorldCameraProps.SetActive(flag);
         }
-        print("Dark world");
         cam.backgroundColor = _darkworldBackgroundColor;
     }
-
 }

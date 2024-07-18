@@ -47,6 +47,17 @@ public class SFXController : MonoBehaviour {
         }
     }
 
+    void Start()
+    {
+        RoomConfigurations.OnRoomChanged.AddListener(UpdateSFXForRoom);
+    }
+    void UpdateSFXForRoom()
+    {
+        SetWindVolume(RoomConfigurations.CurrentRoom.Data.SFXWindVolume);
+        SetGardensVolume(RoomConfigurations.CurrentRoom.Data.SFXGardensVolume);
+        SetThunderstormVolume(RoomConfigurations.CurrentRoom.Data.SFXThunderstormVolume);
+    }
+
     [Button]
     public void SetWindVolume(float newVolume){
         wind.setVolume(newVolume);
