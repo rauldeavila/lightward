@@ -107712,6 +107712,7 @@ GameObject:
   - component: {fileID: 3069599766497680975}
   - component: {fileID: 3069599766497680960}
   - component: {fileID: 4955870713063851526}
+  - component: {fileID: 1483477487}
   m_Layer: 8
   m_Name: WIZ
   m_TagString: Player
@@ -107850,7 +107851,7 @@ MonoBehaviour:
   JustJumped: 0
   Pogoed: 0
   PogoMultiplier: 0.85
-  JumpForce: 16
+  JumpForce: 18
   MinJumpDuration: 0.15
   MinWallJumpDuration: 1
   JumpDelay: 0.25
@@ -108015,6 +108016,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f36625a1d6f94db2b9029d9799d248a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnMagicChanged:
+    m_PersistentCalls:
+      m_Calls: []
   Cloak: default
   gained_health: {fileID: 11400000, guid: fccc455bfbe3e4d4fbd5beec3df7da58, type: 2}
   lost_health: {fileID: 11400000, guid: 5297883b3f56848f0ab1880c7cc2ae30, type: 2}
@@ -108102,6 +108106,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Wiz: 1
+--- !u!114 &1483477487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3069599766497680962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: decf69c3aa5ed41ef8008545e3b00252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SignalSender: {fileID: 11400000, guid: f1c6369b3815cbf43b0fce1666f0196b, type: 2}
+  SignalEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3069599766497680975}
+        m_TargetAssemblyTypeName: DashController, Assembly-CSharp
+        m_MethodName: DashPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3069599766518394092
 GameObject:
   m_ObjectHideFlags: 0
@@ -138061,35 +138093,6 @@ MonoBehaviour:
   m_ShadowIntensity: 0.75
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
-  m_Vertices:
-  - position: {x: 0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0.70710677, g: 0.70710677, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.9985302, y: 0.9985302, z: 0}
-    color: {r: -0.70710677, g: 0.70710677, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.9985302, y: 0.9985302, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.99853003, y: -0.9985304, z: 0}
-    color: {r: -0.70710665, g: -0.7071069, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: -0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0.70710665, g: -0.7071069, b: 0, a: 0}
-    uv: {x: 0, y: 0}
-  - position: {x: 0.99853003, y: -0.9985304, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  - position: {x: 0, y: 0, z: 0}
-    color: {r: 0, g: 0, b: 0, a: 1}
-    uv: {x: 0, y: 0}
-  m_Triangles: 030001000800020000000100030002000100050003000800040002000300050004000300070005000800060004000500070006000500010007000800000006000700010000000700
   m_LocalBounds:
     m_Center: {x: 0, y: -0.00000011920929, z: 0}
     m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}

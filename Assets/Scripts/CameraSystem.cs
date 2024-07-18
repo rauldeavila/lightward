@@ -68,6 +68,12 @@ public class CameraSystem : MonoBehaviour {
     private float _originalDeadZoneWidth;
     private float _originalDeadZoneHeight;
 
+    private CinemachineFramingTransposer framingTransposer;
+    private float originalLookaheadTime;
+    private float originalLookaheadSmoothing;
+    private float originalXDamping;
+    private float originalYDamping;
+
 
     void Awake(){
         if (Instance != null && Instance != this){ 
@@ -79,6 +85,16 @@ public class CameraSystem : MonoBehaviour {
         _brain = FindObjectOfType<CinemachineBrain>();
         if(_brain != null){
             _brain.m_UpdateMethod = CinemachineBrain.UpdateMethod.FixedUpdate;
+        }
+        // Store original lookahead values
+        if (framingTransposer != null)
+        {
+            originalLookaheadTime = framingTransposer.m_LookaheadTime;
+            originalLookaheadSmoothing = framingTransposer.m_LookaheadSmoothing;
+            originalXDamping = framingTransposer.m_XDamping;
+            originalYDamping = framingTransposer.m_YDamping;
+            _originalDeadZoneWidth = framingTransposer.m_DeadZoneWidth;
+            _originalDeadZoneHeight = framingTransposer.m_DeadZoneHeight;
         }
         cameraOffset = cam.GetComponent<CinemachineCameraOffset>();
         _handheldProfile = Resources.Load<NoiseSettings>("Cinemachine Presets/Handheld");
@@ -129,6 +145,61 @@ public class CameraSystem : MonoBehaviour {
 
     }
 
+    // Method to disable lookahead
+    private void DisableCameraSmoothingAndDamping()
+    {
+        if (framingTransposer != null)
+        {
+            framingTransposer.m_LookaheadTime = 0;
+            framingTransposer.m_LookaheadSmoothing = 0;
+            framingTransposer.m_XDamping = 0;
+            framingTransposer.m_YDamping = 0;
+            framingTransposer.m_DeadZoneWidth = 0;
+            framingTransposer.m_DeadZoneHeight = 0;
+        }
+    }
+
+    // Method to restore camera smoothing, damping, and deadzone
+    private void RestoreCameraSmoothingAndDamping()
+    {
+        if (framingTransposer != null)
+        {
+            framingTransposer.m_LookaheadTime = originalLookaheadTime;
+            framingTransposer.m_LookaheadSmoothing = originalLookaheadSmoothing;
+            framingTransposer.m_XDamping = originalXDamping;
+            framingTransposer.m_YDamping = originalYDamping;
+            framingTransposer.m_DeadZoneWidth = _originalDeadZoneWidth;
+            framingTransposer.m_DeadZoneHeight = _originalDeadZoneHeight;
+        }
+    }
+
+    public IEnumerator SmoothTransitionToNewConfiner(Collider2D newRoomCollider, CinemachineConfiner2D confiner, float duration = 0.1f) // Super fast transition
+    {
+        DisableCameraSmoothingAndDamping();
+
+        float timeElapsed = 0f;
+        Vector3 startPosition = cam.transform.position;
+        Vector3 targetPosition = Hero.position;
+        targetPosition.z = startPosition.z; // Keep the same Z value
+
+        while (timeElapsed < duration)
+        {
+            timeElapsed += Time.deltaTime;
+            float t = timeElapsed / duration;
+            cam.transform.position = Vector3.Lerp(startPosition, targetPosition, EaseInOutQuad(t));
+            yield return null;
+        }
+
+        confiner.m_BoundingShape2D = newRoomCollider;
+        cam.transform.position = targetPosition; // Ensure final position is set
+
+        RestoreCameraSmoothingAndDamping();
+    }
+
+    private float EaseInOutQuad(float t)
+    {
+        return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+    }
 
 private IEnumerator MoveToWiz() {
     float timeElapsed = 0f;

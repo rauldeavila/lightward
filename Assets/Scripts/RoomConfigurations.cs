@@ -13,6 +13,7 @@ public class RoomConfigurations : MonoBehaviour
     public static RoomConfigurations CurrentRoom;
     public static UnityEvent OnRoomChanged = new UnityEvent();
     private CinemachineConfiner2D confiner;
+    private CameraSystem cameraSystem;
 
     void Awake()
     {
@@ -38,6 +39,7 @@ public class RoomConfigurations : MonoBehaviour
         }
 
         confiner = FindObjectOfType<CinemachineConfiner2D>();
+        cameraSystem = FindObjectOfType<CameraSystem>();
         if (confiner == null)
         {
             Debug.LogError("CinemachineConfiner2D not found in the scene.");
@@ -82,8 +84,7 @@ public class RoomConfigurations : MonoBehaviour
         {
             if (newRoomCollider is PolygonCollider2D || newRoomCollider is CompositeCollider2D)
             {
-                confiner.m_BoundingShape2D = newRoomCollider;
-                // Debug.Log("Switched to new room confiner: " + newRoomCollider.name);
+                StartCoroutine(cameraSystem.SmoothTransitionToNewConfiner(newRoomCollider, confiner));
             }
             else
             {
