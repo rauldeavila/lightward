@@ -23,7 +23,7 @@ public class ColorLightSystem : MonoBehaviour
         Material colorDarkMaterial = Resources.Load<Material>("ColorDark-LVL23"); // DEFAULT
         Material colorDarkMaterialDarkRoom = Resources.Load<Material>("ColorDark-LVL01");
 
-        switch (RoomConfigurations.Instance.Data.LightIntensity)
+        switch (RoomConfigurations.CurrentRoom.Data.LightIntensity)
         {
             case 0:
                 colorLightMaterial = colorLightMaterialDarkRoom;

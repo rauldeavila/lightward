@@ -11,7 +11,7 @@ public class ThunderstormManager : MonoBehaviour
 
 
     void Start(){
-        if(RoomConfigurations.Instance.Data.ThunderstormEffect)
+        if(RoomConfigurations.CurrentRoom.Data.ThunderstormEffect)
         {
             ScheduleLightning(0.5f, 2f);
         }

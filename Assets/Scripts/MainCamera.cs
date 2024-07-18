@@ -34,7 +34,7 @@ public class MainCamera : MonoBehaviour {
     void Start()
     {
         cam = GetComponent<Camera>();
-        switch(RoomConfigurations.Instance.Data.AreaName)
+        switch(RoomConfigurations.CurrentRoom.Data.AreaName)
         {
             case "Graveyard":
                 GraveyardCam(true);

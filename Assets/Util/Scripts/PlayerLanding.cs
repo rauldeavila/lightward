@@ -52,7 +52,7 @@ public class PlayerLanding : MonoBehaviour {
 
     public void SetParticles(string particles){
         if(particles == "grass" && landingParticles != grassParticles){
-            if(RoomConfigurations.Instance.GetProfileName() == "Autumn")
+            if(RoomConfigurations.CurrentRoom.GetProfileName() == "Autumn")
             {
                 landingParticles = autumnParticles;
             }

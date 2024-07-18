@@ -346,7 +346,7 @@ public class Jump : MonoBehaviour {
         Instantiate(JumpParticles, this.transform.position, Quaternion.identity);
         if(PlayerState.Instance.OnGrass)
         {
-            if(RoomConfigurations.Instance.GetProfileName() == "Autumn")
+            if(RoomConfigurations.CurrentRoom.GetProfileName() == "Autumn")
             {
                 Instantiate(JumpAutumn, this.transform.position, Quaternion.identity);
             }

@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEditor;
+using System.Linq;
 
 public class DebugToolsWindow : EditorWindow
 {
     private Texture2D heroIcon;
     private Texture2D camToHero;
     private Texture2D cam;
+    private Vector2 scrollPosition;
+    private DebugTools debugTools;
 
     [MenuItem("Window/Debug Tools")]
     public static void ShowWindow()
@@ -19,6 +22,13 @@ public class DebugToolsWindow : EditorWindow
         heroIcon = Resources.Load<Texture2D>("Debug/hero_icon");
         camToHero = Resources.Load<Texture2D>("Debug/cam_to_hero");
         cam = Resources.Load<Texture2D>("Debug/cam");
+
+        // Find the DebugTools component in the scene
+        debugTools = FindObjectOfType<DebugTools>();
+        if (debugTools == null)
+        {
+            Debug.LogWarning("DebugTools component not found in the scene.");
+        }
     }
 
     private void OnGUI()
@@ -41,6 +51,12 @@ public class DebugToolsWindow : EditorWindow
         {
             MoveSelectedObjectToCenter();
         }
+
+        GUILayout.Space(20); // Add some space before the asset list
+        GUILayout.Label("Prefabs", EditorStyles.boldLabel);
+        scrollPosition = GUILayout.BeginScrollView(scrollPosition, GUILayout.Height(200));
+        DisplayAssetsFromFolder("Assets/Resources/_prefabs");
+        GUILayout.EndScrollView();
     }
 
     private GUIStyle CreateButtonStyle(string hexColor)
@@ -131,6 +147,43 @@ public class DebugToolsWindow : EditorWindow
         else
         {
             Debug.LogWarning("DebugTools component not found in the scene.");
+        }
+    }
+
+    private void DisplayAssetsFromFolder(string folderPath)
+    {
+        string[] assetGUIDs = AssetDatabase.FindAssets("", new[] { folderPath });
+        foreach (string guid in assetGUIDs)
+        {
+            string assetPath = AssetDatabase.GUIDToAssetPath(guid);
+            Object asset = AssetDatabase.LoadAssetAtPath<Object>(assetPath);
+
+            if (asset != null)
+            {
+                EditorGUILayout.BeginHorizontal();
+                EditorGUILayout.ObjectField(asset, typeof(Object), false);
+                if (GUILayout.Button("Add to Scene"))
+                {
+                    AddAssetToScene(assetPath);
+                }
+                EditorGUILayout.EndHorizontal();
+            }
+        }
+    }
+
+    private void AddAssetToScene(string assetPath)
+    {
+        Object asset = AssetDatabase.LoadAssetAtPath<Object>(assetPath);
+        if (asset is GameObject)
+        {
+            GameObject instance = (GameObject)PrefabUtility.InstantiatePrefab(asset);
+            Undo.RegisterCreatedObjectUndo(instance, "Add " + instance.name);
+            
+            // Move the newly instantiated object to the center of the Scene View
+            if (debugTools != null)
+            {
+                debugTools.MoveToSceneViewCenter(instance);
+            }
         }
     }
 }

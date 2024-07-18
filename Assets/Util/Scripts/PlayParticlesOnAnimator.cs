@@ -156,7 +156,7 @@ public class PlayParticlesOnAnimator : MonoBehaviour {
     public void PlayWalkParticles(){
         if(!_state.OnWater){
             if(grassParticles){
-                if(RoomConfigurations.Instance.GetProfileName() == "Autumn")
+                if(RoomConfigurations.CurrentRoom.GetProfileName() == "Autumn")
                 {
                     autumnWalk.Play();
                 }

@@ -21,7 +21,7 @@ public class WizLight : MonoBehaviour
 
     void Start()
     {
-        SetWizLightLevelFromOneToThree(RoomConfigurations.Instance.Data.LightIntensity);
+        SetWizLightLevelFromOneToThree(RoomConfigurations.CurrentRoom.Data.LightIntensity);
         // Get light level of current room from room script and set light up accordingly.
     }
 

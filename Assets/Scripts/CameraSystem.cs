@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEditor;
 using Cinemachine;
 using UnityEngine.SceneManagement;
 using Sirenix.OdinInspector;
+using Pathfinding;
 public class CameraSystem : MonoBehaviour {
 
     #region unity
@@ -14,7 +16,8 @@ public class CameraSystem : MonoBehaviour {
     // 3 = 240x135 - STRONG = FOV: 4.21875
     // 4 = 192x108 - STRONGEST = FOV: 
 
-
+    public Transform Hero;
+    public PolygonCollider2D GenericCamBoundariesForAwake;
     public float FixedXPosition = 0f;
     public float FixedYPosition = 0f;
 
@@ -59,10 +62,8 @@ public class CameraSystem : MonoBehaviour {
     private Coroutine positionCoroutine;
     private CinemachineCameraOffset cameraOffset;
 
-
     private Transform temporaryTarget;
 
-    private Transform _wizTransform;
 
     private float _originalDeadZoneWidth;
     private float _originalDeadZoneHeight;
@@ -88,10 +89,9 @@ public class CameraSystem : MonoBehaviour {
         _shakeHard = this.transform.Find("ShakeHard").gameObject;
         _earthquake = this.transform.Find("Earthquake").gameObject;
         if(SceneManager.GetActiveScene().name != "intro"){
-            _wizTransform = FindObjectOfType<PlayerController>().transform;
-            cam. m_Follow = _wizTransform;
-            cam.GetComponent<CinemachineConfiner2D>(). m_BoundingShape2D = FindObjectOfType<CamBoundaries>().GetComponent<PolygonCollider2D>();
-            _originalDeadZoneWidth = cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneWidth;
+            cam. m_Follow = Hero;
+            cam.GetComponent<CinemachineConfiner2D>(). m_BoundingShape2D = GenericCamBoundariesForAwake;
+            cam.GetComponent<CinemachineConfiner2D>(). m_BoundingShape2D = FindObjectsOfType<RoomConfigurations>().FirstOrDefault(room => room.isCurrentRoom).GetComponent<PolygonCollider2D>();
             _originalDeadZoneHeight = cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneHeight;
         }
     }
@@ -142,12 +142,12 @@ private IEnumerator MoveToWiz() {
     while (true) {
         timeElapsed += Time.deltaTime;
         float t = timeElapsed / 2;
-        Vector3 targetPosition = new Vector3(_wizTransform.position.x, _wizTransform.position.y, fixedZ);
+        Vector3 targetPosition = new Vector3(Hero.position.x, Hero.position.y, fixedZ);
         cam.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
         startPosition = cam.transform.position; // Update the start position to the current position
         
         Camera actualCamera = CinemachineCore.Instance.GetActiveBrain(0).OutputCamera;
-        Vector3 wizScreenPos = actualCamera.WorldToScreenPoint(_wizTransform.position);
+        Vector3 wizScreenPos = actualCamera.WorldToScreenPoint(Hero.position);
 
         Vector3 camCenterScreenPos = new Vector3(Screen.width / 2, Screen.height / 2, 0);
         Vector3 delta = wizScreenPos - camCenterScreenPos;
