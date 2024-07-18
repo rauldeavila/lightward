@@ -93,8 +93,8 @@ public class CameraSystem : MonoBehaviour {
             originalLookaheadSmoothing = framingTransposer.m_LookaheadSmoothing;
             originalXDamping = framingTransposer.m_XDamping;
             originalYDamping = framingTransposer.m_YDamping;
-            _originalDeadZoneWidth = framingTransposer.m_DeadZoneWidth;
-            _originalDeadZoneHeight = framingTransposer.m_DeadZoneHeight;
+            _originalDeadZoneWidth = cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneWidth;
+            _originalDeadZoneHeight = cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneHeight;
         }
         cameraOffset = cam.GetComponent<CinemachineCameraOffset>();
         _handheldProfile = Resources.Load<NoiseSettings>("Cinemachine Presets/Handheld");
@@ -108,6 +108,7 @@ public class CameraSystem : MonoBehaviour {
             cam. m_Follow = Hero;
             cam.GetComponent<CinemachineConfiner2D>(). m_BoundingShape2D = GenericCamBoundariesForAwake;
             cam.GetComponent<CinemachineConfiner2D>(). m_BoundingShape2D = FindObjectsOfType<RoomConfigurations>().FirstOrDefault(room => room.isCurrentRoom).GetComponent<PolygonCollider2D>();
+            _originalDeadZoneWidth = cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneWidth;
             _originalDeadZoneHeight = cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneHeight;
         }
     }
@@ -175,7 +176,7 @@ public class CameraSystem : MonoBehaviour {
 
     public IEnumerator SmoothTransitionToNewConfiner(Collider2D newRoomCollider, CinemachineConfiner2D confiner, float duration = 0.1f) // Super fast transition
     {
-        DisableCameraSmoothingAndDamping();
+        // DisableCameraSmoothingAndDamping();
 
         float timeElapsed = 0f;
         Vector3 startPosition = cam.transform.position;
@@ -193,7 +194,7 @@ public class CameraSystem : MonoBehaviour {
         confiner.m_BoundingShape2D = newRoomCollider;
         cam.transform.position = targetPosition; // Ensure final position is set
 
-        RestoreCameraSmoothingAndDamping();
+        // RestoreCameraSmoothingAndDamping();
     }
 
     private float EaseInOutQuad(float t)
@@ -201,31 +202,31 @@ public class CameraSystem : MonoBehaviour {
         return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
     }
 
-private IEnumerator MoveToWiz() {
-    float timeElapsed = 0f;
-    Vector3 startPosition = cam.transform.position;
-    float fixedZ = cam.transform.position.z; // Store the fixed Z value
+    private IEnumerator MoveToWiz() {
+        float timeElapsed = 0f;
+        Vector3 startPosition = cam.transform.position;
+        float fixedZ = cam.transform.position.z; // Store the fixed Z value
 
-    CinemachineFramingTransposer framingTransposer = cam.GetCinemachineComponent<CinemachineFramingTransposer>();
-    float deadZoneWidth = framingTransposer.m_DeadZoneWidth;
-    float deadZoneHeight = framingTransposer.m_DeadZoneHeight;
+        CinemachineFramingTransposer framingTransposer = cam.GetCinemachineComponent<CinemachineFramingTransposer>();
+        float deadZoneWidth = framingTransposer.m_DeadZoneWidth;
+        float deadZoneHeight = framingTransposer.m_DeadZoneHeight;
 
-    while (true) {
-        timeElapsed += Time.deltaTime;
-        float t = timeElapsed / 2;
-        Vector3 targetPosition = new Vector3(Hero.position.x, Hero.position.y, fixedZ);
-        cam.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
-        startPosition = cam.transform.position; // Update the start position to the current position
-        
-        Camera actualCamera = CinemachineCore.Instance.GetActiveBrain(0).OutputCamera;
-        Vector3 wizScreenPos = actualCamera.WorldToScreenPoint(Hero.position);
+        while (true) {
+            timeElapsed += Time.deltaTime;
+            float t = timeElapsed / 2;
+            Vector3 targetPosition = new Vector3(Hero.position.x, Hero.position.y, fixedZ);
+            cam.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+            startPosition = cam.transform.position; // Update the start position to the current position
+            
+            Camera actualCamera = CinemachineCore.Instance.GetActiveBrain(0).OutputCamera;
+            Vector3 wizScreenPos = actualCamera.WorldToScreenPoint(Hero.position);
 
-        Vector3 camCenterScreenPos = new Vector3(Screen.width / 2, Screen.height / 2, 0);
-        Vector3 delta = wizScreenPos - camCenterScreenPos;
+            Vector3 camCenterScreenPos = new Vector3(Screen.width / 2, Screen.height / 2, 0);
+            Vector3 delta = wizScreenPos - camCenterScreenPos;
 
-        yield return null;
+            yield return null;
+        }
     }
-}
 
     public void SwitchToWizCam() {
         StartCoroutine(MoveToWiz());
