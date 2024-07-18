@@ -32,9 +32,14 @@ public class DebugToolsWindow : EditorWindow
         {
             SelectCamera();
         }
-        if (GUILayout.Button(new GUIContent("CAM->Hero", camToHero), CreateButtonStyle("0000FF")))
+        if (GUILayout.Button(new GUIContent("CAM->Hero", camToHero), CreateButtonStyle("08ACB5")))
         {
             MoveCameraToPlayer();
+        }
+        GUILayout.Space(10); // Add some space between the buttons
+        if (GUILayout.Button("Center Selected", CreateButtonStyle("E7510A")))
+        {
+            MoveSelectedObjectToCenter();
         }
     }
 
@@ -114,5 +119,18 @@ public class DebugToolsWindow : EditorWindow
         result.SetPixels(pix);
         result.Apply();
         return result;
+    }
+
+    private void MoveSelectedObjectToCenter()
+    {
+        DebugTools debug = FindObjectOfType<DebugTools>();
+        if (debug != null)
+        {
+            debug.MoveSelectedObjectToCenter();
+        }
+        else
+        {
+            Debug.LogWarning("DebugTools component not found in the scene.");
+        }
     }
 }
