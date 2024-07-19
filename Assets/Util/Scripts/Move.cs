@@ -49,11 +49,6 @@ public class Move : MonoBehaviour
         if(controller.State.Dead){
             StopPlayer();
         }
-
-        if (Keyboard.current.f5Key.wasPressedThisFrame) 
-        {
-            NoClip();
-        }
     }
 
     private void FixedUpdate(){
@@ -279,10 +274,12 @@ public class Move : MonoBehaviour
         IsNoClipActive = !IsNoClipActive;
         if (IsNoClipActive) 
         {
+            Debug.Log("<color=#4D6F44>NoClip is on</color>.");
             PlayerController.Instance.SetGravityToZero();
             noClipCol1.isTrigger = true;
             noClipCol2.isTrigger = true;
         } else {
+            Debug.Log("<color=#E85109>NoClip is off</color>.");
             PlayerController.Instance.SetGravityToOne();
             noClipCol1.isTrigger = false;
             noClipCol2.isTrigger = false;

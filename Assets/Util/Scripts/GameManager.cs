@@ -167,6 +167,7 @@ public class GameManager : MonoBehaviour {
     [Button("Instant Shadow Walk")]
     public void InstantShadowWalk()
     {
+        Debug.Log("<color=#0E9C9A>Switching realms. Fasten your seatbelt.</color>");
         if(GameState.Instance.Darkworld)
         {   
             GameState.Instance.Darkworld = false;

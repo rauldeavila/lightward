@@ -52,11 +52,11 @@ public class DebugToolsWindow : EditorWindow
             MoveSelectedObjectToCenter();
         }
         // GUILayout.Space(10); // Add some space between the buttons
-        if (GUILayout.Button("Switch Realms", CreateButtonStyle("DA70D6")))
+        if (GUILayout.Button("Switch Realms ↑↓↑↓SELECT", CreateButtonStyle("0E9C9A")))
         {
             SwitchRealms();
         }
-        if (GUILayout.Button("No Clip", CreateButtonStyle("FFD700")))
+        if (GUILayout.Button("No Clip ←→↑↓SELECT", CreateButtonStyle("FFD700")))
         {
             ToggleNoClip();
         }
