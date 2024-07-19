@@ -33,21 +33,49 @@ public class OnTrigger : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D collider)
     {
-        if(IgnoreWhenSitting)
+        if(!Move.Instance.IsNoClipActive)
         {
-            if(PlayerController.Instance.AnimatorIsPlaying("sit") || PlayerController.Instance.AnimatorIsPlaying("sitting"))
+            if(IgnoreWhenSitting)
             {
-                gameObject.SetActive(false);
-                return;
+                if(PlayerController.Instance.AnimatorIsPlaying("sit") || PlayerController.Instance.AnimatorIsPlaying("sitting"))
+                {
+                    gameObject.SetActive(false);
+                    return;
+                }
+            }
+
+            if(_onceFlag == false)
+            {
+                if(ShowOnlyWhileSitting && (PlayerController.Instance.AnimatorIsPlaying("sit")))
+                {
+                    WizEnteredTriggerEvent.Invoke();
+                    _onceFlag = true;
+                    if(DisableAfterTrigger){
+                        _boxCol.enabled = false;
+                        Invoke("EnableCol", TimeBeforeReenabling);
+                    }
+                    if(DestroyAfterTrigger){
+                        gameObject.SetActive(false);
+                    }
+                }
             }
         }
+    }
 
-        if(_onceFlag == false)
+    private void OnTriggerEnter2D(Collider2D collider) {
+        if(!Move.Instance.IsNoClipActive)
         {
-            if(ShowOnlyWhileSitting && (PlayerController.Instance.AnimatorIsPlaying("sit")))
+            if(collider.CompareTag("WizHitBox") || collider.CompareTag("WizRoll"))
             {
-                WizEnteredTriggerEvent.Invoke();
-                _onceFlag = true;
+                if(ShowOnlyWhileSitting && (!PlayerController.Instance.AnimatorIsPlaying("sit") || !PlayerController.Instance.AnimatorIsPlaying("sitting")))
+                {
+                    return;
+                }
+                if(DisplayMessageFromHandleInputOnEnter)
+                {
+                    DisplayButtonOnScreen.Instance.ShowButtonPrompt(GetComponent<HandleInput>().ActionName, GetComponent<HandleInput>().Message);
+                }
+                WizEnteredTriggerEvent?.Invoke();
                 if(DisableAfterTrigger){
                     _boxCol.enabled = false;
                     Invoke("EnableCol", TimeBeforeReenabling);
@@ -56,42 +84,22 @@ public class OnTrigger : MonoBehaviour {
                     gameObject.SetActive(false);
                 }
             }
-
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collider) {
-        if(collider.CompareTag("WizHitBox") || collider.CompareTag("WizRoll"))
-        {
-            if(ShowOnlyWhileSitting && (!PlayerController.Instance.AnimatorIsPlaying("sit") || !PlayerController.Instance.AnimatorIsPlaying("sitting")))
-            {
-                return;
-            }
-            if(DisplayMessageFromHandleInputOnEnter)
-            {
-                DisplayButtonOnScreen.Instance.ShowButtonPrompt(GetComponent<HandleInput>().ActionName, GetComponent<HandleInput>().Message);
-            }
-            WizEnteredTriggerEvent?.Invoke();
-            if(DisableAfterTrigger){
-                _boxCol.enabled = false;
-                Invoke("EnableCol", TimeBeforeReenabling);
-            }
-            if(DestroyAfterTrigger){
-                gameObject.SetActive(false);
-            }
         }
     }
     private void OnTriggerExit2D(Collider2D collider) {
-        if(collider.CompareTag("WizHitBox") || collider.CompareTag("WizRoll")){
-            if(DisplayMessageFromHandleInputOnEnter)
-            {
-                DisplayButtonOnScreen.Instance.HideButtonPrompt();
-            }
-            if(WizExitedTriggerEvent != null){
-                WizExitedTriggerEvent.Invoke();
-                _onceFlag = false;
-                if(DestroyAfterTrigger){
-                    gameObject.SetActive(false);
+        if(!Move.Instance.IsNoClipActive)
+        {
+            if(collider.CompareTag("WizHitBox") || collider.CompareTag("WizRoll")){
+                if(DisplayMessageFromHandleInputOnEnter)
+                {
+                    DisplayButtonOnScreen.Instance.HideButtonPrompt();
+                }
+                if(WizExitedTriggerEvent != null){
+                    WizExitedTriggerEvent.Invoke();
+                    _onceFlag = false;
+                    if(DestroyAfterTrigger){
+                        gameObject.SetActive(false);
+                    }
                 }
             }
         }

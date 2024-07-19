@@ -52,14 +52,22 @@ public class WizLight : MonoBehaviour
     void Start()
     {
         RoomConfigurations.OnRoomChanged.AddListener(UpdateLightLevel);
+        GameManager.Instance.OnEnterDarkworld.AddListener(UpdateLightLevel);
         UpdateLightLevel();
     }
 
     void UpdateLightLevel()
     {
-        if (RoomConfigurations.CurrentRoom != null)
+        if(GameState.Instance.Darkworld)
         {
-            SetWizLightLevel(RoomConfigurations.CurrentRoom.Data.LightIntensity);
+            SetWizLightLevel(0);
+        }
+        else
+        {
+            if (RoomConfigurations.CurrentRoom != null)
+            {
+                SetWizLightLevel(RoomConfigurations.CurrentRoom.Data.LightIntensity);
+            }
         }
     }
 

@@ -46,10 +46,19 @@ public class DebugToolsWindow : EditorWindow
         {
             MoveCameraToPlayer();
         }
-        GUILayout.Space(10); // Add some space between the buttons
+        // GUILayout.Space(10); // Add some space between the buttons
         if (GUILayout.Button("Center Selected", CreateButtonStyle("E7510A")))
         {
             MoveSelectedObjectToCenter();
+        }
+        // GUILayout.Space(10); // Add some space between the buttons
+        if (GUILayout.Button("Switch Realms", CreateButtonStyle("DA70D6")))
+        {
+            SwitchRealms();
+        }
+        if (GUILayout.Button("No Clip", CreateButtonStyle("FFD700")))
+        {
+            ToggleNoClip();
         }
 
         GUILayout.Space(20); // Add some space before the asset list
@@ -114,14 +123,25 @@ public class DebugToolsWindow : EditorWindow
     private void MoveCameraToPlayer()
     {
         CameraSystem cameraSystem = FindObjectOfType<CameraSystem>();
-        if (cameraSystem != null)
-        {
-            cameraSystem.MoveCameraToPlayer();
-        }
-        else
-        {
-            Debug.LogWarning("CameraSystem component not found in the scene.");
-        }
+        cameraSystem.MoveCameraToPlayer();
+    }
+
+    private void MoveSelectedObjectToCenter()
+    {
+        DebugTools debug = FindObjectOfType<DebugTools>();
+        debug.MoveSelectedObjectToCenter();
+
+    }
+
+    private void SwitchRealms()
+    {
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        gameManager.InstantShadowWalk();
+    }
+    private void ToggleNoClip()
+    {
+        Move moveScript = FindObjectOfType<Move>();
+        moveScript.NoClip();
     }
 
     private Texture2D MakeTex(int width, int height, Color col)
@@ -135,19 +155,6 @@ public class DebugToolsWindow : EditorWindow
         result.SetPixels(pix);
         result.Apply();
         return result;
-    }
-
-    private void MoveSelectedObjectToCenter()
-    {
-        DebugTools debug = FindObjectOfType<DebugTools>();
-        if (debug != null)
-        {
-            debug.MoveSelectedObjectToCenter();
-        }
-        else
-        {
-            Debug.LogWarning("DebugTools component not found in the scene.");
-        }
     }
 
     private void DisplayAssetsFromFolder(string folderPath)

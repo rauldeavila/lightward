@@ -7,12 +7,16 @@ public class Move : MonoBehaviour
 {
     private PlayerController controller;
     public Vector2 direction;
-    public float maxSpeed = 10f;
+    public float maxSpeed = 7f;
     private Vector3 zeroedVelocity;
 
     private bool _finishedInitialMovement = false;
 
     private bool _movingThroughDodge = false;
+
+    public bool IsNoClipActive = false;
+    public Collider2D noClipCol1;
+    public Collider2D noClipCol2;
 
     public static Move Instance;
 
@@ -45,9 +49,18 @@ public class Move : MonoBehaviour
         if(controller.State.Dead){
             StopPlayer();
         }
+
+        if (Keyboard.current.f5Key.wasPressedThisFrame) 
+        {
+            NoClip();
+        }
     }
 
     private void FixedUpdate(){
+        if (IsNoClipActive) {
+            HandleNoClipMovement();
+            return;
+        }
         if(GameState.Instance.Overworld == false)
         {
             return;
@@ -261,4 +274,65 @@ public class Move : MonoBehaviour
             direction.x = 0;
         }
     }
+
+    public void NoClip() {
+        IsNoClipActive = !IsNoClipActive;
+        if (IsNoClipActive) 
+        {
+            PlayerController.Instance.SetGravityToZero();
+            noClipCol1.isTrigger = true;
+            noClipCol2.isTrigger = true;
+        } else {
+            PlayerController.Instance.SetGravityToOne();
+            noClipCol1.isTrigger = false;
+            noClipCol2.isTrigger = false;
+        }
+    }
+
+    private void HandleNoClipMovement() {
+        PlayerController.Instance.Animator.Play("idle");
+        Vector2 input = new Vector2(0, 0);
+        if (Inputs.Instance.HoldingUpArrow) {
+            if(Inputs.Instance.HoldingDash)
+            {
+                input.y += 70;
+            }
+            else
+            {
+                input.y += 30;
+            }
+        }
+        if (Inputs.Instance.HoldingDownArrow) {
+            if(Inputs.Instance.HoldingDash)
+            {
+                input.y -= 70;
+            }
+            else
+            {
+                input.y -= 30;
+            }
+        }
+        if (Inputs.Instance.HoldingRightArrow) {
+            if(Inputs.Instance.HoldingDash)
+            {
+                input.x += 70;
+            }
+            else
+            {
+                input.x += 30;
+            }
+        }
+        if (Inputs.Instance.HoldingLeftArrow) {
+            if(Inputs.Instance.HoldingDash)
+            {
+                input.x -= 70;
+            }
+            else
+            {
+                input.x -= 30;
+            }
+        }
+        transform.Translate(input * 0.5f * Time.deltaTime);
+    }
+
 }

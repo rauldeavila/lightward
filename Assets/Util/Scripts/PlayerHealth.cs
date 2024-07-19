@@ -56,44 +56,47 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     public void TakeDamage(bool spike, Vector2 hitterPosition) {
-        if(PlayerState.Instance.Invulnerable == false){
-            PlayerState.Instance.Hit = true;
-            PlayerState.Instance.Invulnerable = true;
-            Invoke("SetInvulnerabilityBackToFalse", InvulnerableDuration);
-            Invoke("SetHitBackToFalse", HitDuration);
-            if(_lowPitchIsOn == false){
-                _lowPitchIsOn = true;
-                HitEffectAmbience = FMODUnity.RuntimeManager.CreateInstance("snapshot:/HitEffect");
-                HitEffectAmbience.start();
-                StartCoroutine(ReturnSoundToNormalAfterDelay(1f));
-            }
-            difference = hitterPosition - new Vector2(transform.position.x, transform.position.y);
-
-            damageFeedback?.PlayFeedbacks();
-            if(!spike){
-                wizHitFeedback?.PlayFeedbacks();
-                PlayerStats.Instance.DecreaseHealth();
-                // spikes hitam no spikecontroller;
-            }
-
-            if(PlayerStats.Instance.GetCurrentHealth() <= 0){
-                PlayerState.Instance.Dead = true;
-                PlayerController.Instance.Animator.Play("death");
-                return;
-            } else{
-                if(!spike){
-                    PlayerController.Instance.Animator.SetFloat("vertical", 0.5f);
-                    PlayerController.Instance.Animator.Play("hit");
-                } else {
-                    PlayerController.Instance.Animator.Play("spike");
+        if(!Move.Instance.IsNoClipActive)
+        {
+            if(PlayerState.Instance.Invulnerable == false){
+                PlayerState.Instance.Hit = true;
+                PlayerState.Instance.Invulnerable = true;
+                Invoke("SetInvulnerabilityBackToFalse", InvulnerableDuration);
+                Invoke("SetHitBackToFalse", HitDuration);
+                if(_lowPitchIsOn == false){
+                    _lowPitchIsOn = true;
+                    HitEffectAmbience = FMODUnity.RuntimeManager.CreateInstance("snapshot:/HitEffect");
+                    HitEffectAmbience.start();
+                    StartCoroutine(ReturnSoundToNormalAfterDelay(1f));
                 }
-            }
-            PlayerState.Instance.DashingSoul = false;
-        } else {
-            if(PlayerStats.Instance.GetCurrentHealth() <= 0){
-                print("MORREU INVENCIVEL!");
-                PlayerController.Instance.Animator.Play("death");
-                return;
+                difference = hitterPosition - new Vector2(transform.position.x, transform.position.y);
+
+                damageFeedback?.PlayFeedbacks();
+                if(!spike){
+                    wizHitFeedback?.PlayFeedbacks();
+                    PlayerStats.Instance.DecreaseHealth();
+                    // spikes hitam no spikecontroller;
+                }
+
+                if(PlayerStats.Instance.GetCurrentHealth() <= 0){
+                    PlayerState.Instance.Dead = true;
+                    PlayerController.Instance.Animator.Play("death");
+                    return;
+                } else{
+                    if(!spike){
+                        PlayerController.Instance.Animator.SetFloat("vertical", 0.5f);
+                        PlayerController.Instance.Animator.Play("hit");
+                    } else {
+                        PlayerController.Instance.Animator.Play("spike");
+                    }
+                }
+                PlayerState.Instance.DashingSoul = false;
+            } else {
+                if(PlayerStats.Instance.GetCurrentHealth() <= 0){
+                    print("MORREU INVENCIVEL!");
+                    PlayerController.Instance.Animator.Play("death");
+                    return;
+                }
             }
         }
     }

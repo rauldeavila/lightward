@@ -66,8 +66,11 @@ public class Jump : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        CheckIfOnWall(); 
-        ModifyPhysics();  
+        if(Move.Instance.IsNoClipActive == false)
+        {
+            CheckIfOnWall(); 
+            ModifyPhysics();  
+        }
     }
     #endregion
 

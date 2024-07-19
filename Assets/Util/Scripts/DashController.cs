@@ -55,9 +55,12 @@ public class DashController : MonoBehaviour {
 
 
     public void DashPressed(){
-        if(StateController.Instance.CanDash){
-            StateController.Instance.CanDash = false;
-            StartCoroutine("Dash");
+        if(!Move.Instance.IsNoClipActive)
+        {
+            if(StateController.Instance.CanDash){
+                StateController.Instance.CanDash = false;
+                StartCoroutine("Dash");
+            }
         }
     }
 
