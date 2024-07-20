@@ -8,11 +8,13 @@ public class EnterObject : MonoBehaviour
     
     void OnEnable()
     {
+        GameState.Instance.InsideBuilding = true;
         DisableGameObjects();
     }
 
     void OnDisable()
     {
+        GameState.Instance.InsideBuilding = false;
         EnableGameObjects();
     }
 
@@ -32,9 +34,5 @@ public class EnterObject : MonoBehaviour
             obj.SetActive(true);
         }
     }
-    public void ToggleActive()
-    {
-        GameState.Instance.InsideBuilding = !GameState.Instance.InsideBuilding;
-        this.gameObject.SetActive(!this.gameObject.activeSelf);
-    }
+    
 }

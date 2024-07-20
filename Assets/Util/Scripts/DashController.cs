@@ -58,8 +58,11 @@ public class DashController : MonoBehaviour {
         if(!Move.Instance.IsNoClipActive)
         {
             if(StateController.Instance.CanDash){
-                StateController.Instance.CanDash = false;
-                StartCoroutine("Dash");
+                if(!PlayerState.Instance.Sit)
+                {
+                    StateController.Instance.CanDash = false;
+                    StartCoroutine("Dash");
+                }
             }
         }
     }

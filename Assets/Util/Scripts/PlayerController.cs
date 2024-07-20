@@ -95,7 +95,7 @@ public class PlayerController : MonoBehaviour {
                 }
             } else {
                 if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_new_game").runTimeValue){
-                    this.Animator.Play("sit");
+                    this.Animator.Play("bedtime");
                     // this.Animator.Play("lay");
                     PlayerState.Instance.Sit = true;
                     PlayerState.Instance.Grounded = true;
@@ -145,7 +145,7 @@ public class PlayerController : MonoBehaviour {
                 }
             } else {
                 if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_new_game").runTimeValue){
-                    this.Animator.Play("lay");
+                    this.Animator.Play("bedtime");
                     PlayerState.Instance.Sit = true;
                     // print("new game");
                     PlayerState.Instance.Grounded = true;
@@ -213,10 +213,13 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    public void SetPlayerPosition(float newX, float newY){
+    public void SetPlayerPosition(float newX, float newY, bool saving = true){
         this.transform.position = new Vector3(newX, newY,  this.transform.position.z);
-        ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue = newX;
-        ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue = newY;
+        if(saving)
+        {
+            ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue = newX; 
+            ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue = newY;
+        }
     }
 
     public void DisablePlayerControls(){

@@ -14,7 +14,8 @@ public class MainCamera : MonoBehaviour
     private GameObject _summitCameraProps;
     private GameObject _darkWorldCameraProps;
 
-    private Color _darkworldBackgroundColor = new Color32(80, 80, 80, 255); // #161616
+    // private Color _darkworldBackgroundColor = new Color32(80, 80, 80, 255); // #161616
+    private Color _darkworldBackgroundColor = new Color(0.0f, 0.153f, 0.118f);
     private Color _regularBackgroundColor = new Color32(0, 0, 0, 255);
     public static MainCamera Instance;
 
@@ -44,6 +45,8 @@ public class MainCamera : MonoBehaviour
         cam = GetComponent<Camera>();
         RoomConfigurations.OnRoomChanged.AddListener(UpdateCameraProperties);
         UpdateCameraProperties();
+        GameManager.Instance.OnEnterDarkworld.AddListener(DarkworldCamColor);
+        GameManager.Instance.OnExitDarkworld.AddListener(OverworldCamColor);
     }
 
     void UpdateCameraProperties()
@@ -81,6 +84,10 @@ public class MainCamera : MonoBehaviour
                     Debug.LogError("NO AREA NAME ASSIGNED TO ROOM OBJECT. FIX THIS.");
                     break;
             }
+        }
+        if(GameState.Instance.Darkworld)
+        {
+            DarkworldCamColor();
         }
     }
 
@@ -185,6 +192,16 @@ public class MainCamera : MonoBehaviour
         {
             _darkWorldCameraProps.SetActive(flag);
         }
+    }
+
+    public void DarkworldCamColor()
+    {
         cam.backgroundColor = _darkworldBackgroundColor;
     }
+
+    public void OverworldCamColor()
+    {
+        cam.backgroundColor = _regularBackgroundColor;
+    }
+
 }

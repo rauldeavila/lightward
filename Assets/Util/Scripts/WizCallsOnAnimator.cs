@@ -287,5 +287,19 @@ public class WizCallsOnAnimator : MonoBehaviour {
         ControllerRumble.Instance.LandingRumble();
     }
 
+    public void StartBedtimeCoroutine()
+    {
+        StartCoroutine(WaitAndShowButtonPrompt());
+    }
+
+    private IEnumerator WaitAndShowButtonPrompt()
+    {
+        yield return new WaitForSeconds(10f);
+        if (PlayerController.Instance.Animator.GetCurrentAnimatorStateInfo(0).IsName("bedtime")) // Replace with your animation state name
+        {
+            DisplayButtonOnScreen.Instance.ShowButtonPrompt("MoveUp", "Wake up");
+        }
+    }
+
 
 }

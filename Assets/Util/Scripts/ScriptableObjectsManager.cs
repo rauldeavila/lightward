@@ -103,9 +103,9 @@ public class ScriptableObjectsManager : MonoBehaviour {
                 obj.runTimeValue = 3f;
                 obj.maxValue = 3f;
             } else if(obj.name == "wiz_x"){
-                obj.runTimeValue = 30.5f;
+                obj.runTimeValue = 2f;
             } else if(obj.name == "wiz_y"){
-                obj.runTimeValue = 25.5f;
+                obj.runTimeValue = 0f;
             }else {
                 obj.runTimeValue = 0f;
                 obj.maxValue = 0f;

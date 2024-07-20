@@ -137,9 +137,16 @@ public class HandleInput : MonoBehaviour
 
     void EnterPrompt()
     {
-        // print("ENTER!");
         if(_promptType == "Enter")
         {
+            if(GameState.Instance.InsideBuilding)
+            {
+                Message = "Exit";
+            }
+            else
+            {
+                Message = "Enter";
+            }
             if(Inputs.Instance.HoldingUpArrow && (PlayerController.Instance.AnimatorIsPlaying("idle") || PlayerController.Instance.AnimatorIsPlaying("idle_landing") || PlayerController.Instance.AnimatorIsPlaying("run")))
             {
 
@@ -151,12 +158,10 @@ public class HandleInput : MonoBehaviour
                 {
                     if(EnterObject.activeInHierarchy)
                     {
-                        Message = "Enter";
                         EnterObject.SetActive(false);
                     }
                     else
                     {
-                        Message = "Exit";
                         EnterObject.SetActive(true);
                     }
                 }
