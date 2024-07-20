@@ -53,6 +53,7 @@ public class WizLight : MonoBehaviour
     {
         RoomConfigurations.OnRoomChanged.AddListener(UpdateLightLevel);
         GameManager.Instance.OnEnterDarkworld.AddListener(UpdateLightLevel);
+        GameManager.Instance.OnExitDarkworld.AddListener(UpdateLightLevel);
         UpdateLightLevel();
     }
 

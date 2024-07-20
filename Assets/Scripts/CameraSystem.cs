@@ -129,22 +129,8 @@ public class CameraSystem : MonoBehaviour {
         }
     }
 
-
     #endregion
 
-    private IEnumerator MoveToPosition(Vector3 targetPosition) {
-        float timeElapsed = 0f;
-        Vector3 startPosition = cam.transform.position;
-        
-        cam.m_Follow = null;
-        while (timeElapsed < 2) {
-            timeElapsed += Time.deltaTime;
-            float t = timeElapsed / 2;
-            cam.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
-            yield return null;
-        }
-
-    }
 
     // Method to disable lookahead
     private void DisableCameraSmoothingAndDamping()
@@ -232,9 +218,40 @@ public class CameraSystem : MonoBehaviour {
         StartCoroutine(MoveToWiz());
     }
 
-    public void SwitchToFixedCam(){
-        StartCoroutine(MoveToPosition(new Vector3(FixedXPosition, FixedYPosition, cam.transform.position.z)));
+    public void SwitchToFixedCam(bool fast = false){
+        if(fast)
+        {
+            StartCoroutine(MoveToPosition(new Vector3(FixedXPosition, FixedYPosition, cam.transform.position.z), 0.2f));
+        }
+        else
+        {
+            StartCoroutine(MoveToPosition(new Vector3(FixedXPosition, FixedYPosition, cam.transform.position.z), 2f));
+        }
     }
+
+
+    private IEnumerator MoveToPosition(Vector3 targetPosition, float duration) {
+        float timeElapsed = 0f;
+        Vector3 startPosition = cam.transform.position;
+
+        cam.m_Follow = null;
+        while (timeElapsed < duration) {
+            timeElapsed += Time.deltaTime;
+            float t = timeElapsed / duration;
+            cam.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+            yield return null;
+        }
+        
+        // Ensure the final position is set
+        cam.transform.position = targetPosition;
+        Invoke("EnsureAgain", 0.2f);
+    }
+
+    void EnsureAgain()
+    {
+        cam.transform.position = new Vector3(FixedXPosition, FixedYPosition, cam.transform.position.z);
+    }
+
 
     [Button]
     public void ShakeCamera(int _intensity = 0){
@@ -303,11 +320,34 @@ public class CameraSystem : MonoBehaviour {
         fovCoroutine = StartCoroutine(ChangeFOV(_farFOV));
     }
 
-    public void StrongZoom() {
-        StartCoroutine(LerpDeadZonesToZero(0.5f));
-        if (fovCoroutine != null) StopCoroutine(fovCoroutine);
-        fovCoroutine = StartCoroutine(ChangeFOV(_zoomedFOV));
-        cam.transform.position = new Vector3(PlayerController.Instance.transform.position.x, PlayerController.Instance.transform.position.y, cam.transform.position.z);
+    public void StrongZoom(bool fast = false) {
+        if (fast)
+        {
+            print("zoom fast!");
+            // Stop any ongoing dead zone coroutine and FOV coroutine
+            if (fovCoroutine != null) StopCoroutine(fovCoroutine);
+            if (positionCoroutine != null) StopCoroutine(positionCoroutine);
+
+            // Start new coroutines for fast zoom and dead zone adjustment
+            positionCoroutine = StartCoroutine(LerpDeadZonesToZero(0.1f));
+            fovCoroutine = StartCoroutine(ChangeFOVFast(_zoomedFOV));
+
+            // Instantly move the camera to the player's position
+            cam.transform.position = new Vector3(PlayerController.Instance.transform.position.x, PlayerController.Instance.transform.position.y, cam.transform.position.z);
+        }
+        else
+        {
+            // Stop any ongoing dead zone coroutine and FOV coroutine
+            if (fovCoroutine != null) StopCoroutine(fovCoroutine);
+            if (positionCoroutine != null) StopCoroutine(positionCoroutine);
+
+            // Start new coroutines for smooth zoom and dead zone adjustment
+            positionCoroutine = StartCoroutine(LerpDeadZonesToZero(0.5f));
+            fovCoroutine = StartCoroutine(ChangeFOV(_zoomedFOV));
+
+            // Smoothly move the camera to the player's position
+            cam.transform.position = new Vector3(PlayerController.Instance.transform.position.x, PlayerController.Instance.transform.position.y, cam.transform.position.z);
+        }
     }
 
     public void DefaultZoom() {
@@ -323,22 +363,20 @@ public class CameraSystem : MonoBehaviour {
             cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneHeight = height;
         }
     }
-    private IEnumerator LerpDeadZonesToZero(float duration)
-    {
+    private IEnumerator LerpDeadZonesToZero(float duration) {
         float elapsedTime = 0f;
-        while (elapsedTime < duration)
-        {
+        while (elapsedTime < duration) {
             float t = elapsedTime / duration;
             float lerpedWidth = Mathf.Lerp(_originalDeadZoneWidth, 0f, t);
             float lerpedHeight = Mathf.Lerp(_originalDeadZoneHeight, 0f, t);
-            
+
             // Set the lerped dead zone values
             SetDeadZoneValues(lerpedWidth, lerpedHeight);
-            
+
             elapsedTime += Time.deltaTime;
             yield return null;
         }
-        
+
         // Ensure dead zone values are set to zero at the end
         SetDeadZoneValues(0f, 0f);
     }
@@ -372,6 +410,22 @@ public class CameraSystem : MonoBehaviour {
             cam.m_Lens.OrthographicSize = Mathf.Lerp(currentFOV, targetFOV, elapsedTime);
             yield return null;
         }
+    }
+
+    private IEnumerator ChangeFOVFast(float targetFOV) {
+        float elapsedTime = 0f;
+        float currentFOV = cam.m_Lens.OrthographicSize;
+
+        // Reduce the duration to make the zoom faster
+        float duration = 0.2f;
+
+        while (elapsedTime < duration) {
+            elapsedTime += Time.deltaTime;
+            cam.m_Lens.OrthographicSize = Mathf.Lerp(currentFOV, targetFOV, elapsedTime / duration);
+            yield return null;
+        }
+        // Ensure the final FOV is set
+        cam.m_Lens.OrthographicSize = targetFOV;
     }
 
 public void LookUp() {
