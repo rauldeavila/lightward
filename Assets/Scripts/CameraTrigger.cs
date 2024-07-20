@@ -50,7 +50,7 @@ public class CameraTrigger : MonoBehaviour
         {
             if(FixInThisPosition)
             {
-                print("LOOK AT HERO!");
+                // print("LOOK AT HERO!");
                 CameraSystem.Instance.SetLookAtHero();
             }
             if(Handheld)

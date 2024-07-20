@@ -329,7 +329,7 @@ public class CameraSystem : MonoBehaviour {
     public void StrongZoom(bool fast = false) {
         if (fast)
         {
-            print("zoom fast!");
+            // print("zoom fast!");
             // Stop any ongoing dead zone coroutine and FOV coroutine
             if (fovCoroutine != null) StopCoroutine(fovCoroutine);
             if (positionCoroutine != null) StopCoroutine(positionCoroutine);
