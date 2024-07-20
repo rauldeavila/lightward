@@ -73,7 +73,7 @@ public class CameraSystem : MonoBehaviour {
     private float originalLookaheadSmoothing;
     private float originalXDamping;
     private float originalYDamping;
-
+    private Coroutine moveCoroutine;
 
     void Awake(){
         if (Instance != null && Instance != this){ 
@@ -218,38 +218,44 @@ public class CameraSystem : MonoBehaviour {
         StartCoroutine(MoveToWiz());
     }
 
-    public void SwitchToFixedCam(bool fast = false){
-        if(fast)
-        {
-            StartCoroutine(MoveToPosition(new Vector3(FixedXPosition, FixedYPosition, cam.transform.position.z), 0.2f));
-        }
-        else
-        {
-            StartCoroutine(MoveToPosition(new Vector3(FixedXPosition, FixedYPosition, cam.transform.position.z), 2f));
-        }
-    }
-
-
-    private IEnumerator MoveToPosition(Vector3 targetPosition, float duration) {
-        float timeElapsed = 0f;
-        Vector3 startPosition = cam.transform.position;
-
-        cam.m_Follow = null;
-        while (timeElapsed < duration) {
-            timeElapsed += Time.deltaTime;
-            float t = timeElapsed / duration;
-            cam.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
-            yield return null;
+    public void SwitchToFixedCam(bool fast = false) {
+        Debug.Log("FIXING CAM AT: " + FixedXPosition + " | " + FixedYPosition);
+        
+        if (moveCoroutine != null) {
+            StopCoroutine(moveCoroutine);
+            moveCoroutine = null;
         }
         
-        // Ensure the final position is set
-        cam.transform.position = targetPosition;
-        Invoke("EnsureAgain", 0.2f);
+        if (fast) {
+            moveCoroutine = StartCoroutine(MoveToPosition(new Vector3(FixedXPosition, FixedYPosition, cam.transform.position.z), 0.3f));
+        } else {
+            moveCoroutine = StartCoroutine(MoveToPosition(new Vector3(FixedXPosition, FixedYPosition, cam.transform.position.z), 2f));
+        }
     }
 
-    void EnsureAgain()
-    {
-        cam.transform.position = new Vector3(FixedXPosition, FixedYPosition, cam.transform.position.z);
+    private IEnumerator MoveToPosition(Vector3 targetPosition, float duration) {
+        Debug.Log("Starting MoveToPosition Coroutine");
+
+        float timeElapsed = 0f;
+        Vector3 startPosition = cam.transform.position;
+        _brain.enabled = false;
+        cam.m_Follow = null;
+
+        while (timeElapsed < duration) {
+            timeElapsed += Time.deltaTime;
+            float t = timeElapsed / duration; // Normalized time (0 to 1)
+            // Lerp and apply the position immediately
+            cam.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+            Debug.Log($"Moving Camera: {cam.transform.position}");
+            yield return null; // Wait for the next frame 
+        }
+
+        // Ensure the final position is set (optional, but good practice)
+        cam.transform.position = targetPosition;
+        Debug.Log($"Final Camera Position: {cam.transform.position}");
+
+        _brain.enabled = true;
+        moveCoroutine = null;
     }
 
 
@@ -498,7 +504,21 @@ private IEnumerator StartLookCoroutine(bool isLookingUp) {
     }
 
     public void SetLookAt(Transform target) {
+        DisableCameraSmoothingAndDamping();
+        StartCoroutine(LerpDeadZonesToZero(0.1f));
         cam.m_Follow = target;
+    }
+
+    public void SetLookAtHero()
+    {
+        RestoreCameraSmoothingAndDamping();
+        StartCoroutine(LerpDeadZonesToOriginal(0.1f));
+        cam.m_Follow = Hero;
+    }
+
+    public void SetFollow(Transform target)
+    {
+        cam.m_LookAt = target;
     }
 
     public void RemoveLookAt() {

@@ -22,6 +22,7 @@ public class HandleInput : MonoBehaviour
 
     public GameObject SaveMenuPanel;
 
+    public UnityEvent EnterEvent;
     public UnityEvent UnlockEvent;
     public UnityEvent DialogueEvent;
 
@@ -39,7 +40,7 @@ public class HandleInput : MonoBehaviour
         {
             SaveMenuPrompt();
             SavePrompt();
-            // EnterPrompt();
+            EnterPrompt();
             // UnlockPrompt();
             // SpeakPrompt();
         } 
@@ -135,6 +136,7 @@ public class HandleInput : MonoBehaviour
 
     void EnterPrompt()
     {
+        // print("ENTER!");
         if(_promptType == "Enter")
         {
             if(Inputs.Instance.HoldingUpArrow && (PlayerController.Instance.AnimatorIsPlaying("idle") || PlayerController.Instance.AnimatorIsPlaying("idle_landing") || PlayerController.Instance.AnimatorIsPlaying("run")))
@@ -144,7 +146,10 @@ public class HandleInput : MonoBehaviour
                 PlayerController.Instance.Move.StopPlayer();
                 DisplayButtonOnScreen.Instance.HideButtonPrompt();
                 _showingPrompt = false;
-                ScenesManager.Instance.LoadScene(SceneName, FacingDirection, PosX, PosY);
+                if(EnterEvent != null)
+                {
+                    EnterEvent.Invoke();
+                }
             }
         }
     }

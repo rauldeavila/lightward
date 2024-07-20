@@ -18,10 +18,7 @@ public class CameraTrigger : MonoBehaviour
         {
             if(FixInThisPosition)
             {
-                CameraSystem.Instance.FixedXPosition = this.transform.position.x;
-                CameraSystem.Instance.FixedYPosition = this.transform.position.y;
-                CameraSystem.Instance.SwitchToFixedCam(FixFast);
-                // CameraSystem.Instance.FixCamAt(new Vector3(this.transform.position.x, this.transform.position.y, CameraSystem.Instance.transform.position.z), FixFast);
+                CameraSystem.Instance.SetLookAt(this.transform);
             }
             if(Handheld)
             {
@@ -44,7 +41,8 @@ public class CameraTrigger : MonoBehaviour
         if(FixInThisPosition)
         {
             // Debug.Log("MOVING CAMERA!");
-            CameraSystem.Instance.SwitchToWizCam();
+            CameraSystem.Instance.SetLookAtHero();
+            // CameraSystem.Instance.SwitchToWizCam();
         }
         if(collider.CompareTag("WizHitBox"))
         {
