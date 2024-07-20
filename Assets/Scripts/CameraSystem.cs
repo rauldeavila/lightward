@@ -411,9 +411,11 @@ public class CameraSystem : MonoBehaviour {
         float elapsedTime = 0f;
         float currentFOV = cam.m_Lens.OrthographicSize;
 
-        while (elapsedTime < 1f) {
+        float duration = 0.5f;
+
+        while (elapsedTime < duration) {
             elapsedTime += Time.deltaTime;
-            cam.m_Lens.OrthographicSize = Mathf.Lerp(currentFOV, targetFOV, elapsedTime);
+            cam.m_Lens.OrthographicSize = Mathf.Lerp(currentFOV, targetFOV, elapsedTime / duration);
             yield return null;
         }
     }

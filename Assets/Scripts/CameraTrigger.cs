@@ -14,6 +14,10 @@ public class CameraTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider) 
     {
+        if(PlayerState.Instance.JustDodged)
+        {
+            return;
+        }
         if(collider.CompareTag("WizHitBox"))
         {
             if(FixInThisPosition)
@@ -38,14 +42,17 @@ public class CameraTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider) 
     {
-        if(FixInThisPosition)
+        if(PlayerState.Instance.JustDodged)
         {
-            // Debug.Log("MOVING CAMERA!");
-            CameraSystem.Instance.SetLookAtHero();
-            // CameraSystem.Instance.SwitchToWizCam();
+            return;
         }
         if(collider.CompareTag("WizHitBox"))
         {
+            if(FixInThisPosition)
+            {
+                print("LOOK AT HERO!");
+                CameraSystem.Instance.SetLookAtHero();
+            }
             if(Handheld)
             {
                 CameraSystem.Instance.ToggleHandheld();

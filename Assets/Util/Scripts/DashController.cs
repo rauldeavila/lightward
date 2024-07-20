@@ -91,6 +91,7 @@ public class DashController : MonoBehaviour {
                         controller.Animator.Play("dodge");
                         controller.State.BeingKnockedBack = false;
                         PlayerState.Instance.Dodge = true;
+                        PlayerState.Instance.JustDodged = true;
                         SFXController.Instance.Play("event:/char/wiz/rolling");
 
                         if(controller.State.FacingRight){
@@ -126,6 +127,8 @@ public class DashController : MonoBehaviour {
                             GetComponent<Rigidbody2D>().gravityScale = defaultGravityScale;
                         }
                         PlayerController.Instance.Animator.SetBool("dodge", false);
+                        yield return new WaitForSeconds(0.2f);
+                        PlayerState.Instance.JustDodged = false;
                     }
                     else
                     {
@@ -134,6 +137,7 @@ public class DashController : MonoBehaviour {
                         controller.Animator.Play("backdash");
                         controller.State.BeingKnockedBack = false;
                         PlayerState.Instance.Dodge = true;
+                        PlayerState.Instance.JustDodged = true;
                         // TODO: BACK DASH SOUND EFFECT
                         // SFXController.Instance.Play("event:/char/wiz/rolling");
 
@@ -158,6 +162,8 @@ public class DashController : MonoBehaviour {
                             GetComponent<Rigidbody2D>().gravityScale = defaultGravityScale;
                         }
                         PlayerController.Instance.Animator.SetBool("backdash", false);
+                        yield return new WaitForSeconds(0.2f);
+                        PlayerState.Instance.JustDodged = false;
                     }
                 } else { // DASH
                     if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_dash").runTimeValue == true){

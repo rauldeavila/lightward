@@ -116,6 +116,9 @@ public class GameState : MonoBehaviour {
     [SerializeField] private bool _onRebindPanel;
     public bool OnRebindPanel { get => _onRebindPanel; set => _onRebindPanel = value; }
 
+    [SerializeField] private bool _insideBuilding;
+    public bool InsideBuilding { get => _insideBuilding; set => _insideBuilding = value; }
+
     public void OnCutsceneToFalseInSeconds(float time) {
         Invoke("OnCutsceneFalse", time);
     }

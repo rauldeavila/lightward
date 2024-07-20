@@ -40,6 +40,8 @@ public class PlayerState : MonoBehaviour {
     [GUIColor(0.988f, 0.6f, 0.439f)]
     public bool Dodge;
     [GUIColor(0.988f, 0.6f, 0.439f)]
+    public bool JustDodged;
+    [GUIColor(0.988f, 0.6f, 0.439f)]
     public bool LookingUp;
     [GUIColor(0.988f, 0.6f, 0.439f)]
     public bool LookingDown;
@@ -137,6 +139,7 @@ public class PlayerState : MonoBehaviour {
         WallJump = false;
         Sit = false;
         Dodge = false;
+        JustDodged = false;
         BeingKnockedBack = false;
         LookingUp = false;
         LookingDown = false;
