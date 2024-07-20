@@ -11,6 +11,8 @@ public class HandleInput : MonoBehaviour
     public string Message = "";
     public string _promptType = "Save";
 
+    public GameObject EnterObject;
+
     public string SceneName = "";
     public string FacingDirection = "right";
     public float PosX = 0f;
@@ -22,7 +24,6 @@ public class HandleInput : MonoBehaviour
 
     public GameObject SaveMenuPanel;
 
-    public UnityEvent EnterEvent;
     public UnityEvent UnlockEvent;
     public UnityEvent DialogueEvent;
 
@@ -146,9 +147,22 @@ public class HandleInput : MonoBehaviour
                 PlayerController.Instance.Move.StopPlayer();
                 DisplayButtonOnScreen.Instance.HideButtonPrompt();
                 _showingPrompt = false;
-                if(EnterEvent != null)
+                if(EnterObject != null)
                 {
-                    EnterEvent.Invoke();
+                    if(EnterObject.activeInHierarchy)
+                    {
+                        Message = "Enter";
+                        EnterObject.SetActive(false);
+                    }
+                    else
+                    {
+                        Message = "Exit";
+                        EnterObject.SetActive(true);
+                    }
+                }
+                else
+                {
+                    Debug.Log("Enter Object missing!");
                 }
             }
         }
