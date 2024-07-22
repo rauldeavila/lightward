@@ -104,6 +104,10 @@ public class CameraSystem : MonoBehaviour {
         _shakeMedium = this.transform.Find("ShakeMedium").gameObject;
         _shakeHard = this.transform.Find("ShakeHard").gameObject;
         _earthquake = this.transform.Find("Earthquake").gameObject;
+    }
+
+    void Start()
+    {
         if(SceneManager.GetActiveScene().name != "intro"){
             cam. m_Follow = Hero;
             cam.GetComponent<CinemachineConfiner2D>(). m_BoundingShape2D = GenericCamBoundariesForAwake;
@@ -516,6 +520,8 @@ private IEnumerator StartLookCoroutine(bool isLookingUp) {
         RestoreCameraSmoothingAndDamping();
         StartCoroutine(LerpDeadZonesToOriginal(0.1f));
         cam.m_Follow = Hero;
+        RestoreCameraSmoothingAndDamping();
+        StartCoroutine(LerpDeadZonesToOriginal(0.1f));
     }
 
     public void SetFollow(Transform target)
