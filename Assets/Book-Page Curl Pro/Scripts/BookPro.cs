@@ -392,6 +392,36 @@ namespace BookCurlPro
                 UpdateBookLTRToPoint(f);
         }
 
+        // Method to get the current front page
+        public GameObject GetCurrentFrontPage()
+        {
+            if (currentPaper < papers.Length)
+            {
+                return papers[currentPaper].Front;
+            }
+            return null;
+        }
+
+        // Method to get the current back page
+        public GameObject GetCurrentBackPage()
+        {
+            if (currentPaper > 0 && currentPaper <= papers.Length)
+            {
+                return papers[currentPaper - 1].Back;
+            }
+            return null;
+        }
+
+        public void ShowPage(GameObject page)
+        {
+            BookUtility.ShowPage(page);
+        }
+
+        public int GetCurrentPageNumber()
+        {
+            return CurrentPaper;
+        }
+
         /// <summary>
         /// This function called when the page dragging point reached its distenation after releasing the mouse
         /// This function will call the OnFlip invocation list

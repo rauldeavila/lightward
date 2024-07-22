@@ -24,11 +24,12 @@ namespace BookCurlPro
             if (!ControledBook)
                 ControledBook = GetComponent<BookPro>();
 
-            if (AutoStartFlip)
-                StartFlipping(ControledBook.EndFlippingPaper + 1);
+            // if (AutoStartFlip)
+            //     StartFlipping(ControledBook.EndFlippingPaper + 1);
         }
         public void FlipRightPage()
         {
+            Debug.Log("Flip Right Page!");
             if (isPageFlipping) return;
             if (ControledBook.CurrentPaper >= ControledBook.papers.Length) return;
             isPageFlipping = true;

@@ -15,7 +15,8 @@ public class MainCamera : MonoBehaviour
     private GameObject _darkWorldCameraProps;
 
     // private Color _darkworldBackgroundColor = new Color32(80, 80, 80, 255); // #161616
-    private Color _darkworldBackgroundColor = new Color(0.0f, 0.153f, 0.118f);
+    // private Color _darkworldBackgroundColor = new Color(0.0f, 0.153f, 0.118f);
+    private Color _darkworldBackgroundColor = new Color32(0, 0, 0, 255);
     private Color _regularBackgroundColor = new Color32(0, 0, 0, 255);
     public static MainCamera Instance;
 
