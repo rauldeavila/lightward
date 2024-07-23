@@ -29,7 +29,7 @@ namespace BookCurlPro
         }
         public void FlipRightPage()
         {
-            Debug.Log("Flip Right Page!");
+            // Debug.Log("Flip Right Page!");
             if (isPageFlipping) return;
             if (ControledBook.CurrentPaper >= ControledBook.papers.Length) return;
             isPageFlipping = true;

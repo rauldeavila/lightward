@@ -26,6 +26,7 @@ public class BookController : MonoBehaviour
     private int _lastPage;
 
     private bool _oddPageOnAwake = false;
+    private bool _canChangePage = true;
 
     void Awake()
     {
@@ -68,21 +69,23 @@ public class BookController : MonoBehaviour
 
 
             int firstAvailablePage = PagesWeHave.Min();
-            print("Current page = " + _currentPage);
+            // print("Current page = " + _currentPage);
             
             if(_oddPageOnAwake)
             {
                 _currentPage = _currentPage - 1;
                 int paperIndex = GetPaperFor(_currentPage);
                 _bookPro.SetCurrentPaper(paperIndex);
-                Debug.Log($"Paper set to {paperIndex}");
+                // Debug.Log($"Paper set to {paperIndex}");
                 Invoke("NavigateRight", 0.1f);
+                // Debug.Log($"The book opened on page {_currentPage + 1}.");
             }
             else
             {
                 int paperIndex = GetPaperFor(_currentPage);
                 _bookPro.SetCurrentPaper(paperIndex);
-                Debug.Log($"Paper set to {paperIndex}");
+                // Debug.Log($"Paper set to {paperIndex}");
+                Debug.Log($"The book opened on page {_currentPage}.");
             }
 
 
@@ -99,8 +102,7 @@ public class BookController : MonoBehaviour
         {
             _rectTransform.anchoredPosition = new Vector3(246f, _rectTransform.anchoredPosition.y);
         }
-        Debug.Log($"The book opened on page {_currentPage}.");
-        PrintAllPagesWeHave();
+        // PrintAllPagesWeHave();
     }
 
 
@@ -151,11 +153,11 @@ public class BookController : MonoBehaviour
             if(CurrentPageIntValue.runTimeValue != -1)
             {
                 _currentPage = CurrentPageIntValue.runTimeValue;
-                Debug.Log($"Current page set to: {_currentPage} due to Scriptable Object not being '-1'.");
+                // Debug.Log($"Current page set to: {_currentPage} due to Scriptable Object not being '-1'.");
                 if(_currentPage % 2 != 0)
                 {
                     _oddPageOnAwake = true;
-                    Debug.Log("Odd page on awake!");
+                    // Debug.Log("Odd page on awake!");
                 }
             }
             else
@@ -185,15 +187,25 @@ public class BookController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if(_canChangePage)
         {
-            NavigateLeft();
-        }
+            _canChangePage = false;
+            if (Inputs.Instance.HoldingLeftArrow)
+            {
+                NavigateLeft();
+            }
 
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            NavigateRight();
+            if (Inputs.Instance.HoldingRightArrow)
+            {
+                NavigateRight();
+            }
+            Invoke("ResetCanChangePage", 0.2f);
         }
+    }
+
+    void ResetCanChangePage()
+    {
+        _canChangePage = true;
     }
 
     public void NavigateLeft()
@@ -204,7 +216,7 @@ public class BookController : MonoBehaviour
                 _autoFlip.FlipLeftPage();
                 int previousPage = _currentPage;
                 _currentPage = GetPreviousAvailablePage();
-                Debug.Log($"Navigating backwards. From page {previousPage} to page {_currentPage}.");
+                // Debug.Log($"Navigating backwards. From page {previousPage} to page {_currentPage}.");
                 StartCoroutine(UpdatePageAfterFlip());
             }
             else
@@ -212,7 +224,7 @@ public class BookController : MonoBehaviour
                 // print("Página par, não flipar.");
                 int previousPage = _currentPage;
                 _currentPage = GetPreviousAvailablePage();
-                Debug.Log($"Navigating backwards. From page {previousPage} to page {_currentPage}.");
+                // Debug.Log($"Navigating backwards. From page {previousPage} to page {_currentPage}.");
                 StartCoroutine(LerpPosition(_rectTransform.anchoredPosition.x, _currentPage % 2 == 0 ? -246 : 246, 0.5f));
             }
         }
