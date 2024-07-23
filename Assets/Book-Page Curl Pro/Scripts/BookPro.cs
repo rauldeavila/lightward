@@ -174,6 +174,58 @@ namespace BookCurlPro
 
         }
 
+        public void SetCurrentPaper(int paper)
+        {
+            CurrentPaper = paper;
+            UpdatePages();
+        }
+
+        public void AddPaper(Paper newPaper)
+        {
+            if (papers == null)
+            {
+                papers = new Paper[] { newPaper };
+            }
+            else
+            {
+                Array.Resize(ref papers, papers.Length + 1);
+                papers[papers.Length - 1] = newPaper;
+            }
+            UpdatePages();
+        }
+
+        public void RemovePaper(int index)
+        {
+            if (papers == null || index < 0 || index >= papers.Length)
+            {
+                Debug.LogError("Invalid paper index");
+                return;
+            }
+
+            for (int i = index; i < papers.Length - 1; i++)
+            {
+                papers[i] = papers[i + 1];
+            }
+            Array.Resize(ref papers, papers.Length - 1);
+            UpdatePages();
+        }
+
+        public void ClearPapersList()
+        {
+            papers = new Paper[0];
+        }
+
+        public void UpdatePageOrders()
+        {
+            if (papers == null || papers.Length == 0) return;
+
+            // Example order by name; adjust the comparison as needed
+            Array.Sort(papers, (x, y) => x.Front.name.CompareTo(y.Front.name));
+            UpdatePages();
+        }
+
+
+
         /// <summary>
         /// Update page orders
         /// This function should be called whenever the current page changed, the dragging of the page started or the page has been flipped
@@ -410,11 +462,6 @@ namespace BookCurlPro
                 return papers[currentPaper - 1].Back;
             }
             return null;
-        }
-
-        public void ShowPage(GameObject page)
-        {
-            BookUtility.ShowPage(page);
         }
 
         public int GetCurrentPageNumber()

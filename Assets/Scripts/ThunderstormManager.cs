@@ -52,7 +52,7 @@ public class ThunderstormManager : MonoBehaviour
     void CancelLightning()
     {
         CancelInvoke("StrikeLightning");
-        print("Clear skies.");
+        // print("Clear skies.");
     }
 
     void SometimesPlayLightningStrikeSound(float thunderDuration)
