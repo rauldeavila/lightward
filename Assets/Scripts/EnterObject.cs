@@ -6,12 +6,17 @@ public class EnterObject : MonoBehaviour
 {
     public GameObject[] GameObjectsToToggle;
     public bool DoorClosingSFX = false;
+    public bool ToggleAmbienceSounds = false;
     
     void OnEnable()
     {
         if(DoorClosingSFX)
         {
             SFXController.Instance.Play("event:/game/00_game/door_closing");
+        }
+        if(ToggleAmbienceSounds)
+        {
+            SFXController.Instance.LowerAmbienceVolume();
         }
         GameState.Instance.InsideBuilding = true;
         DisableGameObjects();
@@ -22,6 +27,10 @@ public class EnterObject : MonoBehaviour
         if(DoorClosingSFX)
         {
             SFXController.Instance.Play("event:/game/00_game/door_closing");
+        }
+        if(ToggleAmbienceSounds)
+        {
+            SFXController.Instance.IncreaseAmbienceVolume();
         }
         GameState.Instance.InsideBuilding = false;
         EnableGameObjects();

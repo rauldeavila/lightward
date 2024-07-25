@@ -9,6 +9,16 @@ public class PlaySound : MonoBehaviour {
     public bool Looping = false;
     public bool OnTrigger = false;
 
+    public bool Is3D = false;
+
+    void Start()
+    {
+        if(OnTrigger == false)
+        {
+            PlaySoundEvent();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collider) {
         if(collider.CompareTag("WizHitBox")){
             if(OnTrigger){
@@ -18,19 +28,33 @@ public class PlaySound : MonoBehaviour {
                     } else if(Looping){
                         SFXController.Instance.PlayLoop(SoundPath);
                     } else {
-                        SFXController.Instance.Play(SoundPath);
+                        if(Is3D)
+                        {
+                            SFXController.Instance.Play3D(SoundPath, this.transform.position);
+                        }
+                        else
+                        {
+                            SFXController.Instance.Play(SoundPath);
+                        }
                     }
                 }
             }
         }
     }
 
-    public void PlaySounEvent(){
+    public void PlaySoundEvent(){
         if(SoundPath != null){
             if(Looping){
                 SFXController.Instance.PlayLoop(SoundPath);
             } else {
-                SFXController.Instance.Play(SoundPath);
+                if(Is3D)
+                {
+                    SFXController.Instance.Play3D(SoundPath, this.transform.position);
+                }
+                else
+                {
+                    SFXController.Instance.Play(SoundPath);
+                }
             }
         }
     }

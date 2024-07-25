@@ -73,6 +73,37 @@ public class SFXController : MonoBehaviour {
         thunderstorm.setVolume(newVolume);
     }
 
+    public void LowerAmbienceVolume()
+    {
+        float thunderCurrentVolume;
+        thunderstorm.getVolume(out thunderCurrentVolume);
+        if (thunderCurrentVolume > 0.3f){
+            thunderCurrentVolume = 0.3f;
+        }
+        float windCurrentVolume;
+        wind.getVolume(out windCurrentVolume);
+        if (windCurrentVolume > 0.3f){
+            SetWindVolume(0.3f);
+        }
+        float gardensCurrentVolume;
+        gardens.getVolume(out gardensCurrentVolume);
+        if (gardensCurrentVolume > 0.3f){
+            SetGardensVolume(0.3f);
+        }
+        float thunderstormCurrentVolume;
+        thunderstorm.getVolume(out thunderstormCurrentVolume);
+        if (thunderstormCurrentVolume > 0.3f){
+            SetThunderstormVolume(0.3f);
+        }
+    }
+
+    public void IncreaseAmbienceVolume()
+    {
+        SetWindVolume(RoomConfigurations.CurrentRoom.Data.SFXWindVolume);
+        SetGardensVolume(RoomConfigurations.CurrentRoom.Data.SFXGardensVolume);
+        SetThunderstormVolume(RoomConfigurations.CurrentRoom.Data.SFXThunderstormVolume);
+    }
+
 
     void Update(){
         float thunderCurrentVolume;
