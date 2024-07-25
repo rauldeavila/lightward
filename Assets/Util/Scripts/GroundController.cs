@@ -364,24 +364,16 @@ public class GroundController : MonoBehaviour {
                 SetAllGroundsToFalse();
                 controller.State.OnWood = true;
                 SetParticlesToPlay();
-                landing.LandingEvent = landing.Wood;
-                footsteps.footstepToPlay = footsteps.Wood;
             } else if(collider.CompareTag("Grass")){
                 SetAllGroundsToFalse();
                 controller.State.OnGrass = true;
                 SetParticlesToPlay();
-                landing.LandingEvent = landing.Dirt;
-                footsteps.footstepToPlay = footsteps.Dirt;
             } else if(collider.CompareTag("Stone")){
                 SetAllGroundsToFalse();
-                landing.LandingEvent = landing.Stone;
-                SetParticlesToPlay();
-                footsteps.footstepToPlay = footsteps.Stone;     
+                SetParticlesToPlay(); 
             }else if(collider.CompareTag("RegularGround") || collider.CompareTag("Ground")){
                 SetAllGroundsToFalse();
-                landing.LandingEvent = landing.Dirt;
                 SetParticlesToPlay();
-                footsteps.footstepToPlay = footsteps.Dirt;     
             }
         }
     }
@@ -392,37 +384,29 @@ public class GroundController : MonoBehaviour {
                 SetAllGroundsToFalse();
                 controller.State.OnWood = true;
                 SetParticlesToPlay();
-                landing.LandingEvent = landing.Wood;
-                footsteps.footstepToPlay = footsteps.Wood;
             } else if(collider.CompareTag("Grass")){
                 SetAllGroundsToFalse();
                 controller.State.OnGrass = true;
                 SetParticlesToPlay();
-                landing.LandingEvent = landing.Dirt;
-                footsteps.footstepToPlay = footsteps.Dirt;
             } else if(collider.CompareTag("Dirt")){
                 SetAllGroundsToFalse();
-                landing.LandingEvent = landing.Dirt;
-                SetParticlesToPlay();
-                footsteps.footstepToPlay = footsteps.Dirt;     
+                SetParticlesToPlay();   
             } else if(collider.CompareTag("Stone")){
                 SetAllGroundsToFalse();
-                landing.LandingEvent = landing.Stone;
-                SetParticlesToPlay();
-                footsteps.footstepToPlay = footsteps.Stone;     
+                SetParticlesToPlay();  
             }else if(collider.CompareTag("RegularGround")){
                 SetAllGroundsToFalse();
-                landing.LandingEvent = landing.Dirt;
-                SetParticlesToPlay();
-                footsteps.footstepToPlay = footsteps.Dirt;     
+                SetParticlesToPlay(); 
             }
         }
     }
 
 
     private void SetAllGroundsToFalse(){
+        controller.State.OnDirt = false;
         controller.State.OnGrass = false;
         controller.State.OnWood = false;
+        controller.State.OnGrass = false;
     }
 
     private void SetParticlesToPlay(){

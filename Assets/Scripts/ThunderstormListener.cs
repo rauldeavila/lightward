@@ -76,12 +76,12 @@ public class ThunderstormListener : MonoBehaviour
         }
     }
 
-    void OnDisable()
-    {
-        // Desinscrever-se quando o objeto é desativado (importante para evitar vazamentos de memória)
-        if (FindObjectOfType<ThunderstormManager>() != null)
-        {
-            FindObjectOfType<ThunderstormManager>().OnLightningStrike -= HandleLightningStrike;
-        }
-    }
+    // void OnDisable()
+    // {
+    //     // Desinscrever-se quando o objeto é desativado (importante para evitar vazamentos de memória)
+    //     if (FindObjectOfType<ThunderstormManager>() != null)
+    //     {
+    //         FindObjectOfType<ThunderstormManager>().OnLightningStrike -= HandleLightningStrike;
+    //     }
+    // }
 }

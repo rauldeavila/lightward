@@ -110,12 +110,6 @@
 		<property name="pitch">
 			<value>-3</value>
 		</property>
-		<relationship name="sounds">
-			<destination>{77e6be9a-d763-4b0a-9692-30d285c8deef}</destination>
-			<destination>{23ef01d0-0683-4a39-9751-a8aaf01d2732}</destination>
-			<destination>{b17d2119-5b97-4fc6-a43d-4a9e1ec8e4ac}</destination>
-			<destination>{6f5f528a-6285-41c8-9c5b-6663a05cf99e}</destination>
-		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{94d2fe73-e582-40ba-be33-f8dc6464bd02}">
 		<property name="volume">
@@ -180,38 +174,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{4afe950f-5c15-4589-8ede-cf68ddc01ae7}" />
 	<object class="MixerBusFader" id="{b3ae3278-8aaf-4b6a-8714-6dea1fd59309}" />
-	<object class="EventSound" id="{77e6be9a-d763-4b0a-9692-30d285c8deef}">
-		<relationship name="event">
-			<destination>{d9a7799f-0543-4e09-8307-72c08e6867c0}</destination>
-		</relationship>
-	</object>
-	<object class="EventSound" id="{23ef01d0-0683-4a39-9751-a8aaf01d2732}">
-		<relationship name="event">
-			<destination>{5b5da408-8857-4f51-9726-dfb571b6fdb7}</destination>
-		</relationship>
-	</object>
-	<object class="EventSound" id="{b17d2119-5b97-4fc6-a43d-4a9e1ec8e4ac}">
-		<property name="startOffset">
-			<value>15.5</value>
-		</property>
-		<property name="pitch">
-			<value>-3.4000001</value>
-		</property>
-		<relationship name="event">
-			<destination>{d9a7799f-0543-4e09-8307-72c08e6867c0}</destination>
-		</relationship>
-	</object>
-	<object class="EventSound" id="{6f5f528a-6285-41c8-9c5b-6663a05cf99e}">
-		<property name="startOffset">
-			<value>6.5</value>
-		</property>
-		<property name="pitch">
-			<value>-3.4000001</value>
-		</property>
-		<relationship name="event">
-			<destination>{5b5da408-8857-4f51-9726-dfb571b6fdb7}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusEffectChain" id="{45090677-009c-4518-8033-07353f4b17e1}">
 		<relationship name="effects">
 			<destination>{d03f0187-3d97-41f3-861e-a3756ed097f2}</destination>

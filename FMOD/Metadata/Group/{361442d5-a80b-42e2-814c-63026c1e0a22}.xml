@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.01.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="MixerGroup" id="{361442d5-a80b-42e2-814c-63026c1e0a22}">
 		<property name="color">
 			<value>Blue Light 1</value>
@@ -29,6 +29,9 @@
 	<object class="MixerBusPanner" id="{ea027ee8-b991-48d7-b392-aac8677ff8e0}" />
 	<object class="MixerBusFader" id="{94ff98bd-c06d-4c88-8b0c-d9b18b00b606}" />
 	<object class="SFXReverbEffect" id="{4ac233ab-efe3-4d6d-9ba9-450f88b0f35a}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<property name="decayTime">
 			<value>100</value>
 		</property>

@@ -4,23 +4,30 @@ using UnityEngine;
 
 public class FootstepsSoundsOnAnimator : MonoBehaviour {
 
-    // FMOD -------
-    public string footstepToPlay;
 
-    // Setados no GroundController.CS no WIZ
-    [FMODUnity.EventRef]
-    public string Dirt = "";
-    [FMODUnity.EventRef]
-    public string Wood = "";
-    [FMODUnity.EventRef]
-    public string Stone = "";
+    public string Dirt = "event:/char/wiz/footstep_dirt";
+    public string Wood = "event:/char/wiz/footstep_wood";
+    public string Stone = "event:/char/wiz/footstep_stone";
+    public string Grass = "event:/char/wiz/footstep_grass";
 
-    private void Awake() {
-        footstepToPlay = Dirt;
-    }
-
-    public void PlayFootstep(){
-        FMODUnity.RuntimeManager.PlayOneShot(footstepToPlay, transform.position);
+    public void PlayFootstep()
+    {
+        if(PlayerState.Instance.OnGrass)
+        {
+            SFXController.Instance.Play(Grass);
+        }
+        else if(PlayerState.Instance.OnStone)
+        {
+            SFXController.Instance.Play(Stone);
+        }
+        else if(PlayerState.Instance.OnWood)
+        {
+            SFXController.Instance.Play(Wood);
+        }
+        else
+        {
+            SFXController.Instance.Play(Dirt);
+        }
     }
 
 }

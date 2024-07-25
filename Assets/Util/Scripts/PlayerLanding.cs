@@ -15,16 +15,10 @@ public class PlayerLanding : MonoBehaviour {
     public MMFeedbacks landingFeedback;
     private PauseController pauseScript; // to prevent landing particles when resuming
 
-    // FMOD -------
-    public string LandingEvent = "";
-
-    // SETADOS NO GroundController.CS no WIZ
-    [FMODUnity.EventRef]
-    public string Dirt = "";
-    [FMODUnity.EventRef]
-    public string Wood = "";
-    [FMODUnity.EventRef]
-    public string Stone = "";
+    public string Dirt = "event:/char/wiz/landing_dirt";
+    public string Wood = "event:/char/wiz/landing_wood";
+    public string Stone = "event:/char/wiz/landing_stone";
+    public string Grass = "event:/char/wiz/landing_grass";
 
     private bool _canPlay = true;
 
@@ -39,7 +33,6 @@ public class PlayerLanding : MonoBehaviour {
             Instance = this; 
         } 
 
-        LandingEvent = Dirt;
         pauseScript = FindObjectOfType<PauseController>();
         StartCoroutine(EnableLandingParticlesAndSound());
         EnablePlay();
@@ -84,7 +77,7 @@ public class PlayerLanding : MonoBehaviour {
                 landingFeedback?.PlayFeedbacks();
                 PlayerState.Instance.Jump = false;
                 PlayerState.Instance.WallJump = false;
-                FMODUnity.RuntimeManager.PlayOneShot(LandingEvent, transform.position);
+                PlayLandingSound();
                 if(landingParticles != null){
                     if(landingParticles == grassParticles){
                         Instantiate(landingParticles, this.transform.position + spawnParticlePosition , Quaternion.identity);
@@ -97,4 +90,25 @@ public class PlayerLanding : MonoBehaviour {
             }
         }
     }
+
+    public void PlayLandingSound()
+    {
+        if(PlayerState.Instance.OnGrass)
+        {
+            SFXController.Instance.Play(Grass);
+        }
+        else if(PlayerState.Instance.OnStone)
+        {
+            SFXController.Instance.Play(Stone);
+        }
+        else if(PlayerState.Instance.OnWood)
+        {
+            SFXController.Instance.Play(Wood);
+        }
+        else
+        {
+            SFXController.Instance.Play(Dirt);
+        }
+    }
+
 }

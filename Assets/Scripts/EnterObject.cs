@@ -5,15 +5,24 @@ using UnityEngine;
 public class EnterObject : MonoBehaviour
 {
     public GameObject[] GameObjectsToToggle;
+    public bool DoorClosingSFX = false;
     
     void OnEnable()
     {
+        if(DoorClosingSFX)
+        {
+            SFXController.Instance.Play("event:/game/00_game/door_closing");
+        }
         GameState.Instance.InsideBuilding = true;
         DisableGameObjects();
     }
 
     void OnDisable()
     {
+        if(DoorClosingSFX)
+        {
+            SFXController.Instance.Play("event:/game/00_game/door_closing");
+        }
         GameState.Instance.InsideBuilding = false;
         EnableGameObjects();
     }
