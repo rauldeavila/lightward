@@ -97,20 +97,20 @@ public class HandleInput : MonoBehaviour
                 {
                     // print("SAVING!");
                     Inputs.Instance.HoldingDownArrow = false;
-                    PlayerController.Instance.Move.StopPlayer();
+                    Move.Instance.StopPlayer();
                     DisplayButtonOnScreen.Instance.HideButtonPrompt();
                     _showingPrompt = false;
                     if(PlayerController.Instance.transform.position.x < this.transform.position.x){
                         if(PlayerController.Instance.State.FacingRight == false)
                         {
-                            PlayerController.Instance.Move.Flip();
+                            Move.Instance.Flip();
                         }
                     } 
                     else if(PlayerController.Instance.transform.position.x > this.transform.position.x)
                     {
                         if(PlayerController.Instance.State.FacingRight == true)
                         {
-                            PlayerController.Instance.Move.Flip();
+                            Move.Instance.Flip();
                         }
                     }
 
@@ -151,7 +151,7 @@ public class HandleInput : MonoBehaviour
             {
 
                 Inputs.Instance.HoldingUpArrow = false;
-                PlayerController.Instance.Move.StopPlayer();
+                Move.Instance.StopPlayer();
                 DisplayButtonOnScreen.Instance.HideButtonPrompt();
                 _showingPrompt = false;
                 if(EnterObject != null)
@@ -180,7 +180,7 @@ public class HandleInput : MonoBehaviour
             if(Inputs.Instance.HoldingUpArrow && (PlayerController.Instance.AnimatorIsPlaying("idle") || PlayerController.Instance.AnimatorIsPlaying("idle_landing") || PlayerController.Instance.AnimatorIsPlaying("run")))
             {
                 Inputs.Instance.HoldingUpArrow = false;
-                PlayerController.Instance.Move.StopPlayer();
+                Move.Instance.StopPlayer();
                 DisplayButtonOnScreen.Instance.HideButtonPrompt();
                 _showingPrompt = false;
                 if(UnlockEvent != null)
@@ -200,7 +200,7 @@ public class HandleInput : MonoBehaviour
             if(Inputs.Instance.HoldingDownArrow && (PlayerController.Instance.AnimatorIsPlaying("idle") || PlayerController.Instance.AnimatorIsPlaying("idle_landing") || PlayerController.Instance.AnimatorIsPlaying("run")))
             {
                 Inputs.Instance.HoldingDownArrow = false;
-                PlayerController.Instance.Move.StopPlayer();
+                Move.Instance.StopPlayer();
                 DisplayButtonOnScreen.Instance.HideButtonPrompt();
                 _showingPrompt = false;
                 if(DialogueEvent != null)

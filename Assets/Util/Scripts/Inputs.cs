@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class Inputs : MonoBehaviour
 {
     public static Inputs Instance;
-    public GameControls _gameControls;
+    public GameControls Controls;
     private InputDevice lastDevice;
     public bool Keyboard;
     public bool AnyKeyWasPressed;
@@ -50,8 +50,8 @@ public class Inputs : MonoBehaviour
 
         SignalSenders = Resources.LoadAll<SignalSender>("ScriptableObjects/SignalSenders").ToList();
 
-        _gameControls = new GameControls();
-        _gameControls.Enable();
+        Controls = new GameControls();
+        Controls.Enable();
 
         ResetAllButtonPress();
 
@@ -60,7 +60,7 @@ public class Inputs : MonoBehaviour
 
     void OnDisable()
     {
-        _gameControls.Disable();
+        Controls.Disable();
     }
 
     public void UpdateLastInputDevice(InputAction.CallbackContext ctx)

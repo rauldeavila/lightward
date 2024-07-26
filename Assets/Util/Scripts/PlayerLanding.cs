@@ -13,7 +13,6 @@ public class PlayerLanding : MonoBehaviour {
     public GameObject autumnParticles;
     public Vector3 spawnParticlePosition;
     public MMFeedbacks landingFeedback;
-    private PauseController pauseScript; // to prevent landing particles when resuming
 
     public string Dirt = "event:/char/wiz/landing_dirt";
     public string Wood = "event:/char/wiz/landing_wood";
@@ -33,7 +32,6 @@ public class PlayerLanding : MonoBehaviour {
             Instance = this; 
         } 
 
-        pauseScript = FindObjectOfType<PauseController>();
         StartCoroutine(EnableLandingParticlesAndSound());
         EnablePlay();
     }

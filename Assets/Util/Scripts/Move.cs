@@ -39,10 +39,10 @@ public class Move : MonoBehaviour
             controller.State.FacingRight = true;
             Flip();
         }
-        controller.Controls.Game.MoveRight.performed += ctx => SetDirection(ctx, 1);
-        controller.Controls.Game.MoveRight.canceled += ctx => ResetDirection(ctx, 1);
-        controller.Controls.Game.MoveLeft.performed += ctx => SetDirection(ctx, -1);
-        controller.Controls.Game.MoveLeft.canceled += ctx => ResetDirection(ctx, -1);
+        Inputs.Instance.Controls.Game.MoveRight.performed += ctx => SetDirection(ctx, 1);
+        Inputs.Instance.Controls.Game.MoveRight.canceled += ctx => ResetDirection(ctx, 1);
+        Inputs.Instance.Controls.Game.MoveLeft.performed += ctx => SetDirection(ctx, -1);
+        Inputs.Instance.Controls.Game.MoveLeft.canceled += ctx => ResetDirection(ctx, -1);
     }
 
     private void Update(){
@@ -182,9 +182,9 @@ public class Move : MonoBehaviour
         FlipSprite();
 
         if(controller.State.FacingRight){
-            controller.GroundController.groundCheckAdjustmentForNewSprites = new Vector3(0f, 0f, 0f);
+            GroundController.Instance.groundCheckAdjustmentForNewSprites = new Vector3(0f, 0f, 0f);
         } else {
-            controller.GroundController.groundCheckAdjustmentForNewSprites = new Vector3(-0.27f, 0f, 0f);
+            GroundController.Instance.groundCheckAdjustmentForNewSprites = new Vector3(-0.27f, 0f, 0f);
         }
     }
 

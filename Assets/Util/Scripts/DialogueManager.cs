@@ -62,7 +62,7 @@ public class DialogueManager : MonoBehaviour {
 		sentences.Clear();
 		if(PlayerState.Instance)
 		{
-			controller.Move.StopPlayer();
+			Move.Instance.StopPlayer();
 		}
 
 		foreach (string sentence in dialogue.sentences) {

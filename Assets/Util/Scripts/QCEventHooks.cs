@@ -25,12 +25,10 @@ public class QCEventHooks : MonoBehaviour
     void OnActivate()
     {
         HideMouseOnMenu.Instance.ShowMouse();
-        PauseController.Instance.ConsoleOn();
     }
 
     void OnDeactivate()
     {
         HideMouseOnMenu.Instance.HideMouse();
-        PauseController.Instance.ConsoleOff();
     }
 }

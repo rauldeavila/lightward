@@ -236,7 +236,7 @@ public class Jump : MonoBehaviour {
             PlayerController.Instance.Animator.SetBool("wallDropping", true);
             StartCoroutine(ResetWallDroppingBool());
             PlayerController.Instance.Animator.Play("wall_drop");
-            PlayerController.Instance.Move.Flip();
+            Move.Instance.Flip();
             PlayerState.Instance.UnaffectedByWind = false;
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             

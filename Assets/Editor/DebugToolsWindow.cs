@@ -33,6 +33,10 @@ public class DebugToolsWindow : EditorWindow
 
     private void OnGUI()
     {
+        if (GUILayout.Button("Toggle New Game", CreateButtonStyle("111111")))
+        {
+            SwitchRealms();
+        }
         // GUILayout.Label("Debug Tools", EditorStyles.boldLabel);
         if (GUILayout.Button(new GUIContent("Select Hero", heroIcon), CreateButtonStyle("00FF00")))
         {

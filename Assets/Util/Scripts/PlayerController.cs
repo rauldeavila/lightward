@@ -6,25 +6,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
 
-    #region Input System Configuration
-    private GameControls controls = null;
-    public GameControls Controls { get => controls; }
-    private void OnEnable() => controls.Game.Enable();
-    private void OnDisable() => controls.Game.Disable();
     InputDevice lastDevice;
-    #endregion
 
-    #region Shared Components
     public Rigidbody2D Rigidbody2D { get => GetComponent<Rigidbody2D>(); }
-    public Move Move { get => GetComponent<Move>(); }
-    public Jump Jump { get => GetComponent<Jump>(); }
-    public PlayerCombat Attack { get => GetComponent<PlayerCombat>(); }
     public PlayerState State { get => GetComponent<PlayerState>(); }
     public Animator Animator { get => GetComponentInChildren<Animator>(); }
-    public GroundController GroundController { get => GetComponent<GroundController>(); }
-    public DashController DashController { get => GetComponent<DashController>(); }
-
-    #endregion
    
     public bool canLook = false; // set on animator;
     private bool _jumpFlag = false;
@@ -45,9 +31,7 @@ public class PlayerController : MonoBehaviour {
 
         zeroedVelocity = Vector3.zero;
 
-        if (controls == null) {
-            controls = new GameControls();
-        }
+
 #if UNITY_EDITOR
             _editor = true;
 #endif
@@ -56,7 +40,7 @@ public class PlayerController : MonoBehaviour {
             print("Loading save file!");
             SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
             if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right").runTimeValue  == false){
-                Move.Flip();
+                Move.Instance.Flip();
             }
             this.Animator.Play("sit");
             StartCoroutine(UIAnimated());
@@ -66,7 +50,7 @@ public class PlayerController : MonoBehaviour {
             if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_changing_scene").runTimeValue){
                 SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
                 if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right").runTimeValue  == false){
-                    Move.Flip();
+                    Move.Instance.Flip();
                 }
                 if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_new_scene_dashing_soul").runTimeValue){
                     this.Animator.Play("dashingsoul_dashing");
@@ -102,7 +86,7 @@ public class PlayerController : MonoBehaviour {
                     SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
                 } else {
                     if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right")  == false){
-                        Move.Flip();
+                        Move.Instance.Flip();
                     }
                     // configs for game booted
                     this.Animator.Play("idle"); // CHANGE THIS IF WANT TO SIT ON CAMPFIRES -----------------------------------------------------
@@ -116,7 +100,7 @@ public class PlayerController : MonoBehaviour {
             if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_changing_scene").runTimeValue){
                 SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
                 if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right")  == false){
-                    Move.Flip();
+                    Move.Instance.Flip();
                 }
                 if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_new_scene_dashing_soul").runTimeValue){
                     this.Animator.Play("dashingsoul_dashing");
@@ -151,7 +135,7 @@ public class PlayerController : MonoBehaviour {
                     PlayerState.Instance.Grounded = true;
                 } else {
                     if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right")  == false){
-                        Move.Flip();
+                        Move.Instance.Flip();
                     }
                     this.Animator.Play("sit");
                     StartCoroutine(UIAnimated());
@@ -162,7 +146,7 @@ public class PlayerController : MonoBehaviour {
             }
             SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
             if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right")  == false){
-                Move.Flip();
+                Move.Instance.Flip();
             }
         }
     }
@@ -174,9 +158,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void Start() {
-        Controls.Game.Jump.performed += ctx => lastDevice = ctx.control?.device;
-        Controls.Game.Attack.performed += ctx => lastDevice = ctx.control?.device;
-        Controls.Game.Dash.performed += ctx => lastDevice = ctx.control?.device;
+        Inputs.Instance.Controls.Game.Jump.performed += ctx => lastDevice = ctx.control?.device;
+        Inputs.Instance.Controls.Game.Attack.performed += ctx => lastDevice = ctx.control?.device;
+        Inputs.Instance.Controls.Game.Dash.performed += ctx => lastDevice = ctx.control?.device;
     }
 
     void FixedUpdate(){
@@ -191,18 +175,6 @@ public class PlayerController : MonoBehaviour {
     }
 
     #endregion
-
-    public bool lastUsedInputIsKeyboard(){
-        if(lastDevice != null){
-            if(lastDevice.displayName == "Keyboard"){
-                return true;
-            } else{
-                return false;
-            }
-        } else {
-            return false;
-        }
-    }
 
 
     public bool AnimatorIsPlaying(string stateName){
@@ -223,7 +195,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void DisablePlayerControls(){
-        Move.enabled = false;
+        Move.Instance.enabled = false;
         StateController.Instance.CanJump = false;
         // DashController.Instance.DisableDash();
         //DashController.enabled = false;
@@ -231,7 +203,7 @@ public class PlayerController : MonoBehaviour {
 
     public void EnablePlayerControls(){
         Animator.SetBool("paused", false);
-        Move.enabled = true;
+        Move.Instance.enabled = true;
         StateController.Instance.CanJump = true;
         // DashController.Instance.EnableDash();
 
@@ -239,11 +211,11 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void DisablePlayerAttack(){
-        Attack.enabled = false;
+        PlayerCombat.Instance.enabled = false;
     }
 
     public void EnablePlayerAttack(){
-        Attack.enabled = true;
+        PlayerCombat.Instance.enabled = true;
     }
 
     public void DecreaseTransform(float amount){
