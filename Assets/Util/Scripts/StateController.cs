@@ -183,7 +183,7 @@ public class StateController : MonoBehaviour {
             return;
         }
 
-        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_dashing_light").runTimeValue == false){
+        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("hero_dashing_light").runTimeValue == false){
             CanDashToLight = false;
             return;
         }

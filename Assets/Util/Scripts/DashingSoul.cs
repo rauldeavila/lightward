@@ -22,7 +22,7 @@ public class DashingSoul : MonoBehaviour {
 
     void FixedUpdate(){
 
-        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_dashing_soul").runTimeValue == false){
+        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("hero_dashing_soul").runTimeValue == false){
             return;
         }
         // AQUI QUE OCORRE O CHECK DO BOTAO

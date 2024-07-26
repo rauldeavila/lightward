@@ -9,6 +9,7 @@ using Sirenix.OdinInspector; // for fast debugging xD
 
 public class GameManager : MonoBehaviour {
 
+    public GameObject WizHouseForNewGame;
     public GameObject SavePanel;
     public GameObject PausePanel;
     public int targetFrameRate = 60; // Desired frame rate
@@ -57,6 +58,7 @@ public class GameManager : MonoBehaviour {
         } else { 
             Instance = this; 
         } 
+
         _globalVolume = FindObjectOfType<Volume>(); 
         if(PlayerPrefs.GetInt("CRT") == 1){
             // to-do FIX
@@ -83,6 +85,11 @@ public class GameManager : MonoBehaviour {
     }
 
     void Start(){
+        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_new_game").runTimeValue){
+            WizHouseForNewGame.SetActive(true);
+            GameState.Instance.InsideBuilding = true;
+        }
+
         UI_SFX = FMODUnity.RuntimeManager.GetBus("bus:/Master/Underwater/sfxui");
         Music = FMODUnity.RuntimeManager.GetBus("bus:/Master/Underwater/music");
         SFX = FMODUnity.RuntimeManager.GetBus("bus:/Master/Underwater/sfx");

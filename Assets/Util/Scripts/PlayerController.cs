@@ -31,124 +31,10 @@ public class PlayerController : MonoBehaviour {
 
         zeroedVelocity = Vector3.zero;
 
-
 #if UNITY_EDITOR
-            _editor = true;
+        _editor = true;
 #endif
-        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_loading_savefile").runTimeValue){
-            ScriptableObjectsManager.Instance.SetScriptableObjectValue<BoolValue>("game_loading_savefile", false);
-            print("Loading save file!");
-            SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
-            if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right").runTimeValue  == false){
-                Move.Instance.Flip();
-            }
-            this.Animator.Play("sit");
-            StartCoroutine(UIAnimated());
-            PlayerState.Instance.Sit = true;
-            PlayerState.Instance.Grounded = true;
-        } else if(_editor){
-            if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_changing_scene").runTimeValue){
-                SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
-                if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right").runTimeValue  == false){
-                    Move.Instance.Flip();
-                }
-                if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_new_scene_dashing_soul").runTimeValue){
-                    this.Animator.Play("dashingsoul_dashing");
-                    this.State.DashingSoul = true;
-                    Invoke("StopMoving",0f);
-                    TriggerHealthUINOIntro();
-                    TriggerMagicUINOIntro();
-                } else if (ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_new_scene_falling").runTimeValue){
-                    this.Animator.Play("fall");
-                    Invoke("StopMoving",0f);
-                    TriggerHealthUINOIntro();
-                    TriggerMagicUINOIntro();
-                } else if (ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_new_scene_up").runTimeValue){
-                    this.Animator.Play("idle");
-                    Invoke("StopMoving",0f);
-                    TriggerHealthUINOIntro();
-                    TriggerMagicUINOIntro();
-                } else {
-                    this.Animator.Play("run");
-                    Invoke("StopMoving", 0.3f); // wiz anda sozinho enquanto o game_changing_scene for true.
-                    // print("not a new game - changed scene");
-                    PlayerState.Instance.Sit = false;
-                    TriggerHealthUINOIntro();
-                    TriggerMagicUINOIntro();
-                    PlayerState.Instance.Grounded = true;
-                }
-            } else {
-                if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_new_game").runTimeValue){
-                    this.Animator.Play("bedtime");
-                    // this.Animator.Play("lay");
-                    PlayerState.Instance.Sit = true;
-                    PlayerState.Instance.Grounded = true;
-                    SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
-                } else {
-                    if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right")  == false){
-                        Move.Instance.Flip();
-                    }
-                    // configs for game booted
-                    this.Animator.Play("idle"); // CHANGE THIS IF WANT TO SIT ON CAMPFIRES -----------------------------------------------------
-                    PlayerState.Instance.Sit = false;
-                    StartCoroutine(UIAnimated());
-                    // print("not a new game - loading from campfire");
-                    PlayerState.Instance.Grounded = true;
-                }
-            }
-        } else{
-            if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_changing_scene").runTimeValue){
-                SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
-                if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right")  == false){
-                    Move.Instance.Flip();
-                }
-                if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_new_scene_dashing_soul").runTimeValue){
-                    this.Animator.Play("dashingsoul_dashing");
-                    this.State.DashingSoul = true;
-                    Invoke("StopMoving",0f);
-                    TriggerHealthUINOIntro();
-                    TriggerMagicUINOIntro();
-                } else if (ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_new_scene_falling").runTimeValue){
-                    this.Animator.Play("fall");
-                    Invoke("StopMoving",0f);
-                    TriggerHealthUINOIntro();
-                    TriggerMagicUINOIntro();
-                } else if (ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_new_scene_up").runTimeValue){
-                    this.Animator.Play("idle");
-                    Invoke("StopMoving",0f);
-                    TriggerHealthUINOIntro();
-                    TriggerMagicUINOIntro();
-                } else {
-                    this.Animator.Play("run");
-                    Invoke("StopMoving", 0.3f); // wiz anda sozinho enquanto o game_changing_scene for true.
-                    // print("not a new game - changed scene");
-                    PlayerState.Instance.Sit = false;
-                    TriggerHealthUINOIntro();
-                    TriggerMagicUINOIntro();
-                    PlayerState.Instance.Grounded = true;
-                }
-            } else {
-                if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_new_game").runTimeValue){
-                    this.Animator.Play("bedtime");
-                    PlayerState.Instance.Sit = true;
-                    // print("new game");
-                    PlayerState.Instance.Grounded = true;
-                } else {
-                    if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right")  == false){
-                        Move.Instance.Flip();
-                    }
-                    this.Animator.Play("sit");
-                    StartCoroutine(UIAnimated());
-                    // print("not a new game - loading from campfire");
-                    PlayerState.Instance.Sit = true;
-                    PlayerState.Instance.Grounded = true;
-                }
-            }
-            SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
-            if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right")  == false){
-                Move.Instance.Flip();
-            }
-        }
+        HandleScriptableObjectInitializations();
     }
 
     void StopMoving(){
@@ -360,7 +246,6 @@ public class PlayerController : MonoBehaviour {
         return Animator.GetCurrentAnimatorClipInfo(0)[0].clip.name;
     }
 
-
     public void SetGravityToOneInSeconds(float time){
         Invoke("SetGravityToOne", time);
     }
@@ -369,42 +254,87 @@ public class PlayerController : MonoBehaviour {
         Invoke("AddNewHeart", 1f);
     }
 
-private IEnumerator AnimateHeartFilling() {
-    FloatValue wizHealth = ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_health");
+    private IEnumerator AnimateHeartFilling() {
+        FloatValue wizHealth = ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_health");
 
-    float currentHealth = wizHealth.runTimeValue;
-    float currentMaxValue = wizHealth.maxValue;
-    float totalDuration = 1.5f;  // Total time for the whole sequence
-    float elapsed = 0.0f;
-    
-    while (currentHealth < currentMaxValue) {
-        elapsed += Time.deltaTime;
+        float currentHealth = wizHealth.runTimeValue;
+        float currentMaxValue = wizHealth.maxValue;
+        float totalDuration = 1.5f;  // Total time for the whole sequence
+        float elapsed = 0.0f;
         
-        // Cubic Easing Out: y = 1 - (1 - x) * (1 - x) * (1 - x)
-        float t = 1 - Mathf.Pow(1 - (elapsed / totalDuration), 3);
+        while (currentHealth < currentMaxValue) {
+            elapsed += Time.deltaTime;
+            
+            // Cubic Easing Out: y = 1 - (1 - x) * (1 - x) * (1 - x)
+            float t = 1 - Mathf.Pow(1 - (elapsed / totalDuration), 3);
 
-        float newHealth = Mathf.Lerp(currentHealth, currentMaxValue, t);
-        ScriptableObjectsManager.Instance.SetScriptableObjectValue<FloatValue>("wiz_health", newHealth);
+            float newHealth = Mathf.Lerp(currentHealth, currentMaxValue, t);
+            ScriptableObjectsManager.Instance.SetScriptableObjectValue<FloatValue>("wiz_health", newHealth);
 
-        if (newHealth >= currentMaxValue) {
-            break;
+            if (newHealth >= currentMaxValue) {
+                break;
+            }
+
+            yield return null;
         }
 
-        yield return null;
+        // Add 1 to the max value and final heart animation
+        float newMaxValue = currentMaxValue + 1;
+        ScriptableObjectsManager.Instance.SetMaxValueForFloatObject("wiz_health", newMaxValue);
+        ScriptableObjectsManager.Instance.SetScriptableObjectValue<FloatValue>("wiz_health", newMaxValue);
+
+        yield return new WaitForSeconds(0.5f);  // Add a slight delay for impact
     }
 
-    // Add 1 to the max value and final heart animation
-    float newMaxValue = currentMaxValue + 1;
-    ScriptableObjectsManager.Instance.SetMaxValueForFloatObject("wiz_health", newMaxValue);
-    ScriptableObjectsManager.Instance.SetScriptableObjectValue<FloatValue>("wiz_health", newMaxValue);
 
-    yield return new WaitForSeconds(0.5f);  // Add a slight delay for impact
-}
+    private void AddNewHeart() {
+        StartCoroutine(AnimateHeartFilling());
+    }
 
-
-private void AddNewHeart() {
-    StartCoroutine(AnimateHeartFilling());
-}
-
+    void HandleScriptableObjectInitializations()
+    {
+        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_loading_savefile").runTimeValue)
+        {
+            ScriptableObjectsManager.Instance.SetScriptableObjectValue<BoolValue>("game_loading_savefile", false);
+            SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
+            if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right").runTimeValue  == false){
+                Move.Instance.Flip();
+            }
+            this.Animator.Play("sit");
+            StartCoroutine(UIAnimated());
+            PlayerState.Instance.Sit = true;
+            PlayerState.Instance.Grounded = true;
+            return;
+        }
+        
+        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_new_game").runTimeValue){
+            this.Animator.Play("bedtime");
+            PlayerState.Instance.Sit = true;
+            PlayerState.Instance.Grounded = true;
+            SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
+        } else {
+            if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right")  == false){
+                Move.Instance.Flip();
+            }
+            if(_editor)
+            {
+                this.Animator.Play("idle"); // CHANGE THIS IF WANT TO SIT ON CAMPFIRES -----------------------------------------------------
+                PlayerState.Instance.Sit = false;   
+            }
+            else
+            {
+                this.Animator.Play("sit");
+                PlayerState.Instance.Sit = true;
+            }
+            PlayerState.Instance.Grounded = true;
+            StartCoroutine(UIAnimated());
+        }
+        
+        // SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("wiz_y").runTimeValue);
+        
+        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_facing_right")  == false){
+            Move.Instance.Flip();
+        }
+    }
 
 }

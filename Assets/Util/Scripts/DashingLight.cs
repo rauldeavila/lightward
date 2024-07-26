@@ -88,7 +88,7 @@ public class DashingLight : MonoBehaviour {
     
 
     public void HandleDashingLightButtonPress(){
-        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_dashing_light").runTimeValue == true){
+        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("hero_dashing_light").runTimeValue == true){
             if(StateController.Instance.CanDashToLight && !Cooldown){
                 if(!PlayerController.Instance.AnimatorIsPlaying("dash") & !PlayerController.Instance.AnimatorIsPlaying("dodge")){
                     DashToLight();

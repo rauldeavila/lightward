@@ -42,7 +42,7 @@ public class FireballCasting : MonoBehaviour {
     }
 
     private void TryFireball(){
-        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("wiz_fireball").runTimeValue == true){
+        if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("hero_fireball").runTimeValue == true){
             if(PlayerState.Instance.CanUseSpell(cost_fireball) && _canCastFireballs && StateController.Instance.CanCastFireball){
                 _canCastFireballs = false;
                 PlayerCombat.Instance.EnterAttackCooldownForSeconds(0.5f);

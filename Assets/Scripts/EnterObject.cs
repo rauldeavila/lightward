@@ -12,7 +12,10 @@ public class EnterObject : MonoBehaviour
     {
         if(DoorClosingSFX)
         {
-            SFXController.Instance.Play("event:/game/00_game/door_closing");
+            if(PlayerState.Instance.Sit == false)
+            {
+                SFXController.Instance.Play("event:/game/00_game/door_closing");
+            }
         }
         if(ToggleAmbienceSounds)
         {

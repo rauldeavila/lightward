@@ -33,9 +33,13 @@ public class DebugToolsWindow : EditorWindow
 
     private void OnGUI()
     {
-        if (GUILayout.Button("Toggle New Game", CreateButtonStyle("111111")))
+        if (GUILayout.Button("New Game", CreateButtonStyle("111111")))
         {
-            SwitchRealms();
+            NewGame();
+        }
+        if (GUILayout.Button("New Game to FALSE", CreateButtonStyle("f1f1f1")))
+        {
+            NotNewGame();
         }
         // GUILayout.Label("Debug Tools", EditorStyles.boldLabel);
         if (GUILayout.Button(new GUIContent("Select Hero", heroIcon), CreateButtonStyle("00FF00")))
@@ -196,5 +200,15 @@ public class DebugToolsWindow : EditorWindow
                 debugTools.MoveToSceneViewCenter(instance);
             }
         }
+    }
+
+    private void NewGame()
+    {
+        ScriptableObjectsManager.Instance.ResetAllForNewGame();
+    }
+
+    private void NotNewGame()
+    {
+        ScriptableObjectsManager.Instance.NotNewGame();
     }
 }

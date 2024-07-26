@@ -96,12 +96,12 @@ public class ScriptableObjectsManager : MonoBehaviour {
     public void ResetAllForNewGame(){
         print("Reseting stuff for new game...");
         foreach(var obj in FloatObjects){
-            if(obj.name == "wiz_health"){
-                obj.runTimeValue = 5f;
-                obj.maxValue = 5f;
-            } else if(obj.name == "wiz_magic"){
-                obj.runTimeValue = 3f;
-                obj.maxValue = 3f;
+            if(obj.name == "hero_health"){
+                obj.runTimeValue = 40f;
+                obj.maxValue = 40f;
+            } else if(obj.name == "hero_magic"){
+                obj.runTimeValue = 40f;
+                obj.maxValue = 40f;
             } else if(obj.name == "wiz_x"){
                 obj.runTimeValue = 2f;
             } else if(obj.name == "wiz_y"){
@@ -123,18 +123,40 @@ public class ScriptableObjectsManager : MonoBehaviour {
             }
         }
         foreach(var obj in IntObjects){
-            if(obj.name == "wiz_magic"){
-                obj.maxValue = 3;
-                obj.runTimeValue = 3;
-            } else {
-                obj.runTimeValue = 0;
-            }
+            obj.runTimeValue = 0;
         }
         foreach(var obj in StringObjects){
             obj.runTimeValue = "";
         }
     }
 
+    public void NotNewGame()
+    {
+        print("Giving stuff to player...");
+        foreach(var obj in FloatObjects){
+            if(obj.name == "hero_health"){
+                obj.runTimeValue = 40f;
+                obj.maxValue = 40f;
+            } else if(obj.name == "hero_magic"){
+                obj.runTimeValue = 40f;
+                obj.maxValue = 40f;
+            }
+        }
+        foreach(var obj in BoolObjects){
+            if(obj.name == "hero_fireball"){
+                obj.runTimeValue = true;
+            }
+            if(obj.name == "hero_dashing_light"){
+                obj.runTimeValue = true;
+            }
+            if(obj.name == "hero_dashing_soul"){
+                obj.runTimeValue = true;
+            }
+            if(obj.name == "game_new_game"){
+                obj.runTimeValue = false;
+            }
+        }
+    }
 
 
     public void ResetAreaName()
