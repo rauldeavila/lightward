@@ -26,6 +26,11 @@ public class SpriteMaskUpdater : MonoBehaviour
 
     void Update()
     {
+        if(GameState.Instance.Darkworld)
+        {
+            _spriteMask.sprite = null;
+            return;
+        }
         // Increment the timer by the time passed since the last frame
         if(RandomizeFrameRate)
         {

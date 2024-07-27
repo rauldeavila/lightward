@@ -3,10 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class GameState : MonoBehaviour {
 
     public static GameState Instance;
+
+    public UnityEvent OnEnterSafeZone;
+    public UnityEvent OnExitSafeZone;
 
     void Awake(){
         if (Instance != null && Instance != this){ 
@@ -57,7 +61,17 @@ public class GameState : MonoBehaviour {
     [SerializeField] private bool _darkworld;
     public bool Darkworld { get => _darkworld; set => _darkworld = value; }
     [SerializeField] private bool _atSafeZone;
-    public bool AtSafeZone { get => _atSafeZone; set => _atSafeZone = value; }
+    public bool AtSafeZone { 
+        get => _atSafeZone; 
+        set {
+            _atSafeZone = value;
+            if (_atSafeZone) {
+                OnEnterSafeZone?.Invoke();
+            } else {
+                OnExitSafeZone?.Invoke();
+            }
+        }
+    }
 
 
 

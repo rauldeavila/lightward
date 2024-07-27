@@ -33,7 +33,7 @@ public class DebugToolsWindow : EditorWindow
 
     private void OnGUI()
     {
-        if (GUILayout.Button("New Game", CreateButtonStyle("111111")))
+        if (GUILayout.Button("New Game", CreateButtonStyle("b1b1b1")))
         {
             NewGame();
         }
