@@ -33,6 +33,14 @@ public class DebugToolsWindow : EditorWindow
 
     private void OnGUI()
     {
+        if (GUILayout.Button("*******", CreateButtonStyle("487e02")))
+        {
+            FillMagic();
+        }
+        if (GUILayout.Button("<3<3<3<3", CreateButtonStyle("d96464")))
+        {
+            FillHealth();
+        }
         if (GUILayout.Button("New Game", CreateButtonStyle("b1b1b1")))
         {
             NewGame();
@@ -210,5 +218,17 @@ public class DebugToolsWindow : EditorWindow
     private void NotNewGame()
     {
         ScriptableObjectsManager.Instance.NotNewGame();
+    }
+
+    private void FillMagic()
+    {
+        ScriptableObjectsManager.Instance.SetScriptableObjectValue<FloatValue>("hero_magic", ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("hero_magic").maxValue);
+        Magic.Instance.UpdateMagic();
+    }
+
+    private void FillHealth()
+    {
+        ScriptableObjectsManager.Instance.SetScriptableObjectValue<FloatValue>("hero_health", ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("hero_health").maxValue);
+        Health.Instance.UpdateHealth();
     }
 }

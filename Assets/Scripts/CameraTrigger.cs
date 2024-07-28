@@ -22,6 +22,7 @@ public class CameraTrigger : MonoBehaviour
         {
             if(FixInThisPosition)
             {
+                Debug.Log($"FIX IN THIS POSITION: {this.transform.position}");
                 CameraSystem.Instance.SetLookAt(this.transform);
             }
             if(Handheld)
