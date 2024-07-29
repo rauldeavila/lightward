@@ -33,8 +33,8 @@ public class Breakable : MonoBehaviour {
     public GameObject coinPrefabAlt;
 
 
-    private float upForceMin = 2f;
-    private float upForceMax = 5f;
+    private float upForceMin = 5f;
+    private float upForceMax = 15f;
 
     public bool disableColliderOnFinalState;
     [ShowIf("disableColliderOnFinalState")]
