@@ -56,47 +56,54 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     public void TakeDamage(bool spike, Vector2 hitterPosition) {
+        if(PlayerState.Instance.Invulnerable) { return; }
+        if(PlayerState.Instance.Hit) { return; }
         if(!Move.Instance.IsNoClipActive)
         {
-            if(PlayerState.Instance.Invulnerable == false){
-                PlayerState.Instance.Hit = true;
-                PlayerState.Instance.Invulnerable = true;
-                Invoke("SetInvulnerabilityBackToFalse", InvulnerableDuration);
-                Invoke("SetHitBackToFalse", HitDuration);
-                if(_lowPitchIsOn == false){
-                    _lowPitchIsOn = true;
-                    HitEffectAmbience = FMODUnity.RuntimeManager.CreateInstance("snapshot:/HitEffect");
-                    HitEffectAmbience.start();
-                    StartCoroutine(ReturnSoundToNormalAfterDelay(1f));
-                }
-                difference = hitterPosition - new Vector2(transform.position.x, transform.position.y);
+            PlayerState.Instance.DashingSoul = false;
+            PlayerState.Instance.Hit = true;
+            PlayerState.Instance.Invulnerable = true;
+            Invoke("SetInvulnerabilityBackToFalse", InvulnerableDuration);
+            Invoke("SetHitBackToFalse", HitDuration);
+            if(_lowPitchIsOn == false){
+                _lowPitchIsOn = true;
+                HitEffectAmbience = FMODUnity.RuntimeManager.CreateInstance("snapshot:/HitEffect");
+                HitEffectAmbience.start();
+                StartCoroutine(ReturnSoundToNormalAfterDelay(1f));
+            }
+            difference = hitterPosition - new Vector2(transform.position.x, transform.position.y);
 
-                damageFeedback?.PlayFeedbacks();
-                if(!spike){
-                    wizHitFeedback?.PlayFeedbacks();
-                    PlayerStats.Instance.DecreaseHealth();
-                    // spikes hitam no spikecontroller;
-                }
+            damageFeedback?.PlayFeedbacks();
+            PlayerStats.Instance.DecreaseHealth();
 
+            if(PlayerStats.Instance.GetCurrentHealth() <= 0){
+                PlayerState.Instance.Dead = true;
+                PlayerController.Instance.Animator.Play("death");
+                return;
+            }
+
+
+            if(spike)
+            {
+                PlayerController.Instance.Animator.Play("spike");
+                CameraSystem.Instance.ShakeCamera(2);
+                PlayerState.Instance.Jump = false;
+                PlayerState.Instance.BeingKnockedBack = true;
+                PlayerController.Instance.KnockWizBack(0f, 8f);
                 if(PlayerStats.Instance.GetCurrentHealth() <= 0){
-                    PlayerState.Instance.Dead = true;
+                    Debug.Log("Death!");
                     PlayerController.Instance.Animator.Play("death");
                     return;
-                } else{
-                    if(!spike){
-                        PlayerController.Instance.Animator.SetFloat("vertical", 0.5f);
-                        PlayerController.Instance.Animator.Play("hit");
-                    } else {
-                        PlayerController.Instance.Animator.Play("spike");
-                    }
+                } else {
+                    Invoke("HandleSpikeRespawn", 0.3f);
                 }
-                PlayerState.Instance.DashingSoul = false;
-            } else {
-                if(PlayerStats.Instance.GetCurrentHealth() <= 0){
-                    print("MORREU INVENCIVEL!");
-                    PlayerController.Instance.Animator.Play("death");
-                    return;
-                }
+            }
+            else // NOT SPIKE
+            {
+                PlayerController.Instance.Animator.Play("hit");
+                PlayerController.Instance.Animator.SetFloat("vertical", 0.5f);
+                wizHitFeedback?.PlayFeedbacks();
+
             }
         }
     }
@@ -120,6 +127,19 @@ public class PlayerHealth : MonoBehaviour {
         PlayerState.Instance.Hit = false;
     }
 
+    void HandleSpikeRespawn(){
+        FadePanel.Instance.FadeOut();
+        Invoke("Respawn", 0.5f);
+    }
 
+    void Respawn(){
+        PlayerState.Instance.Grounded = true;
+        PlayerController.Instance.Animator.Play("respawn");
+        FadePanel.Instance.FadeIn();
+        Inputs.Instance.HoldingLeftArrow = false;
+        Inputs.Instance.HoldingRightArrow = false;
+        PlayerController.Instance.Animator.SetBool("holdingLeftOrRight", false);
+        PlayerController.Instance.SetPlayerPosition(ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("respawn_x").runTimeValue, ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("respawn_y").runTimeValue);
+    }
 
 }

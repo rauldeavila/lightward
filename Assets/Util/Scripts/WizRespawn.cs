@@ -4,20 +4,22 @@ using UnityEngine;
 
 public class WizRespawn : MonoBehaviour {
 
-    private PlayerController wiz;
-
-    private void Awake() {
-        wiz = FindObjectOfType<PlayerController>();
-    }
-
     public void RespawnWiz1(){
-        wiz.SetGravityToOne();
+        PlayerController.Instance.SetGravityToOne();
     }
 
     public void RespawnWiz2(){
-        wiz.EnablePlayerAttack();
-        wiz.EnablePlayerControls();
-        wiz.State.Respawning = false;
+        Invoke("EnsureIt", 0.3f);
+        PlayerController.Instance.EnablePlayerAttack();
+        PlayerController.Instance.EnablePlayerControls();
+        PlayerController.Instance.State.Respawning = false;
+    }
+
+    void EnsureIt()
+    {
+        PlayerController.Instance.EnablePlayerAttack();
+        PlayerController.Instance.EnablePlayerControls();
+        PlayerController.Instance.State.Respawning = false;
     }
 
 }

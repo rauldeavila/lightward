@@ -152,9 +152,6 @@ public class WizCallsOnAnimator : MonoBehaviour {
         crossfadePanel.GetComponent<Animator>().SetTrigger("fadeout");
     }
 
-    public void HealthUIDamage(){
-        healthPanel.GetComponent<Animator>().Play("hearts-panel-damage");
-    }
 
     public void StopMusicBus(){
         Music.stopAllEvents(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);

@@ -170,12 +170,11 @@ public class PlayerStats : MonoBehaviour {
 
     public float GetMaxHealth(){
         // return wiz_health.maxValue;
-        return wiz_health_f.maxValue;
+        return ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("hero_health").maxValue;
     }
 
     public float GetCurrentHealth(){
-        // return wiz_health.runTimeValue;
-        return wiz_health_f.runTimeValue;
+        return ScriptableObjectsManager.Instance.GetScriptableObject<FloatValue>("hero_health").runTimeValue;
     }
 
     public bool IsDashingLightEquiped(){

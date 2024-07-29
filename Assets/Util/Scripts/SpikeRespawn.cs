@@ -3,12 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class SpikeRespawn : MonoBehaviour {
-
-    
-    [InfoBox("On Trigger Enter this transform.position will be wiz respawn position", InfoMessageType.Warning)]
-    
-    private DamagePlayerHandler spike;
 
     private void OnTriggerEnter2D(Collider2D collider) {
         if(collider.CompareTag("WizHitBox") || collider.CompareTag("WizRoll")){
