@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class ColorLightSystem : MonoBehaviour
 {
@@ -16,7 +17,6 @@ public class ColorLightSystem : MonoBehaviour
 
     void SetupColorLightSystem()
     {
-        // RoomConfigurations.Instance.Data.LightIntensity
         // Load the ColorLight material from the Resources folder
         Material colorLightMaterial = Resources.Load<Material>("ColorLight-LVL23"); // DEFAULT
         Material colorLightMaterialDarkRoom = Resources.Load<Material>("ColorLight-LVL01");
@@ -51,6 +51,7 @@ public class ColorLightSystem : MonoBehaviour
 
         if (parentSpriteRenderer != null)
         {
+            parentSpriteRenderer.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
             parentSpriteRenderer.material = colorLightMaterial;
             parentSpriteRenderer.color = tintColor; // Set the tint color
             CreateLayersForSpriteRenderer(parentSpriteRenderer, brightMaterial, colorLightMaterial, colorDarkMaterial);
@@ -65,6 +66,8 @@ public class ColorLightSystem : MonoBehaviour
 
     void CreateLayersForSpriteRenderer(SpriteRenderer parentSpriteRenderer, Material brightMaterial, Material colorLightMaterial, Material colorDarkMaterial)
     {
+        SpriteAnimator parentSpriteAnimator = GetComponent<SpriteAnimator>();
+
         // Create the first child object with the bright material
         GameObject brightChild = new GameObject("BrightLayer");
         brightChild.transform.SetParent(transform);
@@ -78,6 +81,17 @@ public class ColorLightSystem : MonoBehaviour
         brightSpriteRenderer.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
         brightSpriteRenderer.color = lightLayerTintColor; // Set the light layer tint color
 
+        // Copy flip properties
+        brightSpriteRenderer.flipX = parentSpriteRenderer.flipX;
+        brightSpriteRenderer.flipY = parentSpriteRenderer.flipY;
+
+        // Copy SpriteAnimator if exists
+        if (parentSpriteAnimator != null)
+        {
+            SpriteAnimator brightSpriteAnimator = brightChild.AddComponent<SpriteAnimator>();
+            CopySpriteAnimator(parentSpriteAnimator, brightSpriteAnimator);
+        }
+
         // Create the second child object with the original material
         GameObject darkChild = new GameObject("DarkLayer");
         darkChild.transform.SetParent(transform);
@@ -90,7 +104,19 @@ public class ColorLightSystem : MonoBehaviour
         darkSpriteRenderer.sortingOrder = parentSpriteRenderer.sortingOrder;
         darkSpriteRenderer.maskInteraction = SpriteMaskInteraction.VisibleOutsideMask;
         darkSpriteRenderer.color = darkLayerTintColor != Color.white ? darkLayerTintColor : tintColor; // Set the dark layer tint color
+
+        // Copy flip properties
+        darkSpriteRenderer.flipX = parentSpriteRenderer.flipX;
+        darkSpriteRenderer.flipY = parentSpriteRenderer.flipY;
+
+        // Copy SpriteAnimator if exists
+        if (parentSpriteAnimator != null)
+        {
+            SpriteAnimator darkSpriteAnimator = darkChild.AddComponent<SpriteAnimator>();
+            CopySpriteAnimator(parentSpriteAnimator, darkSpriteAnimator);
+        }
     }
+
 
     void CreateLayersForTilemapRenderer(TilemapRenderer parentTilemapRenderer, Material brightMaterial, Material colorLightMaterial, Material colorDarkMaterial)
     {
@@ -105,7 +131,7 @@ public class ColorLightSystem : MonoBehaviour
         brightTilemapRenderer.sortingLayerID = parentTilemapRenderer.sortingLayerID;
         brightTilemapRenderer.sortingOrder = parentTilemapRenderer.sortingOrder + 2;
         brightTilemapRenderer.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
-        brightTilemap.color = lightLayerTintColor;// Set the light layer tint color
+        brightTilemap.color = lightLayerTintColor; // Set the light layer tint color
 
         // Copy tiles from parent to bright layer
         CopyTilemap(parentTilemapRenderer.GetComponent<Tilemap>(), brightTilemap);
@@ -152,5 +178,12 @@ public class ColorLightSystem : MonoBehaviour
                 }
             }
         }
+    }
+
+    void CopySpriteAnimator(SpriteAnimator source, SpriteAnimator destination)
+    {
+        destination.Frames = source.Frames;
+        destination.FramesPerSecond = source.FramesPerSecond;
+        destination.PingPong = source.PingPong;
     }
 }
