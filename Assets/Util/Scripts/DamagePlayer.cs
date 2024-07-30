@@ -7,9 +7,7 @@ public class DamagePlayer : MonoBehaviour {
 
     public bool isSpike = false;
     public bool isParticle = false;
-
     public bool isFire = false;
-
     private bool _coolDownForDashingLight = false;
 
     private void OnTriggerEnter2D(Collider2D collider) {

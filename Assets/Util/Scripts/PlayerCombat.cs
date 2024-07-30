@@ -48,6 +48,7 @@ public class PlayerCombat : MonoBehaviour {
     }
 
     private void Attack(){
+        if(PlayerState.Instance.Hit) { return; }
         PlayerState.Instance.Attack = true;
         if(Inputs.Instance.HoldingUpArrow){
             PlayerController.Instance.Animator.Play("attack_up");

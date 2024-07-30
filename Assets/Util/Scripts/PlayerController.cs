@@ -91,9 +91,6 @@ public class PlayerController : MonoBehaviour {
         Animator.SetBool("paused", false);
         Move.Instance.enabled = true;
         StateController.Instance.CanJump = true;
-        // DashController.Instance.EnableDash();
-
-        //DashController.enabled = true;
     }
 
     public void DisablePlayerAttack(){
@@ -155,6 +152,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void UnfreezeRigidbody(){
+        // print("Unfreeze rigidbody!");
         Rigidbody2D.constraints = RigidbodyConstraints2D.None;
         Rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
     }

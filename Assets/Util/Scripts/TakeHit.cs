@@ -30,6 +30,8 @@ public class TakeHit : MonoBehaviour {
     [ShowIf("DoesPlayerKnocksItBack")]
     public float KnockBackStrength = 2f;
 
+    private float _delayToListenAgain = 0.3f;
+    private bool _canListen = true;
 
     [HideInInspector] public bool canTakeHit = true;
 
@@ -170,11 +172,20 @@ public class TakeHit : MonoBehaviour {
         }
     }
 
-
+    void ReenableListening()
+    {
+        _canListen = true;
+    }
+    
     public void KnockPlayerBack(){
         if(!ground){
             if(PlayerController.Instance.AnimatorIsPlaying("attack_down")){
-                Jump.Instance.Pogo();
+                if(_canListen)
+                {
+                    _canListen = false;
+                    Jump.Instance.Pogo();
+                    Invoke("ReenableListening", _delayToListenAgain);
+                }
             } else if(PlayerController.Instance.AnimatorIsPlaying("attack")) {
                 Vector2 difference = new Vector2(this.transform.position.x, this.transform.position.y) - new Vector2(PlayerController.Instance.transform.position.x, PlayerController.Instance.transform.position.y);
                 if (GetComponent<Rigidbody2D>() == null) {

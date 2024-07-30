@@ -267,7 +267,7 @@ public class ComboSystem : MonoBehaviour
 
     private void OnJumpAttackComboDetected()
     {
-        Debug.Log("Jump + Attack + Jump + Attack combo detected! - it does nothing.");
+        // Debug.Log("Jump + Attack + Jump + Attack combo detected! - it does nothing.");
         lastComboTime = Time.unscaledTime; // Set the last combo time
         // Reset the combo index for the next detection
         jumpAttackComboIndex = 0;

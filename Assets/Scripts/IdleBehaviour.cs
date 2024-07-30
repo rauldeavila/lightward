@@ -11,6 +11,8 @@ public class IdleBehaviour : StateMachineBehaviour
        {
             PlayerState.Instance.Respawning = false;
             Move.Instance.enabled = true;
+            PlayerCombat.Instance.enabled = true;
+            PlayerController.Instance.UnfreezeRigidbody();
        }
     }
 

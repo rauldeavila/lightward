@@ -93,7 +93,7 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638575155701702834
+  lastModified: 638579630502392557
   FileSizes:
   - Name: Desktop
     Value: 15264
@@ -823,10 +823,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638575155701718882
+  lastModified: 638579630502407988
   FileSizes:
   - Name: Desktop
-    Value: 9210
+    Value: 9250
   Exists: 1
 --- !u!114 &-6402182557276624846
 MonoBehaviour:
@@ -1138,10 +1138,10 @@ MonoBehaviour:
   Path: FMOD/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638575435901389907
+  lastModified: 638579638678812962
   FileSizes:
   - Name: Desktop
-    Value: 24050368
+    Value: 24091264
   Exists: 1
 --- !u!114 &-5067860713317869102
 MonoBehaviour:
@@ -2646,6 +2646,7 @@ MonoBehaviour:
   - {fileID: -303179863628031702}
   - {fileID: -1795325597215343135}
   - {fileID: 1304937601141764100}
+  - {fileID: 4217025363725560953}
   EditorParameters:
   - {fileID: -6875798784163521143}
   - {fileID: 5877087860446330077}
@@ -2665,7 +2666,7 @@ MonoBehaviour:
   - {fileID: -8968597007050266248}
   StringsBanks:
   - {fileID: -6413291587173078448}
-  cacheTime: 638575435901389907
+  cacheTime: 638579638678812962
   cacheVersion: 131619
 --- !u!114 &134036986730740280
 MonoBehaviour:
@@ -3826,6 +3827,33 @@ MonoBehaviour:
     Data2: 1209991355
     Data3: 1013673407
     Data4: 1617675671
+  Banks:
+  - {fileID: -5082420947824793738}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4217025363725560953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/game/00_game/spike_clang
+  m_EditorClassIdentifier: 
+  Path: event:/game/00_game/spike_clang
+  Guid:
+    Data1: -253303138
+    Data2: 1077182965
+    Data3: 971241909
+    Data4: -994262283
   Banks:
   - {fileID: -5082420947824793738}
   IsStream: 0
