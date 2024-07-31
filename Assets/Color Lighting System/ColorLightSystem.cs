@@ -73,11 +73,11 @@ public class ColorLightSystem : MonoBehaviour
         brightChild.transform.SetParent(transform);
         brightChild.transform.localPosition = Vector3.zero;
 
-        SpriteRenderer brightSpriteRenderer = brightChild.AddComponent<SpriteRenderer>();
+        SpriteRenderer brightSpriteRenderer = brightChild.AddComponent<SpriteRenderer>();   
         brightSpriteRenderer.sprite = parentSpriteRenderer.sprite;
         brightSpriteRenderer.material = brightMaterial;
         brightSpriteRenderer.sortingLayerID = parentSpriteRenderer.sortingLayerID;
-        brightSpriteRenderer.sortingOrder = parentSpriteRenderer.sortingOrder + 2;
+        brightSpriteRenderer.sortingOrder = parentSpriteRenderer.sortingOrder + 10;
         brightSpriteRenderer.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
         brightSpriteRenderer.color = lightLayerTintColor; // Set the light layer tint color
 
@@ -129,7 +129,7 @@ public class ColorLightSystem : MonoBehaviour
         TilemapRenderer brightTilemapRenderer = brightChild.AddComponent<TilemapRenderer>();
         brightTilemapRenderer.material = brightMaterial;
         brightTilemapRenderer.sortingLayerID = parentTilemapRenderer.sortingLayerID;
-        brightTilemapRenderer.sortingOrder = parentTilemapRenderer.sortingOrder + 2;
+        brightTilemapRenderer.sortingOrder = parentTilemapRenderer.sortingOrder + 10;
         brightTilemapRenderer.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
         brightTilemap.color = lightLayerTintColor; // Set the light layer tint color
 
