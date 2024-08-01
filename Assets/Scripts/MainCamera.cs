@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Camera))]
 public class MainCamera : MonoBehaviour 
 {
     public GameObject ColorSpaceObject;
@@ -14,11 +15,12 @@ public class MainCamera : MonoBehaviour
     private GameObject _summitCameraProps;
     private GameObject _darkWorldCameraProps;
 
-    // private Color _darkworldBackgroundColor = new Color32(80, 80, 80, 255); // #161616
-    // private Color _darkworldBackgroundColor = new Color(0.0f, 0.153f, 0.118f);
     private Color _darkworldBackgroundColor = new Color32(0, 0, 0, 255);
     private Color _regularBackgroundColor = new Color32(0, 0, 0, 255);
     public static MainCamera Instance;
+
+    private float pixelsPerUnit = 16f;
+    private float unitsPerPixel;
 
     void Awake()
     {
@@ -39,6 +41,8 @@ public class MainCamera : MonoBehaviour
         _summitCameraProps = GameObject.Find("Summit Camera Props")?.gameObject;
         _heightsCameraProps = GameObject.Find("Heights Camera Props")?.gameObject; 
         _darkWorldCameraProps = GameObject.Find("Dark World Camera Props")?.gameObject;
+
+        unitsPerPixel = 1f / pixelsPerUnit;
     }
 
     void Start()
@@ -48,6 +52,11 @@ public class MainCamera : MonoBehaviour
         UpdateCameraProperties();
         GameManager.Instance.OnEnterDarkworld.AddListener(DarkworldCamColor);
         GameManager.Instance.OnExitDarkworld.AddListener(OverworldCamColor);
+    }
+
+    void LateUpdate()
+    {
+        EnforcePixelPerfectMovement();
     }
 
     void UpdateCameraProperties()
@@ -90,6 +99,14 @@ public class MainCamera : MonoBehaviour
         {
             DarkworldCamColor();
         }
+    }
+
+    private void EnforcePixelPerfectMovement()
+    {
+        Vector3 position = transform.position;
+        position.x = Mathf.Round(position.x / unitsPerPixel) * unitsPerPixel;
+        position.y = Mathf.Round(position.y / unitsPerPixel) * unitsPerPixel;
+        transform.position = position;
     }
 
     private void SetAllCameraPropsToFalse()
@@ -204,5 +221,4 @@ public class MainCamera : MonoBehaviour
     {
         cam.backgroundColor = _regularBackgroundColor;
     }
-
 }

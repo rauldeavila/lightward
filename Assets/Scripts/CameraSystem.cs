@@ -7,6 +7,7 @@ using Cinemachine;
 using UnityEngine.SceneManagement;
 using Sirenix.OdinInspector;
 using Pathfinding;
+
 public class CameraSystem : MonoBehaviour {
 
     #region unity
@@ -47,13 +48,10 @@ public class CameraSystem : MonoBehaviour {
     private GameObject _shakeHard;
     private GameObject _earthquake;
 
-
-
     private const float _nativeFOV = 5.625f;
     private const float _farFOV = 9.4375f;
     private const float _zoomedFOV = 2.8125f;
     private Coroutine fovCoroutine;
-
 
     private const float defaultY = 0f; // Set to the default Y offset
     private const float upY = 3f; // Set to the Y offset when looking up
@@ -63,7 +61,6 @@ public class CameraSystem : MonoBehaviour {
     private CinemachineCameraOffset cameraOffset;
 
     private Transform temporaryTarget;
-
 
     private float _originalDeadZoneWidth;
     private float _originalDeadZoneHeight;
@@ -75,7 +72,10 @@ public class CameraSystem : MonoBehaviour {
     private float originalYDamping;
     private Coroutine moveCoroutine;
 
-    void Awake(){
+    private float pixelsPerUnit = 16f;
+    private float unitsPerPixel;
+
+    void Awake() {
         if (Instance != null && Instance != this){ 
             Destroy(this); 
         } else { 
@@ -83,18 +83,17 @@ public class CameraSystem : MonoBehaviour {
         }       
         cam = GetComponent<CinemachineVirtualCamera>();
         _brain = FindObjectOfType<CinemachineBrain>();
-        if(_brain != null){
-            _brain.m_UpdateMethod = CinemachineBrain.UpdateMethod.FixedUpdate;
-        }
+
         // Store original lookahead values
+        framingTransposer = cam.GetCinemachineComponent<CinemachineFramingTransposer>();
         if (framingTransposer != null)
         {
             originalLookaheadTime = framingTransposer.m_LookaheadTime;
             originalLookaheadSmoothing = framingTransposer.m_LookaheadSmoothing;
             originalXDamping = framingTransposer.m_XDamping;
             originalYDamping = framingTransposer.m_YDamping;
-            _originalDeadZoneWidth = cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneWidth;
-            _originalDeadZoneHeight = cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneHeight;
+            _originalDeadZoneWidth = framingTransposer.m_DeadZoneWidth;
+            _originalDeadZoneHeight = framingTransposer.m_DeadZoneHeight;
         }
         cameraOffset = cam.GetComponent<CinemachineCameraOffset>();
         _handheldProfile = Resources.Load<NoiseSettings>("Cinemachine Presets/Handheld");
@@ -104,29 +103,40 @@ public class CameraSystem : MonoBehaviour {
         _shakeMedium = this.transform.Find("ShakeMedium").gameObject;
         _shakeHard = this.transform.Find("ShakeHard").gameObject;
         _earthquake = this.transform.Find("Earthquake").gameObject;
+
+        unitsPerPixel = 1f / pixelsPerUnit;
     }
 
-    void Start()
-    {
-        if(SceneManager.GetActiveScene().name != "intro"){
-            cam. m_Follow = Hero;
-            cam.GetComponent<CinemachineConfiner2D>(). m_BoundingShape2D = GenericCamBoundariesForAwake;
-            cam.GetComponent<CinemachineConfiner2D>(). m_BoundingShape2D = FindObjectsOfType<RoomConfigurations>().FirstOrDefault(room => room.isCurrentRoom).GetComponent<PolygonCollider2D>();
-            _originalDeadZoneWidth = cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneWidth;
-            _originalDeadZoneHeight = cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneHeight;
+    void Start() {
+        if (SceneManager.GetActiveScene().name != "intro"){
+            cam.m_Follow = Hero;
+            cam.GetComponent<CinemachineConfiner2D>().m_BoundingShape2D = GenericCamBoundariesForAwake;
+            cam.GetComponent<CinemachineConfiner2D>().m_BoundingShape2D = FindObjectsOfType<RoomConfigurations>().FirstOrDefault(room => room.isCurrentRoom).GetComponent<PolygonCollider2D>();
+            _originalDeadZoneWidth = framingTransposer.m_DeadZoneWidth;
+            _originalDeadZoneHeight = framingTransposer.m_DeadZoneHeight;
         }
     }
 
+    void LateUpdate() {
+        EnforcePixelPerfectMovement();
+    }
 
-    void FixedUpdate(){
-        if(SceneManager.GetActiveScene().name != "intro"){
-            if(GameState.Instance.Overworld)
+    private void EnforcePixelPerfectMovement() {
+        Vector3 position = transform.position;
+        position.x = Mathf.Round(position.x / unitsPerPixel) * unitsPerPixel;
+        position.y = Mathf.Round(position.y / unitsPerPixel) * unitsPerPixel;
+        transform.position = position;
+    }
+
+    void FixedUpdate() {
+        if (SceneManager.GetActiveScene().name != "intro"){
+            if (GameState.Instance.Overworld)
             {
-                if(!PlayerController.Instance.AnimatorIsPlaying("fall") && PlayerController.Instance.canLook && Inputs.Instance.HoldingDownArrow && !PlayerState.Instance.OnSaveTrigger && !PlayerState.Instance.OnElevator && PlayerState.Instance.Grounded && !PlayerController.Instance.AnimatorIsPlaying("run") && !PlayerController.Instance.AnimatorIsPlaying("run_landing") && (PlayerController.Instance.AnimatorIsPlaying("idle") || PlayerController.Instance.AnimatorIsPlaying("look_up") || PlayerController.Instance.AnimatorIsPlaying("look_up_2") || PlayerController.Instance.AnimatorIsPlaying("look_down") || PlayerController.Instance.AnimatorIsPlaying("look_down_2") || PlayerController.Instance.AnimatorIsPlaying("attack_up") || PlayerController.Instance.AnimatorIsPlaying("attack_down"))){
+                if (!PlayerController.Instance.AnimatorIsPlaying("fall") && PlayerController.Instance.canLook && Inputs.Instance.HoldingDownArrow && !PlayerState.Instance.OnSaveTrigger && !PlayerState.Instance.OnElevator && PlayerState.Instance.Grounded && !PlayerController.Instance.AnimatorIsPlaying("run") && !PlayerController.Instance.AnimatorIsPlaying("run_landing") && (PlayerController.Instance.AnimatorIsPlaying("idle") || PlayerController.Instance.AnimatorIsPlaying("look_up") || PlayerController.Instance.AnimatorIsPlaying("look_up_2") || PlayerController.Instance.AnimatorIsPlaying("look_down") || PlayerController.Instance.AnimatorIsPlaying("look_down_2") || PlayerController.Instance.AnimatorIsPlaying("attack_up") || PlayerController.Instance.AnimatorIsPlaying("attack_down"))){
                     LookDown();
-                } else if(!PlayerController.Instance.AnimatorIsPlaying("fall") && PlayerController.Instance.canLook && Inputs.Instance.HoldingUpArrow && !PlayerState.Instance.OnSaveTrigger && !PlayerState.Instance.OnElevator && PlayerState.Instance.Grounded && !PlayerController.Instance.AnimatorIsPlaying("run") && !PlayerController.Instance.AnimatorIsPlaying("run_landing") && (PlayerController.Instance.AnimatorIsPlaying("idle") || PlayerController.Instance.AnimatorIsPlaying("look_up") || PlayerController.Instance.AnimatorIsPlaying("look_up_2") || PlayerController.Instance.AnimatorIsPlaying("look_down") || PlayerController.Instance.AnimatorIsPlaying("look_down_2") || PlayerController.Instance.AnimatorIsPlaying("attack_up") || PlayerController.Instance.AnimatorIsPlaying("attack_down"))){
+                } else if (!PlayerController.Instance.AnimatorIsPlaying("fall") && PlayerController.Instance.canLook && Inputs.Instance.HoldingUpArrow && !PlayerState.Instance.OnSaveTrigger && !PlayerState.Instance.OnElevator && PlayerState.Instance.Grounded && !PlayerController.Instance.AnimatorIsPlaying("run") && !PlayerController.Instance.AnimatorIsPlaying("run_landing") && (PlayerController.Instance.AnimatorIsPlaying("idle") || PlayerController.Instance.AnimatorIsPlaying("look_up") || PlayerController.Instance.AnimatorIsPlaying("look_up_2") || PlayerController.Instance.AnimatorIsPlaying("look_down") || PlayerController.Instance.AnimatorIsPlaying("look_down_2") || PlayerController.Instance.AnimatorIsPlaying("attack_up") || PlayerController.Instance.AnimatorIsPlaying("attack_down"))){
                     LookUp();
-                } else{
+                } else {
                     LookStraight();
                 }
             }
@@ -135,10 +145,8 @@ public class CameraSystem : MonoBehaviour {
 
     #endregion
 
-
     // Method to disable lookahead
-    private void DisableCameraSmoothingAndDamping()
-    {
+    private void DisableCameraSmoothingAndDamping() {
         if (framingTransposer != null)
         {
             framingTransposer.m_LookaheadTime = 0;
@@ -151,8 +159,7 @@ public class CameraSystem : MonoBehaviour {
     }
 
     // Method to restore camera smoothing, damping, and deadzone
-    private void RestoreCameraSmoothingAndDamping()
-    {
+    private void RestoreCameraSmoothingAndDamping() {
         if (framingTransposer != null)
         {
             framingTransposer.m_LookaheadTime = originalLookaheadTime;
@@ -187,8 +194,7 @@ public class CameraSystem : MonoBehaviour {
         // RestoreCameraSmoothingAndDamping();
     }
 
-    private float EaseInOutQuad(float t)
-    {
+    private float EaseInOutQuad(float t) {
         return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
     }
 
@@ -262,9 +268,8 @@ public class CameraSystem : MonoBehaviour {
         moveCoroutine = null;
     }
 
-
     [Button]
-    public void ShakeCamera(int _intensity = 0){
+    public void ShakeCamera(int _intensity = 0) {
         switch (_intensity) {
             case 0:
                 _shakeSoft.GetComponent<CinemachineImpulseSource>().GenerateImpulse();
@@ -282,8 +287,8 @@ public class CameraSystem : MonoBehaviour {
     }
 
     [Button]
-    public void ToggleHandheld(){
-        if(Handheld){
+    public void ToggleHandheld() {
+        if (Handheld) {
             Handheld = false;
             cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 0;
             cam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = 0;
@@ -295,8 +300,8 @@ public class CameraSystem : MonoBehaviour {
     }
 
     [Button]
-    public void ToggleEarthquake(){
-        if(Earthquake){
+    public void ToggleEarthquake() {
+        if (Earthquake) {
             Earthquake = false;
         } else {
             Earthquake = true;
@@ -304,26 +309,22 @@ public class CameraSystem : MonoBehaviour {
         }
     }
 
-    IEnumerator StartEarthquake()
-    {
-        while (Earthquake)
-        {
+    IEnumerator StartEarthquake() {
+        while (Earthquake) {
             _earthquake.GetComponent<CinemachineImpulseSource>().GenerateImpulse();
             yield return new WaitForSeconds(0.2f);
         }
     }
 
     [Button]
-    public void FireballRight(){
+    public void FireballRight() {
         _fireballRightChild.GetComponent<CinemachineImpulseSource>().GenerateImpulse();
     }
 
     [Button]
-    public void FireballLeft(){
+    public void FireballLeft() {
         _fireballLeftChild.GetComponent<CinemachineImpulseSource>().GenerateImpulse();
     }
-
-
 
     public void FarZoom() {
         if (fovCoroutine != null) StopCoroutine(fovCoroutine);
@@ -331,8 +332,7 @@ public class CameraSystem : MonoBehaviour {
     }
 
     public void StrongZoom(bool fast = false) {
-        if (fast)
-        {
+        if (fast) {
             // print("zoom fast!");
             // Stop any ongoing dead zone coroutine and FOV coroutine
             if (fovCoroutine != null) StopCoroutine(fovCoroutine);
@@ -344,9 +344,7 @@ public class CameraSystem : MonoBehaviour {
 
             // Instantly move the camera to the player's position
             cam.transform.position = new Vector3(PlayerController.Instance.transform.position.x, PlayerController.Instance.transform.position.y, cam.transform.position.z);
-        }
-        else
-        {
+        } else {
             // Stop any ongoing dead zone coroutine and FOV coroutine
             if (fovCoroutine != null) StopCoroutine(fovCoroutine);
             if (positionCoroutine != null) StopCoroutine(positionCoroutine);
@@ -365,14 +363,15 @@ public class CameraSystem : MonoBehaviour {
         if (fovCoroutine != null) StopCoroutine(fovCoroutine);
         fovCoroutine = StartCoroutine(ChangeFOV(_nativeFOV));
     }
-    private void SetDeadZoneValues(float width, float height)
-    {
+
+    private void SetDeadZoneValues(float width, float height) {
         if (cam != null)
         {
             cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneWidth = width;
             cam.GetCinemachineComponent<CinemachineFramingTransposer>().m_DeadZoneHeight = height;
         }
     }
+
     private IEnumerator LerpDeadZonesToZero(float duration) {
         float elapsedTime = 0f;
         while (elapsedTime < duration) {
@@ -391,8 +390,7 @@ public class CameraSystem : MonoBehaviour {
         SetDeadZoneValues(0f, 0f);
     }
 
-    private IEnumerator LerpDeadZonesToOriginal(float duration)
-    {
+    private IEnumerator LerpDeadZonesToOriginal(float duration) {
         float elapsedTime = 0f;
         while (elapsedTime < duration)
         {
@@ -440,40 +438,38 @@ public class CameraSystem : MonoBehaviour {
         cam.m_Lens.OrthographicSize = targetFOV;
     }
 
-public void LookUp() {
-    StartCoroutine(StartLookCoroutine(true));
-}
+    public void LookUp() {
+        StartCoroutine(StartLookCoroutine(true));
+    }
 
-public void LookDown() {
-    StartCoroutine(StartLookCoroutine(false));
-}
+    public void LookDown() {
+        StartCoroutine(StartLookCoroutine(false));
+    }
 
-private IEnumerator StartLookCoroutine(bool isLookingUp) {
-    yield return new WaitForSeconds(0.5f); // Wait for 0.5 seconds
+    private IEnumerator StartLookCoroutine(bool isLookingUp) {
+        yield return new WaitForSeconds(0.5f); // Wait for 0.5 seconds
 
-    if(isLookingUp) {
-        // Existing logic for looking up
-        if (positionCoroutine != null) StopCoroutine(positionCoroutine);
-        positionCoroutine = StartCoroutine(ChangeY(upY));
-        if(!PlayerController.Instance.AnimatorIsPlaying("look_up") && !PlayerController.Instance.AnimatorIsPlaying("look_up_2")){
-            PlayerController.Instance.Animator.Play("look_up");
-        }
-    } else {
-        // Existing logic for looking down
-        if (positionCoroutine != null) StopCoroutine(positionCoroutine);
-        positionCoroutine = StartCoroutine(ChangeY(downY));
-        if(!PlayerController.Instance.AnimatorIsPlaying("look_down") && !PlayerController.Instance.AnimatorIsPlaying("look_down_2")){
-            PlayerController.Instance.Animator.Play("look_down");
+        if (isLookingUp) {
+            // Existing logic for looking up
+            if (positionCoroutine != null) StopCoroutine(positionCoroutine);
+            positionCoroutine = StartCoroutine(ChangeY(upY));
+            if (!PlayerController.Instance.AnimatorIsPlaying("look_up") && !PlayerController.Instance.AnimatorIsPlaying("look_up_2")){
+                PlayerController.Instance.Animator.Play("look_up");
+            }
+        } else {
+            // Existing logic for looking down
+            if (positionCoroutine != null) StopCoroutine(positionCoroutine);
+            positionCoroutine = StartCoroutine(ChangeY(downY));
+            if (!PlayerController.Instance.AnimatorIsPlaying("look_down") && !PlayerController.Instance.AnimatorIsPlaying("look_down_2")){
+                PlayerController.Instance.Animator.Play("look_down");
+            }
         }
     }
-}
-
 
     public void LookDownFalling() {
         if (positionCoroutine != null) StopCoroutine(positionCoroutine);
         positionCoroutine = StartCoroutine(ChangeYFaster(downYFalling));
     }
-
 
     public void LookStraight() {
         if (positionCoroutine != null) StopCoroutine(positionCoroutine);
@@ -515,8 +511,7 @@ private IEnumerator StartLookCoroutine(bool isLookingUp) {
         cam.m_Follow = target;
     }
 
-    public void SetLookAtHero()
-    {
+    public void SetLookAtHero() {
         RestoreCameraSmoothingAndDamping();
         StartCoroutine(LerpDeadZonesToOriginal(0.1f));
         cam.m_Follow = Hero;
@@ -524,8 +519,7 @@ private IEnumerator StartLookCoroutine(bool isLookingUp) {
         StartCoroutine(LerpDeadZonesToOriginal(0.1f));
     }
 
-    public void SetFollow(Transform target)
-    {
+    public void SetFollow(Transform target) {
         cam.m_LookAt = target;
     }
 
@@ -554,21 +548,17 @@ private IEnumerator StartLookCoroutine(bool isLookingUp) {
         cam.m_Follow = target;
     }
 
-
-    public void StopAllShakes()
-    {
+    public void StopAllShakes() {
         StopAllCoroutines();
         CancelInvoke();
     }
 
     [Button]
-    public void DarkworldTransition()
-    {
+    public void DarkworldTransition() {
         StartCoroutine(DarkworldCameraTransition());
     }
 
-    private IEnumerator DarkworldCameraTransition()
-    {
+    private IEnumerator DarkworldCameraTransition() {
         float totalDuration = 4.3f;
         float anticipationTime = 0.3f;
         float mainRotationTime = 3f;
@@ -577,8 +567,7 @@ private IEnumerator StartLookCoroutine(bool isLookingUp) {
         float elapsedTime = 0f;
 
         // Initial anticipation phase
-        while (elapsedTime < anticipationTime)
-        {
+        while (elapsedTime < anticipationTime) {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / anticipationTime;
             float angle = Mathf.Lerp(0, 10, t); // Anticipation angle (opposite direction)
@@ -587,10 +576,10 @@ private IEnumerator StartLookCoroutine(bool isLookingUp) {
         }
 
         yield return new WaitForSeconds(0.3f);
+
         // Main rotation phase with overshooting
         elapsedTime = 0f;
-        while (elapsedTime < mainRotationTime)
-        {
+        while (elapsedTime < mainRotationTime) {
             elapsedTime += Time.deltaTime;
             float t = elapsedTime / mainRotationTime;
             float angle = Mathf.Lerp(10, -390, t); // -360 with overshooting
@@ -604,11 +593,9 @@ private IEnumerator StartLookCoroutine(bool isLookingUp) {
         int numSegments = overshootAngles.Length - 1;
         float baseHandshakeTime = stabilizationTime / (numSegments * (numSegments + 1) / 4); // Adjusted to make each segment faster
 
-        for (int i = 0; i < numSegments; i++)
-        {
+        for (int i = 0; i < numSegments; i++) {
             float segmentTime = baseHandshakeTime * (numSegments - i); // Decreasing time for each segment
-            while (elapsedTime < segmentTime)
-            {
+            while (elapsedTime < segmentTime) {
                 elapsedTime += Time.deltaTime;
                 float t = elapsedTime / segmentTime;
                 float angle = Mathf.Lerp(overshootAngles[i], overshootAngles[i + 1], t);
@@ -623,8 +610,7 @@ private IEnumerator StartLookCoroutine(bool isLookingUp) {
     }
 
     [Button]
-    public void MoveCameraToPlayer()
-    {
+    public void MoveCameraToPlayer() {
         Debug.Log("Moved camera to HERO");
         this.transform.position = new Vector3(FindObjectOfType<PlayerController>().transform.position.x, FindObjectOfType<PlayerController>().transform.position.y, this.transform.position.z);
         EditorUtility.SetDirty(this.transform);
