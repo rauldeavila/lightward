@@ -12,6 +12,7 @@ public class HandleInput : MonoBehaviour
     public string _promptType = "Save";
 
     public GameObject EnterObject;
+    public GameObject DisableObjectWhenEntering;
 
     public string SceneName = "";
     public string FacingDirection = "right";
@@ -163,6 +164,7 @@ public class HandleInput : MonoBehaviour
                     else
                     {
                         EnterObject.SetActive(true);
+                        DisableObjectWhenEntering.SetActive(false);
                     }
                 }
                 else

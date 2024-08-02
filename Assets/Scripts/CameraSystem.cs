@@ -617,4 +617,9 @@ public class CameraSystem : MonoBehaviour {
         SceneView.RepaintAll();
     }
 
+    public void ChangeCamBoundaries(PolygonCollider2D collider)
+    {
+        cam.GetComponent<CinemachineConfiner2D>().m_BoundingShape2D = collider;
+    }
+
 }

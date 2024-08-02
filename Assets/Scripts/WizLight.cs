@@ -15,6 +15,8 @@ public class WizLight : MonoBehaviour
     public int Level2Bright = 70;
     public int Level3Soft = 239;
     public int Level3Bright = 200;
+    public int Level4Soft = 200;
+    public int Level4Bright = 0;
 
     public static WizLight Instance;
 
@@ -37,7 +39,8 @@ public class WizLight : MonoBehaviour
             { 0, Level0Soft },
             { 1, Level1Soft },
             { 2, Level2Soft },
-            { 3, Level3Soft }
+            { 3, Level3Soft },
+            { 4, Level4Soft }
         };
 
         brightLevels = new Dictionary<int, int>
@@ -45,7 +48,8 @@ public class WizLight : MonoBehaviour
             { 0, Level0Bright },
             { 1, Level1Bright },
             { 2, Level2Bright },
-            { 3, Level3Bright }
+            { 3, Level3Bright },
+            { 4, Level4Bright },
         };
     }
 

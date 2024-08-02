@@ -15,6 +15,7 @@ public class RoomConfigurations : MonoBehaviour
     public static UnityEvent OnRoomChanged = new UnityEvent();
     private CinemachineConfiner2D confiner;
     private CameraSystem cameraSystem;
+    public bool FORCE_COLLIDER_UPDATE = false;
 
     void Awake()
     {
@@ -40,13 +41,17 @@ public class RoomConfigurations : MonoBehaviour
         }
         if(objectsToEnable.Count < 2)
         {
-            Debug.LogError("Watch out! The room " + gameObject.name + " has less than 2 objects enabled.");
+            Debug.Log("Watch out! The room " + gameObject.name + " has less than 2 objects enabled.");
         }
         confiner = FindObjectOfType<CinemachineConfiner2D>();
         cameraSystem = FindObjectOfType<CameraSystem>();
         if (confiner == null)
         {
             Debug.LogError("CinemachineConfiner2D not found in the scene.");
+        }
+        if(FORCE_COLLIDER_UPDATE)
+        {
+            CameraSystem.Instance.ChangeCamBoundaries(GetComponent<PolygonCollider2D>());
         }
     }
 
