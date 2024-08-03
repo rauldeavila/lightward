@@ -1,71 +1,72 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveTransform : MonoBehaviour
 {
-
     public float StartingX = 0f;
     public float StartingY = 0f;
     public float MoveSpeed = 5f;
-
     public float LoopWhenReaches = 1062f;
-
     public bool useRigidbody = false;
 
     private Rigidbody2D _rb;
-    private float _initialStartingX;
+    private Vector3 _initialPosition;
 
-    void Start(){
-        _rb = GetComponent<Rigidbody2D>();
-        _initialStartingX = StartingX;
-        if(MoveSpeed > 0)
+    void Start()
+    {
+        _initialPosition = new Vector3(StartingX, StartingY, 0);
+        transform.position = _initialPosition;
+
+        if (useRigidbody)
         {
-            StartCoroutine(IncrementXVelocity());
+            _rb = GetComponent<Rigidbody2D>();
+        }
+
+        if (MoveSpeed > 0)
+        {
+            StartCoroutine(IncrementXPosition());
         }
         else
         {
-            StartCoroutine(DecrementXVelocity());
+            StartCoroutine(DecrementXPosition());
         }
     }
 
-    IEnumerator IncrementXVelocity()
+    IEnumerator IncrementXPosition()
     {
-        while(true)
+        while (true)
         {
-            while(StartingX < LoopWhenReaches)
+            while (transform.position.x < LoopWhenReaches)
             {
-                StartingX += Time.deltaTime * MoveSpeed * 10;
+                MoveObject(MoveSpeed);
                 yield return null;
             }
-            StartingX = _initialStartingX;
+            transform.position = _initialPosition;
         }
     }
 
-    IEnumerator DecrementXVelocity(){
-        while(true)
+    IEnumerator DecrementXPosition()
+    {
+        while (true)
         {
-            while(StartingX > LoopWhenReaches)
+            while (transform.position.x > LoopWhenReaches)
             {
-                StartingX += Time.deltaTime * MoveSpeed * 10;
+                MoveObject(MoveSpeed);
                 yield return null;
             }
-            StartingX = _initialStartingX;
+            transform.position = _initialPosition;
         }
     }
 
-    public void FixedUpdate(){
-        MoveObject();
-    }
-
-    void MoveObject(){
-        if(useRigidbody)
+    void MoveObject(float speed)
+    {
+        if (useRigidbody)
         {
-            _rb.velocity = new Vector2(StartingX, 0);
-        } else 
+            _rb.velocity = new Vector2(speed, 0);
+        }
+        else
         {
-            transform.Translate(StartingX * Time.deltaTime, StartingY * Time.deltaTime, 0);
+            transform.Translate(speed * Time.deltaTime, 0, 0);
         }
     }
-
 }
