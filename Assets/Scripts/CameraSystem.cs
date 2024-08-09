@@ -331,37 +331,37 @@ public class CameraSystem : MonoBehaviour {
         fovCoroutine = StartCoroutine(ChangeFOV(_farFOV));
     }
 
-    public void StrongZoom(bool fast = false) {
-        if (fast) {
-            // print("zoom fast!");
-            // Stop any ongoing dead zone coroutine and FOV coroutine
-            if (fovCoroutine != null) StopCoroutine(fovCoroutine);
-            if (positionCoroutine != null) StopCoroutine(positionCoroutine);
+    public void StrongZoom() {
+        // if (fast) {
+        //     // print("zoom fast!");
+        //     // Stop any ongoing dead zone coroutine and FOV coroutine
+        //     if (fovCoroutine != null) StopCoroutine(fovCoroutine);
+        //     if (positionCoroutine != null) StopCoroutine(positionCoroutine);
 
-            // Start new coroutines for fast zoom and dead zone adjustment
-            positionCoroutine = StartCoroutine(LerpDeadZonesToZero(0.1f));
-            fovCoroutine = StartCoroutine(ChangeFOVFast(_zoomedFOV));
+        //     // Start new coroutines for fast zoom and dead zone adjustment
+        //     positionCoroutine = StartCoroutine(LerpDeadZonesToZero(0.1f));
+        //     fovCoroutine = StartCoroutine(ChangeFOVFast(_zoomedFOV));
 
-            // Instantly move the camera to the player's position
-            cam.transform.position = new Vector3(PlayerController.Instance.transform.position.x, PlayerController.Instance.transform.position.y, cam.transform.position.z);
-        } else {
-            // Stop any ongoing dead zone coroutine and FOV coroutine
-            if (fovCoroutine != null) StopCoroutine(fovCoroutine);
-            if (positionCoroutine != null) StopCoroutine(positionCoroutine);
+        //     // Instantly move the camera to the player's position
+        //     cam.transform.position = new Vector3(PlayerController.Instance.transform.position.x, PlayerController.Instance.transform.position.y, cam.transform.position.z);
+        // } else {
+        //     // Stop any ongoing dead zone coroutine and FOV coroutine
+        //     if (fovCoroutine != null) StopCoroutine(fovCoroutine);
+        //     if (positionCoroutine != null) StopCoroutine(positionCoroutine);
 
-            // Start new coroutines for smooth zoom and dead zone adjustment
-            positionCoroutine = StartCoroutine(LerpDeadZonesToZero(0.5f));
-            fovCoroutine = StartCoroutine(ChangeFOV(_zoomedFOV));
+        //     // Start new coroutines for smooth zoom and dead zone adjustment
+        //     positionCoroutine = StartCoroutine(LerpDeadZonesToZero(0.5f));
+        //     fovCoroutine = StartCoroutine(ChangeFOV(_zoomedFOV));
 
-            // Smoothly move the camera to the player's position
-            cam.transform.position = new Vector3(PlayerController.Instance.transform.position.x, PlayerController.Instance.transform.position.y, cam.transform.position.z);
-        }
+        //     // Smoothly move the camera to the player's position
+        //     cam.transform.position = new Vector3(PlayerController.Instance.transform.position.x, PlayerController.Instance.transform.position.y, cam.transform.position.z);
+        // }
     }
 
     public void DefaultZoom() {
-        StartCoroutine(LerpDeadZonesToOriginal(1f));
-        if (fovCoroutine != null) StopCoroutine(fovCoroutine);
-        fovCoroutine = StartCoroutine(ChangeFOV(_nativeFOV));
+        // StartCoroutine(LerpDeadZonesToOriginal(1f));
+        // if (fovCoroutine != null) StopCoroutine(fovCoroutine);
+        // fovCoroutine = StartCoroutine(ChangeFOV(_nativeFOV));
     }
 
     private void SetDeadZoneValues(float width, float height) {
@@ -505,14 +505,37 @@ public class CameraSystem : MonoBehaviour {
         }
     }
 
+    private void DisableBoundaries()
+    {
+        cam.GetComponent<CinemachineConfiner2D>().m_BoundingShape2D = GenericCamBoundariesForAwake;
+    }
+
+    void EnableBoundaries()
+    {
+        // cam.GetComponent<CinemachineConfiner2D>().m_BoundingShape2D = FindObjectsOfType<RoomConfigurations>().FirstOrDefault(room => room.isCurrentRoom).GetComponent<PolygonCollider2D>();
+        // Invoke("InvalidateCache", 0.5f);
+    }
+
+    void InvalidateCache()
+    {
+        cam.GetComponent<CinemachineConfiner2D>().InvalidateCache();
+    }
+
     public void SetLookAt(Transform target) {
         DisableCameraSmoothingAndDamping();
+        // DisableBoundaries();
         StartCoroutine(LerpDeadZonesToZero(0.1f));
         cam.m_Follow = target;
     }
 
     public void SetLookAtHero() {
         RestoreCameraSmoothingAndDamping();
+        EnableBoundaries();
+        Invoke("RestOfLookAtHero", 0.5f);
+    }
+
+    void RestOfLookAtHero()
+    {
         StartCoroutine(LerpDeadZonesToOriginal(0.1f));
         cam.m_Follow = Hero;
         RestoreCameraSmoothingAndDamping();
@@ -620,6 +643,12 @@ public class CameraSystem : MonoBehaviour {
     public void ChangeCamBoundaries(PolygonCollider2D collider)
     {
         cam.GetComponent<CinemachineConfiner2D>().m_BoundingShape2D = collider;
+        cam.GetComponent<CinemachineConfiner2D>().InvalidateCache();
+    }
+
+    public string GetBoundaries()
+    {
+        return cam.GetComponent<CinemachineConfiner2D>().m_BoundingShape2D.name;
     }
 
 }

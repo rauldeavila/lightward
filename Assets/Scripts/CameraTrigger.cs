@@ -11,6 +11,7 @@ public class CameraTrigger : MonoBehaviour
     public bool ZoomFast = false;
     public bool FixInThisPosition = false;
     public bool FixFast = false;
+    public bool Campfire = false;
 
     private void OnTriggerEnter2D(Collider2D collider) 
     {
@@ -32,7 +33,7 @@ public class CameraTrigger : MonoBehaviour
             
             if(NearZoom)
             {
-                CameraSystem.Instance.StrongZoom(ZoomFast);
+                CameraSystem.Instance.StrongZoom();
             } 
             else if(FarZoom)
             {
@@ -61,7 +62,10 @@ public class CameraTrigger : MonoBehaviour
 
             if(NearZoom || FarZoom)
             {
-                CameraSystem.Instance.DefaultZoom();
+                if(!Campfire)
+                {
+                    CameraSystem.Instance.DefaultZoom();
+                }
             } 
         }
     }

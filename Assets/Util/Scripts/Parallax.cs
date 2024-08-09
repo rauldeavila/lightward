@@ -4,6 +4,7 @@ using UnityEngine;
 public class Parallax : MonoBehaviour
 {
     // Parallax Scroll Variables
+    public bool ThisObjectMoves = false;
     public Camera cam; // the camera
     public Transform subject; // the subject (usually the player character)
 
@@ -40,8 +41,11 @@ public class Parallax : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        // Update startPos based on XSpeed
-        startPos.x += XSpeed * Time.fixedDeltaTime;
+        if(ThisObjectMoves)
+        {
+            // Update startPos based on XSpeed
+            startPos.x += XSpeed * Time.fixedDeltaTime;
+        }
 
         Vector2 newPos = startPos + travel * parallaxFactor;
 

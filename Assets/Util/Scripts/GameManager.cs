@@ -215,7 +215,7 @@ public class GameManager : MonoBehaviour {
 
     private void EnterDarkworld()
     {
-        CameraSystem.Instance.DarkworldTransition();
+        // CameraSystem.Instance.DarkworldTransition();
         StartCoroutine("LoadDarkworldProfile");
         GameState.Instance.Darkworld = true;
         OnEnterDarkworld?.Invoke();
@@ -223,7 +223,7 @@ public class GameManager : MonoBehaviour {
 
     private void ExitDarkworld()
     {
-        CameraSystem.Instance.DarkworldTransition();
+        // CameraSystem.Instance.DarkworldTransition();
         StartCoroutine("LoadOverworldProfile");
         GameState.Instance.Darkworld = false;
         OnExitDarkworld?.Invoke();
