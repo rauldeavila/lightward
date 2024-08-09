@@ -332,33 +332,16 @@ public class CameraSystem : MonoBehaviour {
     }
 
     public void StrongZoom() {
-        // if (fast) {
-        //     // print("zoom fast!");
-        //     // Stop any ongoing dead zone coroutine and FOV coroutine
-        //     if (fovCoroutine != null) StopCoroutine(fovCoroutine);
-        //     if (positionCoroutine != null) StopCoroutine(positionCoroutine);
+        QuadCam.Instance.ZoomIn(true);
+    }
 
-        //     // Start new coroutines for fast zoom and dead zone adjustment
-        //     positionCoroutine = StartCoroutine(LerpDeadZonesToZero(0.1f));
-        //     fovCoroutine = StartCoroutine(ChangeFOVFast(_zoomedFOV));
-
-        //     // Instantly move the camera to the player's position
-        //     cam.transform.position = new Vector3(PlayerController.Instance.transform.position.x, PlayerController.Instance.transform.position.y, cam.transform.position.z);
-        // } else {
-        //     // Stop any ongoing dead zone coroutine and FOV coroutine
-        //     if (fovCoroutine != null) StopCoroutine(fovCoroutine);
-        //     if (positionCoroutine != null) StopCoroutine(positionCoroutine);
-
-        //     // Start new coroutines for smooth zoom and dead zone adjustment
-        //     positionCoroutine = StartCoroutine(LerpDeadZonesToZero(0.5f));
-        //     fovCoroutine = StartCoroutine(ChangeFOV(_zoomedFOV));
-
-        //     // Smoothly move the camera to the player's position
-        //     cam.transform.position = new Vector3(PlayerController.Instance.transform.position.x, PlayerController.Instance.transform.position.y, cam.transform.position.z);
-        // }
+    public void MidZoom()
+    {
+        QuadCam.Instance.ZoomIn();
     }
 
     public void DefaultZoom() {
+        QuadCam.Instance.ZoomOut();
         // StartCoroutine(LerpDeadZonesToOriginal(1f));
         // if (fovCoroutine != null) StopCoroutine(fovCoroutine);
         // fovCoroutine = StartCoroutine(ChangeFOV(_nativeFOV));
@@ -540,6 +523,7 @@ public class CameraSystem : MonoBehaviour {
         cam.m_Follow = Hero;
         RestoreCameraSmoothingAndDamping();
         StartCoroutine(LerpDeadZonesToOriginal(0.1f));
+        DefaultZoom();
     }
 
     public void SetFollow(Transform target) {

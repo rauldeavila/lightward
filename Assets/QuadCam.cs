@@ -9,8 +9,19 @@ public class QuadCam : MonoBehaviour
     private float defaultX = -1249f;
     private float defaultY = -201f;
     private float defaultZ = 155.94f;
-    private float zoomedZ = 50f;
+    private float mediumZoomZ = 75f;
+    private float strongZoomZ = 50f;
     public float zoomSpeed = 5f;
+
+    public Transform A;
+    public Transform B;
+    public Transform C;
+    public Transform D;
+    public Transform E;
+    public Transform F;
+    public Transform G;
+    public Transform H;
+    public Transform I;
 
     private Coroutine currentCoroutine;
 
@@ -27,13 +38,22 @@ public class QuadCam : MonoBehaviour
     }
 
     [Button("Zoom In")]
-    public void ZoomIn(float targetX, float targetY)
+    public void ZoomIn(bool strongZoom = false)
     {
+        Transform targetTransform = GetTargetTransformFromQuadrant();
+        if (targetTransform == null)
+        {
+            Debug.LogWarning("No quadrant detected or invalid quadrant.");
+            return;
+        }
+
+        float zoomZ = strongZoom ? strongZoomZ : mediumZoomZ;
+
         if (currentCoroutine != null)
         {
             StopCoroutine(currentCoroutine);
         }
-        currentCoroutine = StartCoroutine(SmoothZoom(new Vector3(-1249f, -140f, zoomedZ)));
+        currentCoroutine = StartCoroutine(SmoothZoom(new Vector3(targetTransform.position.x, targetTransform.position.y, zoomZ)));
     }
 
     [Button("Zoom Out")]
@@ -46,8 +66,28 @@ public class QuadCam : MonoBehaviour
         currentCoroutine = StartCoroutine(SmoothZoom(new Vector3(defaultX, defaultY, defaultZ)));
     }
 
+    private Transform GetTargetTransformFromQuadrant()
+    {
+        string currentQuadrant = QuadrantController.Instance.GetCurrentQuadrant();
+
+        switch (currentQuadrant)
+        {
+            case "A": return A;
+            case "B": return B;
+            case "C": return C;
+            case "D": return D;
+            case "E": return E;
+            case "F": return F;
+            case "G": return G;
+            case "H": return H;
+            case "I": return I;
+            default: return null;
+        }
+    }
+
     private IEnumerator SmoothZoom(Vector3 targetPosition)
     {
+        Debug.Log("Target position = " + GetTargetTransformFromQuadrant().ToString());
         while (Vector3.Distance(transform.position, targetPosition) > 0.01f)
         {
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * zoomSpeed);

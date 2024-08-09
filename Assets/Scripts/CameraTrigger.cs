@@ -6,12 +6,13 @@ public class CameraTrigger : MonoBehaviour
 {
 
     public bool Handheld = false;
-    public bool NearZoom = false;
-    public bool FarZoom = false;
-    public bool ZoomFast = false;
+    public bool MidZoom = false;
+    public bool StrongZoom = false;
+    public bool FastZoom = false;
     public bool FixInThisPosition = false;
     public bool FixFast = false;
-    public bool Campfire = false;
+    public bool ForceQuadrant = false;
+    public string QuadrantToForce = "H";
 
     private void OnTriggerEnter2D(Collider2D collider) 
     {
@@ -31,14 +32,15 @@ public class CameraTrigger : MonoBehaviour
                 CameraSystem.Instance.ToggleHandheld();
             }
             
-            if(NearZoom)
+            if(MidZoom)
+            {
+                CameraSystem.Instance.MidZoom();
+            }
+
+            if(StrongZoom)
             {
                 CameraSystem.Instance.StrongZoom();
             } 
-            else if(FarZoom)
-            {
-                CameraSystem.Instance.FarZoom();
-            }
         }
     }
 
@@ -60,13 +62,10 @@ public class CameraTrigger : MonoBehaviour
                 CameraSystem.Instance.ToggleHandheld();
             }
 
-            if(NearZoom || FarZoom)
+            if(StrongZoom || MidZoom)
             {
-                if(!Campfire)
-                {
-                    CameraSystem.Instance.DefaultZoom();
-                }
-            } 
+                CameraSystem.Instance.DefaultZoom();
+            }
         }
     }
 
