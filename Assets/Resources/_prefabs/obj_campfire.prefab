@@ -11262,7 +11262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9220956492624941712}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11308,8 +11308,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Handheld: 0
-  NearZoom: 1
-  FarZoom: 0
-  ZoomFast: 0
-  FixInThisPosition: 1
+  MidZoom: 0
+  StrongZoom: 1
+  FastZoom: 0
+  FixInThisPosition: 0
   FixFast: 0
+  ForceQuadrant: 0
+  QuadrantToForce: H
+  QuadrantCustomY: -191

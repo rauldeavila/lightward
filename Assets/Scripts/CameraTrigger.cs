@@ -13,6 +13,7 @@ public class CameraTrigger : MonoBehaviour
     public bool FixFast = false;
     public bool ForceQuadrant = false;
     public string QuadrantToForce = "H";
+    public float QuadrantCustomY = -191;
 
     private void OnTriggerEnter2D(Collider2D collider) 
     {
