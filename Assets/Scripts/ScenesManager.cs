@@ -54,7 +54,10 @@ public class ScenesManager : MonoBehaviour {
         // Debug.Log("Scene loading complete!");
         FinishedLoading = true;
         if(!MainMenu){
-            CrossfadePanelController.Instance.FadeIn();
+            if(CrossfadePanelController.Instance != null)
+            {
+                CrossfadePanelController.Instance.Default();
+            }
         }
         if(Inputs.Instance)
         {

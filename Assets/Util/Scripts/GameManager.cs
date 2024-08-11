@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
     public GameObject WizHouseForNewGame;
     public GameObject SavePanel;
     public GameObject PausePanel;
+    public GameObject CrossfadePanel;
     public int targetFrameRate = 60; // Desired frame rate
 
     public ScriptableRendererFeature feature;
@@ -86,6 +87,8 @@ public class GameManager : MonoBehaviour {
 
     void Start(){
         if(ScriptableObjectsManager.Instance.GetScriptableObject<BoolValue>("game_new_game").runTimeValue){
+            QuadCam.Instance.NewGame = true;
+            QuadCam.Instance.StartCinematicTransition();
             WizHouseForNewGame.SetActive(true);
             GameState.Instance.InsideBuilding = true;
         }
@@ -321,4 +324,10 @@ public class GameManager : MonoBehaviour {
         LoadProfileByName(overworldProfile);
         GameState.Instance.Overworld = true;
     }
+
+    public void EnableCrossfadePanel()
+    {
+      CrossfadePanel.SetActive(true);
+    }
+
 }

@@ -22,7 +22,9 @@ public class WakeywakeyBehaviour : StateMachineBehaviour
         GameState.Instance.InsideBuilding = true;
         PlayerController.Instance.SetPlayerPosition(2.45f, 0f, false);
         PlayerState.Instance.Sit = false;
-        HealthUIController.Instance.GetComponent<Animator>().SetTrigger("intro");
+        QuadCam.Instance.SetNewGameToFalse();
+        GameManager.Instance.EnableCrossfadePanel();
+        // HealthUIController.Instance.GetComponent<Animator>().SetTrigger("intro");
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

@@ -23,4 +23,9 @@ public class CrossfadePanelController : MonoBehaviour {
         // BaseCamera.Instance.GetComponent<Camera>().backgroundColor = Color.black;
     }
 
+    public void Default()
+    {
+        GetComponent<Animator>().Play("default");
+    }
+
 }

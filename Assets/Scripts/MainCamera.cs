@@ -56,7 +56,7 @@ public class MainCamera : MonoBehaviour
 
     void LateUpdate()
     {
-        EnforcePixelPerfectMovement();
+        // EnforcePixelPerfectMovement();
     }
 
     void UpdateCameraProperties()

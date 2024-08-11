@@ -37,7 +37,7 @@ public class QuadrantController : MonoBehaviour
 
     public void SetCurrentQuadrant(string newQuadrant)
     {
-        Debug.Log("New quadrant: " + newQuadrant);
+        // Debug.Log("New quadrant: " + newQuadrant);
         currentQuadrant = newQuadrant;
     }
 }

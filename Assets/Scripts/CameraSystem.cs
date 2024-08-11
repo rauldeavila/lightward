@@ -341,6 +341,7 @@ public class CameraSystem : MonoBehaviour {
     }
 
     public void DefaultZoom() {
+        ZoomPositionBasedOnPlayer.Instance.ResetTransformToZoom();
         QuadCam.Instance.ZoomOut();
         // StartCoroutine(LerpDeadZonesToOriginal(1f));
         // if (fovCoroutine != null) StopCoroutine(fovCoroutine);

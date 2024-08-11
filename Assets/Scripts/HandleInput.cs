@@ -164,7 +164,7 @@ public class HandleInput : MonoBehaviour
                     else
                     {
                         EnterObject.SetActive(true);
-                        DisableObjectWhenEntering.SetActive(false);
+                        if(DisableObjectWhenEntering != null) { DisableObjectWhenEntering.SetActive(false); }
                     }
                 }
                 else

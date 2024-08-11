@@ -23,28 +23,18 @@ public class CameraTrigger : MonoBehaviour
         }
         if(collider.CompareTag("WizHitBox"))
         {
-            if(FixInThisPosition)
-            {
-                Debug.Log($"FIX IN THIS POSITION: {this.transform.position}");
-                CameraSystem.Instance.SetLookAt(this.transform);
-            }
             if(Handheld)
             {
                 CameraSystem.Instance.ToggleHandheld();
             }
             
-            if(MidZoom)
+            if(MidZoom || StrongZoom)
             {
-                CameraSystem.Instance.MidZoom();
+                if(FixInThisPosition) { ZoomPositionBasedOnPlayer.Instance.ZoomThis(this.transform); }
+                QuadCam.Instance.ZoomIn(StrongZoom);
             }
-
-            if(StrongZoom)
-            {
-                CameraSystem.Instance.StrongZoom();
-            } 
         }
     }
-
     private void OnTriggerExit2D(Collider2D collider) 
     {
         if(PlayerState.Instance.JustDodged)

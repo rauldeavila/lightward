@@ -110,11 +110,11 @@ public class Move : MonoBehaviour
         } else {
             PlayerState.Instance.Run = false;
         }
-        float pixelsPerUnit = 16; // Assuming 16 pixels per unit
-        Vector3 position = transform.position;
-        position.x = Mathf.Round(position.x * pixelsPerUnit) / pixelsPerUnit;
-        position.y = Mathf.Round(position.y * pixelsPerUnit) / pixelsPerUnit;
-        transform.position = position;
+        // float pixelsPerUnit = 16; // Assuming 16 pixels per unit
+        // Vector3 position = transform.position;
+        // position.x = Mathf.Round(position.x * pixelsPerUnit) / pixelsPerUnit;
+        // position.y = Mathf.Round(position.y * pixelsPerUnit) / pixelsPerUnit;
+        // transform.position = position;
         
     }
 
