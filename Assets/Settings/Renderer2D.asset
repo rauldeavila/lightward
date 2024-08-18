@@ -75,30 +75,30 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: 6f2fcdc189458914eb8a323f19e3a27b, type: 3}
   preset: 6
   pixelResolutionX: 320
-  pixelResolutionY: 216
-  screenBend: 0
+  pixelResolutionY: 180
+  screenBend: 3.2
   screenOverscan: 0
   blur: 0
   bleed: 0
   smidge: 0
   scanlinesStrength: 0
   apertureStrength: 0
-  shadowlines: 0
-  shadowlinesSpeed: -20
-  shadowlinesAlpha: 0
-  noiseSize: 0
-  noiseSpeed: 0
-  noiseAlpha: 0
-  vignetteSize: 0
+  shadowlines: 8.3
+  shadowlinesSpeed: 4.5
+  shadowlinesAlpha: 0.03
+  noiseSize: 44.2
+  noiseSpeed: 0.68
+  noiseAlpha: 0.116
+  vignetteSize: 5.55
   vignetteSmooth: 0
-  vignetteRound: 2
-  brightness: 0
-  contrast: 1
+  vignetteRound: 50
+  brightness: 0.14
+  contrast: 1.32
   gamma: 1
   red: 1
   green: 1
   blue: 1
-  chromaticAberration: 2.2
-  redOffset: {x: 0.22, y: 0.22}
-  blueOffset: {x: 0, y: -0.308}
-  greenOffset: {x: -0.22, y: 0.22}
+  chromaticAberration: 0
+  redOffset: {x: 0.16, y: 0.16}
+  blueOffset: {x: 0, y: -0.22399999}
+  greenOffset: {x: -0.16, y: 0.16}

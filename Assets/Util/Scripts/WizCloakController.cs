@@ -97,27 +97,27 @@ public class WizCloakController : MonoBehaviour {
 
     public void SetCloakToDefault()
     {
-        switch (ScriptableObjectsManager.Instance.GetScriptableObject<StringValue>("wiz_sword").runTimeValue)
-        {
-            case "default":
-                _sr.material = _default_default;
-                WizEyesController.Instance.SetEyesToDefault();
-                break;
-            case "ancient":
-                _sr.material = _default_ancient;
-                WizEyesController.Instance.SetEyesToDefault();
-                break;
-            case "master":
-                _sr.material = _default_master;
-                WizEyesController.Instance.SetEyesToDefault();
-                break;
-            case "black":
-                _sr.material = _default_black;
-                WizEyesController.Instance.SetEyesToDefault();
-                break;
-            default:
-                break;
-        }
+        // switch (ScriptableObjectsManager.Instance.GetScriptableObject<StringValue>("wiz_sword").runTimeValue)
+        // {
+        //     case "default":
+        //         _sr.material = _default_default;
+        //         WizEyesController.Instance.SetEyesToDefault();
+        //         break;
+        //     case "ancient":
+        //         _sr.material = _default_ancient;
+        //         WizEyesController.Instance.SetEyesToDefault();
+        //         break;
+        //     case "master":
+        //         _sr.material = _default_master;
+        //         WizEyesController.Instance.SetEyesToDefault();
+        //         break;
+        //     case "black":
+        //         _sr.material = _default_black;
+        //         WizEyesController.Instance.SetEyesToDefault();
+        //         break;
+        //     default:
+        //         break;
+        // }
     }
 
     public void SetCloakToBlue()
